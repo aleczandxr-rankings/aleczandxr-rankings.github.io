@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Aleczandxr's - Rankings</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+          rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+    <header class="masthead">
+        <div>
+            <h1 class="title"><em id="title-type">Rankings</em> Chart</h1>
+            <div class="subtitle" id="subtitle">Aleczandxr's personal favourites ranked</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:10px;">
+            <div class="meta" id="meta">
+                <div><strong>loading…</strong></div>
+            </div>
+            <button id="stats-nav-btn" class="stats-nav-btn" title="View statistics">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+                Stats
+            </button>
+            <a href="https://docs.google.com/spreadsheets/d/1X_U3j_CsIijotszz6Q7f-d2fiHrsfUwHwuOcvvnjHY8/edit?gid=0#gid=0"
+               target="_blank" rel="noopener" class="source-btn" title="View source spreadsheet">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                Source
+            </a>
+            <button id="theme-toggle" class="theme-btn" title="Switch to light mode"
+                    aria-label="Toggle light/dark mode">
+                <svg id="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <line x1="12" y1="2" x2="12" y2="6"></line>
+                    <line x1="12" y1="18" x2="12" y2="22"></line>
+                    <line x1="4.22" y1="4.22" x2="7.05" y2="7.05"></line>
+                    <line x1="16.95" y1="16.95" x2="19.78" y2="19.78"></line>
+                    <line x1="2" y1="12" x2="6" y2="12"></line>
+                    <line x1="18" y1="12" x2="22" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="7.05" y2="16.95"></line>
+                    <line x1="16.95" y1="7.05" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg id="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="type-switcher" class="type-switcher hidden"></div>
+
+    <div id="stats-page" class="stats-page hidden">
+        <div class="stats-filter-bar">
+            <span class="stats-filter-label">Year range</span>
+            <div class="stats-year-range">
+                <select id="stats-year-from" class="stats-year-select"></select>
+                <span class="stats-filter-sep">→</span>
+                <select id="stats-year-to" class="stats-year-select"></select>
+            </div>
+        </div>
+        <div class="stats-tabs" id="stats-tabs"></div>
+        <div id="stats-content" class="stats-content"></div>
+    </div>
+
+    <div id="state" class="state-panel">
+        <h2>Loading data…</h2>
+        <p class="muted">Fetching <code>rankings_data.json</code></p>
+    </div>
+
+    <div id="ui" class="hidden">
+        <div class="controls">
+            <div class="media-filter-row" id="media-filter-row"></div>
+            <button class="btn-ghost" id="clear-btn" disabled>Show all</button>
+            <div class="search-wrap">
+                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="search" class="search-input"
+                       placeholder="Filter series… (type to search, click to add)" autocomplete="off">
+                <div id="suggestions" class="suggestions"></div>
+            </div>
+            <div class="pills" id="pills"></div>
+            <div class="year-control">
+                <label class="year-label-inline" for="year-selector">Show through year</label>
+                <select id="year-selector" class="year-selector"></select>
+            </div>
+            <div class="spacing-control">
+                <span class="spacing-label">Spacing: <span id="spacing-val">340</span>px</span>
+                <input type="range" class="spacing-slider" id="spacing-slider" min="30" max="700" step="10" value="340">
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <svg id="chart"></svg>
+        </div>
+    </div>
+</div>
+
+<div id="tooltip" class="tooltip"></div>
+
+<script src="media_types.js"></script>
+<script src="chart.js"></script>
+<script src="stats.js"></script>
+</body>
+</html>

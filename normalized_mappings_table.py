@@ -1,0 +1,142 @@
+NAME_MAPS: dict[str, dict[str, str]] = {
+    "fiction": {
+        "Haikyuu":                                          "Haikyuu!!",
+        "Animal Crossing":                                  "Animal Crossing (Gamecube)",
+        "Final Fantasy XIV (Up until the end of Endwalker 6.55)":
+                                                            "Final Fantasy XIV",
+        "Final Fantasy XIV (Up until the end of Shadowbringers 5.3)":
+                                                            "Final Fantasy XIV",
+        "The Witcher video game series":                    "The Witcher Video Game Series",
+        "Cyberpunk: Edgerunners":                           "Cyberpunk Universe (2077 + Phantom Liberty + Edgerunners)",
+        "Final Fantasy VII Remake":                         "Final Fantasy VII Remake + Rebirth",
+        "Final Fantasy VII":                                "Final Fantasy VII (Original)",
+        "Paper Mario: The Thousand Year Door":              "Paper Mario: The Thousand Year Door (+ Remake)",
+        "Undertale & Deltarune":                            "Undertale & Deltarune (Chapters 1 and 2)",
+        "The Lord of the Rings: The Fellowship of the Ring (Film)":
+                                                            "The Lord of the Rings Film Trilogy",
+        "The Lord of the Rings: The Two Towers":            "The Lord of the Rings Film Trilogy",
+        "One Piece (Post-Wano, Pre-Egghead)":               "One Piece",
+        "One Piece (As of Chapter 1147)":                   "One Piece",
+        "One Piece (Up until the end of Impel Down)":       "One Piece",
+        "Nana (Anime)":                                     "Nana",
+        "Bleach (144 Chapters in)":                         "Bleach",
+        "Megalo Box":                                       "Megalo Box + Nomad",
+        "The House in Fata Morgana":                        "The House in Fata Morgana + A Requiem for Innocence",
+        "Silent Hill 2":                                    "Silent Hill 2 (Original and Remake)",
+        "Into The Spiderverse":                             "The Spiderverse Series",
+        "The Tatami Galaxy":                                "The Tatami Galaxy & Time Machine Blues",
+        "Super Mario Galaxy 1 + 2":                         "Super Mario Galaxy 1 & 2",
+        "Blue Period":                                      "Blue Period (Manga)",
+        "Succession (First 3 Seasons)":                     "Succession",
+        "Yakuza 0":                                         "Yakuza/Like A Dragon Series",
+        "Yakuza 5 + Yakuza 6: A Song of Life":              "Yakuza/Like A Dragon Series",
+        "The Legend of Zelda: Majora’s Mask":               "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
+        "The Legend of Zelda: Ocarina of Time":             "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
+        "Re:Zero":                                          "Re:Zero (Anime)",
+    },
+
+    "protagonists": {
+        "Legosi (Beastars)":                                "Legoshi (Beastars)",
+        "Kiritsugu Emiya (Fate/Zero)":                      "Kiritsugu Emiya (Fate Series)",
+        "Jacopo Bearzatti (The House in Fata Morgana: A Requiem for Innocence Visual Novel)":
+            "Jacopo Bearzatti (The House in Fata Morgana: A Requiem for Innocence)",
+        "Miyuki Shirogane/Kaguya Shinomiya (Kaguya-Sama: Love Is War)":
+            "Miyuki Shirogane & Kaguya Shinomiya (Kaguya-Sama: Love Is War)",
+        "Kazuma Kiryu (Yakuza Series)":                     "Kazuma Kiryu (Yakuza/Like A Dragon Series)",
+        "Goro Majima (Yakuza Series)":                      "Goro Majima (Yakuza/Like A Dragon Series)",
+        "Takayugi Yagami (Judgment)": "Takayugi Yagami (Judgment Series)",
+        "Link (The Legend of Zelda)":
+            "Link + The Hero of Time (The Legend of Zelda - Ocarina of Time, Majora’s Mask and Twilight Princess)",
+        "Link/The Hero of Time (The Legend of Zelda)":
+            "Link + The Hero of Time (The Legend of Zelda - Ocarina of Time, Majora’s Mask and Twilight Princess)",
+        "Dean Winchester (Supernatural)":                   "Dean Winchester (Supernatural Seasons 1-5)",
+        "Sam Winchester (Supernatural)":                    "Sam Winchester (Supernatural Seasons 1-5)",
+        "Natsuki Subaru (Re:Zero)":                         "Natsuki Subaru (Re:Zero Anime)",
+        "Cloud Strife (Final Fantasy VII + Remake)":        "Cloud Strife (Final Fantasy VII Franchise)",
+        "Zack Fair (Final Fantasy VII: Crisis Core + OG + Remake)":
+            "Zack Fair (Final Fantasy VII Franchise)",
+        "Squall (Final Fantasy VIII)":                      "Squall Leonhart (Final Fantasy VIII)",
+        "Ramza (Final Fantasy Tactics)": "Ramza Beoulve (Final Fantasy Tactics: The Ivalice Chronicles)",
+        "Ramza Beoulve (Final Fantasy Tactics: War of the Lion)":
+            "Ramza Beoulve (Final Fantasy Tactics: The Ivalice Chronicles)",
+        "Noctis (Final Fantasy XV)": "Noctis Lucis Caelum (Final Fantasy XV)",
+        "Joel (The Last of Us)":                            "Joel Miller (The Last of Us)",
+        "James Sunderland (Silent Hill 2)":                 "James Sunderland (Silent Hill 2 + Remake)",
+        "Ichigo Kurosaki (Bleach - 115 Chapters in)":       "Ichigo Kurosaki (Bleach)",
+        "Kratos (God of War 4)":                            "Kratos (God of War 2018 + Ragnarok + Valhalla)",
+        "Kratos (God of War 2018 + Ragnarok)":              "Kratos (God of War 2018 + Ragnarok + Valhalla)",
+        "Ned Stark (A Song of Ice and Fire)":               "Eddard Stark (A Song of Ice and Fire)",
+        "Kris (Deltarune)":                                 "Kris Dreemurr (Deltarune)",
+        "9S (Nier Automata)":                               "9S (NieR:Automata)",
+        "2B (Nier Automata)":                               "2B (NieR:Automata)",
+        "Nier (Nier Replicant)":                            "Nier (NieR:Replicant)",
+        "A2 (Nier: Automata)": "A2 (NieR: Automata)",
+        "Yugi (Yu-Gi-Oh)": "Yugi Mutou and Yami/Atem (Yu-Gi-Oh)",
+        "Yami/Atem (Yu-Gi-Oh)": "Yugi Mutou and Yami/Atem (Yu-Gi-Oh)",
+        "Kumiko Oumae (Hibike Euphonium!)": "Kumiko Oumae (Hibike! Euphonium)",
+    },
+
+    "antagonists": {
+        "Akira Nishikiyama (Yakuza Series)":                "Akira Nishikiyama (Yakuza/Like A Dragon Series)",
+        "Ryuji Goda (Yakuza Kiwami 2)":                     "Ryuji Goda (Yakuza/Like A Dragon Series)",
+        "Tsukasa Sagawa (Yakuza 0)":                        "Tsukasa Sagawa (Yakuza/Like A Dragon Series)",
+        "Tsubasa Kurosawa (Yakuza 5)":                      "Tsubasa Kurosawa (Yakuza/Like A Dragon Series)",
+        "Homare Nishitani (Yakuza 0)":                      "Homare Nishitani (Yakuza/Like A Dragon Series)",
+        "Daisaku Kuze (Yakuza 0)":                          "Daisaku Kuze (Yakuza/Like A Dragon Series)",
+        "Takumi Someya (Yakuza 6: A Song of Life)":         "Takumi Someya (Yakuza/Like A Dragon Series)",
+        "Toru Hirose (Yakuza 6: A Song of Life)":           "Toru Hirose (Yakuza/Like A Dragon Series)",
+        "Takeru Kurusu (Yakuza 6: A Song of Life)":         "Takeru Kurusu (Yakuza/Like A Dragon Series)",
+        "Emet-Selch (Final Fantasy XIV: Shadowbringers)":   "Emet-Selch (Final Fantasy XIV)",
+        "Littlefinger (A Song of Ice and Fire)":            "Petyr Baelish/Littlefinger (A Song of Ice and Fire)",
+        "Kimblee (Fullmetal Alchemist: Brotherhood)":       "Solf J. Kimblee (Fullmetal Alchemist: Brotherhood)",
+        "Isaburo (Gintama)":                                "Sasaki Isaburo (Gintama)",
+        "Majora (The Legend of Zelda: Majora's Mask)":      "Skull Kid/Majora (The Legend of Zelda: Majora's Mask)",
+        "Davy Jones (Pirates of the Caribbean)":            "Davy Jones (Pirates of the Caribbean Original Trilogy)",
+        "Mindhunter Criminals Minus Ed Kemper (Mindhunter)":
+            "Mindhunter Criminals (Mindhunter)",
+        "Ed Kemper (Mindhunter)": "Mindhunter Criminals (Mindhunter)",
+        "Momochi Zabuza (Naruto)":                          "Momochi Zabuza and Haku (Naruto)",
+        "Haku (Naruto)":                                    "Momochi Zabuza and Haku (Naruto)",
+        "Tohru Adachi (Persona 4 Golden)":                  "Tohru Adachi (Persona 4)",
+        "Genichiro Ashina (Sekiro)":                        "Genichiro Ashina (Sekiro: Shadows Die Twice)",
+        "Majora (The Legend of Zelda: Majora’s Mask)": "Skull Kid/Majora (The Legend of Zelda: Majora’s Mask)",
+        "General Radahn (Elden Ring)": "Starscourge Radahn (Elden Ring)",
+        "Malenia (Elden Ring)": "Malenia, Blade of Miquella (Elden Ring)",
+        "Morgott (Elden Ring)": "Morgott",
+        "Godrick (Elden Ring)": "Godrick the Grafted (Elden Ring)",
+        "Maliketh (Elden Ring)": "Maliketh, The Black Blade (Elden Ring)",
+        "Gerhman (Bloodborne)": "Gehrman, The First Hunter (Bloodborne)",
+        "Ludwig (Bloodborne)": "Ludwig, The Holy Blade (Bloodborne)",
+        "Syanna (The Witcher 3: Blood and Wine)": "Syanna (The Witcher 3: Wild Hunt - Blood & Wine)",
+        "Kaiba (Yu-Gi-Oh)": "Seto Kaiba (Yu-Gi-Oh)",
+        "Pegasus (Yu-Gi-Oh)": "Maximillion Pegasus (Yu-Gi-Oh)",
+        "Bakura (Yu-Gi-Oh)": "Ryou Bakura (Yu-Gi-Oh)",
+        "Benjamin (Hunter x Hunter)": "Benjamin Gui Guo Rou (Hunter x Hunter)",
+        "Kyohei Haruma (Judgment)": "Kyohei Hamura (Judgment)",
+        "Aizawa (Yakuza 5)": "Masato Aizawa (Yakuza 5)",
+    },
+}
+
+SPLIT_MAPS: dict[str, dict[str, list[str]]] = {
+    "protagonists": {
+        "Kakeru Kurahara & Kiyose Haiji (Run With The Wind)": [
+            "Kakeru Kurahara (Run With The Wind)",
+            "Kiyose Haiji (Run With The Wind)",
+        ],
+    },
+
+    "antagonists": {
+        "Kenjaku/Suguru Getou (Jujutsu Kaisen)":[
+            "Kenjaku (Jujutsu Kaisen)",
+            "Suguru Getou (Jujutsu Kaisen)",
+        ],
+        "Marika and Radagon (Elden Ring)":[
+            "Marika (Elden Ring)",
+            "Radagon (Elden Ring)",
+        ],
+        "Yoji Shono & Mitsuru Kuroiwa (Judgment)":[ # edge case where "Yoji Shono (Judgment)" does not exist the next year
+            "Yoji Shono (Judgment)",
+            "Mitsuru Kuroiwa (Judgment)",
+        ],
+    },
+}
