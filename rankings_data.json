@@ -51,7 +51,7 @@
         },
         {
           "tier": 9.0,
-          "label": "Love’s a Strong Word (Kinda)",
+          "label": "Just Missed Out (Very Loose)",
           "color": "#0000ff"
         },
         {
@@ -64,19 +64,22 @@
         "2022",
         "2023",
         "2024",
-        "2025"
+        "2025",
+        "2026"
       ],
       "as_of_by_year": {
         "2022": "(As of April 15th, 2022)",
         "2023": "(As of March 8th, 2023)",
         "2024": "(As of April 15th, 2024)",
-        "2025": "(As of April 28th, 2025)"
+        "2025": "(As of April 28th, 2025)",
+        "2026": "(As of April 20th, 2026)"
       },
       "year_column_caption": {
         "2022": "As of April 15th",
         "2023": "As of March 8th",
         "2024": "As of April 15th",
-        "2025": "As of April 28th"
+        "2025": "As of April 28th",
+        "2026": "As of April 20th"
       },
       "tier_labels_by_year": {
         "2022": {
@@ -128,6 +131,19 @@
           "8.0": "Love’s an Appropriate Word",
           "9.0": "Love’s a Strong Word (Kinda)",
           "999.0": "Honorable Mentions"
+        },
+        "2026": {
+          "1.0": "My Heart and Soul",
+          "1.5": "Moves Heavens And Earth",
+          "2.0": "You Were Made For Me",
+          "3.0": "I Cannot Believe These Exist",
+          "4.0": "You Complete Me",
+          "5.0": "I’m Head Over Heels",
+          "6.0": "You Understand Me",
+          "7.0": "You Know My Weakness",
+          "8.0": "Love’s an Appropriate Word",
+          "9.0": "Just Missed Out (Very Loose)",
+          "999.0": "Honorable Mentions"
         }
       },
       "data": [
@@ -172,6 +188,14 @@
           "series": "Houseki no Kuni"
         },
         {
+          "name": "Aechmea (Houseki no Kuni)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Aechmea (Houseki no Kuni)",
+          "series": "Houseki no Kuni"
+        },
+        {
           "name": "Akaashi Seijurou (Kuroko no Basket)",
           "year": "2022",
           "tier": 7.0,
@@ -204,8 +228,24 @@
           "series": "Kuroko no Basket"
         },
         {
+          "name": "Akaashi Seijurou (Kuroko no Basket)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Akaashi Seijurou (Kuroko no Basket)",
+          "series": "Kuroko no Basket"
+        },
+        {
           "name": "Akainu (One Piece)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Akainu (One Piece)",
+          "series": "One Piece"
+        },
+        {
+          "name": "Akainu (One Piece)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Akainu (One Piece)",
@@ -244,6 +284,30 @@
           "series": "SSSS.Gridman"
         },
         {
+          "name": "Akane Shinjo (SSSS.Gridman)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Akane Shinjo (SSSS.Gridman)",
+          "series": "SSSS.Gridman"
+        },
+        {
+          "name": "Akaza (Demon Slayer)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Akaza (Demon Slayer)",
+          "series": "Demon Slayer"
+        },
+        {
+          "name": "Akemura Soga (Sword Saint) (Kagurabachi)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 96,
+          "exact": "Akemura Soga (Sword Saint) (Kagurabachi)",
+          "series": "Kagurabachi"
+        },
+        {
           "name": "Akira Nishikiyama (Yakuza/Like A Dragon Series)",
           "year": "2024",
           "tier": 1.5,
@@ -260,6 +324,14 @@
           "series": "Yakuza/Like A Dragon Series"
         },
         {
+          "name": "Akira Nishikiyama (Yakuza/Like A Dragon Series)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 16,
+          "exact": "Akira Nishikiyama (Yakuza/Like A Dragon Series)",
+          "series": "Yakuza/Like A Dragon Series"
+        },
+        {
           "name": "All For One (My Hero Academia)",
           "year": "2022",
           "tier": 999.0,
@@ -272,6 +344,14 @@
           "year": "2025",
           "tier": 5.0,
           "rank": 81,
+          "exact": "Ambessa Medarda (Arcane)",
+          "series": "Arcane"
+        },
+        {
+          "name": "Ambessa Medarda (Arcane)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 82,
           "exact": "Ambessa Medarda (Arcane)",
           "series": "Arcane"
         },
@@ -308,6 +388,22 @@
           "series": "The Legend of Korra"
         },
         {
+          "name": "Amon (The Legend of Korra)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Amon (The Legend of Korra)",
+          "series": "The Legend of Korra"
+        },
+        {
+          "name": "Andrew Milton (Red Dead Redemption 2)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 182,
+          "exact": "Andrew Milton (Red Dead Redemption 2)",
+          "series": "Red Dead Redemption 2"
+        },
+        {
           "name": "Andrew Ryan (Bioshock)",
           "year": "2022",
           "tier": 5.0,
@@ -340,6 +436,14 @@
           "series": "Bioshock"
         },
         {
+          "name": "Andrew Ryan (Bioshock)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 66,
+          "exact": "Andrew Ryan (Bioshock)",
+          "series": "Bioshock"
+        },
+        {
           "name": "Anti-Spirals (Gurren Lagann)",
           "year": "2022",
           "tier": 999.0,
@@ -372,8 +476,32 @@
           "series": "Gurren Lagann"
         },
         {
+          "name": "Anti-Spirals (Gurren Lagann)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Anti-Spirals (Gurren Lagann)",
+          "series": "Gurren Lagann"
+        },
+        {
+          "name": "Anton Chigurh (No Country For Old Men)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Anton Chigurh (No Country For Old Men)",
+          "series": "No Country For Old Men"
+        },
+        {
           "name": "Aokiji (One Piece)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Aokiji (One Piece)",
+          "series": "One Piece"
+        },
+        {
+          "name": "Aokiji (One Piece)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Aokiji (One Piece)",
@@ -412,6 +540,14 @@
           "series": "Kuroko no Basket"
         },
         {
+          "name": "Aomine Daiki (Kuroko no Basket)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 91,
+          "exact": "Aomine Daiki (Kuroko no Basket)",
+          "series": "Kuroko no Basket"
+        },
+        {
           "name": "Archer (Fate/Stay Night)",
           "year": "2022",
           "tier": 6.0,
@@ -444,6 +580,14 @@
           "series": "Fate/Stay Night"
         },
         {
+          "name": "Archer (Fate/Stay Night)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 79,
+          "exact": "Archer (Fate/Stay Night)",
+          "series": "Fate/Stay Night"
+        },
+        {
           "name": "Ardyn Izunia (Final Fantasy XV)",
           "year": "2023",
           "tier": 999.0,
@@ -468,28 +612,44 @@
           "series": "Final Fantasy XV"
         },
         {
-          "name": "Argath Thadalfus (Final Fantasy Tactics: War of the Lions)",
+          "name": "Ardyn Izunia (Final Fantasy XV)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Ardyn Izunia (Final Fantasy XV)",
+          "series": "Final Fantasy XV"
+        },
+        {
+          "name": "Argath Thadalfus (Final Fantasy Tactics: The Ivalice Chronicles)",
           "year": "2023",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Argath Thadalfus (Final Fantasy Tactics: War of the Lions)",
-          "series": "Final Fantasy Tactics: War of the Lions"
+          "series": "Final Fantasy Tactics: The Ivalice Chronicles"
         },
         {
-          "name": "Argath Thadalfus (Final Fantasy Tactics: War of the Lions)",
+          "name": "Argath Thadalfus (Final Fantasy Tactics: The Ivalice Chronicles)",
           "year": "2024",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Argath Thadalfus (Final Fantasy Tactics: War of the Lions)",
-          "series": "Final Fantasy Tactics: War of the Lions"
+          "series": "Final Fantasy Tactics: The Ivalice Chronicles"
         },
         {
-          "name": "Argath Thadalfus (Final Fantasy Tactics: War of the Lions)",
+          "name": "Argath Thadalfus (Final Fantasy Tactics: The Ivalice Chronicles)",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Argath Thadalfus (Final Fantasy Tactics: War of the Lions)",
-          "series": "Final Fantasy Tactics: War of the Lions"
+          "series": "Final Fantasy Tactics: The Ivalice Chronicles"
+        },
+        {
+          "name": "Argath Thadalfus (Final Fantasy Tactics: The Ivalice Chronicles)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Argath Thadalfus (Final Fantasy Tactics: The Ivalice Chronicles)",
+          "series": "Final Fantasy Tactics: The Ivalice Chronicles"
         },
         {
           "name": "Arios MacLaine (Trails Series)",
@@ -498,6 +658,22 @@
           "rank": "HM",
           "exact": "Arios MacLaine (Trails Series)",
           "series": "Trails Series"
+        },
+        {
+          "name": "Arios MacLaine (Trails Series)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Arios MacLaine (Trails Series)",
+          "series": "Trails Series"
+        },
+        {
+          "name": "Arlecchino (Lies of P + Overture)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 148,
+          "exact": "Arlecchino (Lies of P + Overture)",
+          "series": "Lies of P + Overture"
         },
         {
           "name": "Artorias (Dark Souls)",
@@ -548,6 +724,14 @@
           "series": "Undertale + Deltarune"
         },
         {
+          "name": "Asgore (Undertale + Deltarune)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 109,
+          "exact": "Asgore (Undertale + Deltarune)",
+          "series": "Undertale + Deltarune"
+        },
+        {
           "name": "Askeladd (Vinland Saga)",
           "year": "2022",
           "tier": 1.0,
@@ -580,7 +764,15 @@
           "series": "Vinland Saga"
         },
         {
-          "name": "Asriel (Undertale)",
+          "name": "Askeladd (Vinland Saga)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 27,
+          "exact": "Askeladd (Vinland Saga)",
+          "series": "Vinland Saga"
+        },
+        {
+          "name": "Asriel Dreemur (Undertale)",
           "year": "2022",
           "tier": 4.0,
           "rank": 35,
@@ -588,7 +780,7 @@
           "series": "Undertale"
         },
         {
-          "name": "Asriel (Undertale)",
+          "name": "Asriel Dreemur (Undertale)",
           "year": "2023",
           "tier": 3.0,
           "rank": 32,
@@ -596,7 +788,7 @@
           "series": "Undertale"
         },
         {
-          "name": "Asriel (Undertale)",
+          "name": "Asriel Dreemur (Undertale)",
           "year": "2024",
           "tier": 3.0,
           "rank": 40,
@@ -604,11 +796,19 @@
           "series": "Undertale"
         },
         {
-          "name": "Asriel (Undertale)",
+          "name": "Asriel Dreemur (Undertale)",
           "year": "2025",
           "tier": 3.0,
           "rank": 47,
           "exact": "Asriel (Undertale)",
+          "series": "Undertale"
+        },
+        {
+          "name": "Asriel Dreemur (Undertale)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 54,
+          "exact": "Asriel Dreemur (Undertale)",
           "series": "Undertale"
         },
         {
@@ -642,6 +842,22 @@
           "rank": 26,
           "exact": "Atsumu Miya (Haikyuu!!)",
           "series": "Haikyuu!!"
+        },
+        {
+          "name": "Atsumu Miya (Haikyuu!!)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 36,
+          "exact": "Atsumu Miya (Haikyuu!!)",
+          "series": "Haikyuu!!"
+        },
+        {
+          "name": "Avon Barksdale (The Wire)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 107,
+          "exact": "Avon Barksdale (The Wire)",
+          "series": "The Wire"
         },
         {
           "name": "Azazel (Supernatural)",
@@ -680,6 +896,14 @@
           "year": "2025",
           "tier": 9.0,
           "rank": 142,
+          "exact": "Azula (Avatar: The Last Airbender)",
+          "series": "Avatar: The Last Airbender"
+        },
+        {
+          "name": "Azula (Avatar: The Last Airbender)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 168,
           "exact": "Azula (Avatar: The Last Airbender)",
           "series": "Avatar: The Last Airbender"
         },
@@ -724,6 +948,14 @@
           "series": "The House in Fata Morgana: A Requiem for Innocence"
         },
         {
+          "name": "Barnier (The House in Fata Morgana: A Requiem for Innocence)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Barnier (The House in Fata Morgana: A Requiem for Innocence)",
+          "series": "The House in Fata Morgana: A Requiem for Innocence"
+        },
+        {
           "name": "Barok van Zieks (The Great Ace Attorney Chronicles)",
           "year": "2023",
           "tier": 6.0,
@@ -748,6 +980,14 @@
           "series": "The Great Ace Attorney Chronicles"
         },
         {
+          "name": "Barok van Zieks (The Great Ace Attorney Chronicles)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 123,
+          "exact": "Barok van Zieks (The Great Ace Attorney Chronicles)",
+          "series": "The Great Ace Attorney Chronicles"
+        },
+        {
           "name": "Baron Omatsuri (One Piece)",
           "year": "2023",
           "tier": 999.0,
@@ -770,6 +1010,22 @@
           "rank": "HM",
           "exact": "Baron Omatsuri (One Piece)",
           "series": "One Piece"
+        },
+        {
+          "name": "Baron Omatsuri (One Piece)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Baron Omatsuri (One Piece)",
+          "series": "One Piece"
+        },
+        {
+          "name": "Bazz-B (Bleach)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 160,
+          "exact": "Bazz-B (Bleach)",
+          "series": "Bleach"
         },
         {
           "name": "Beatrice (Umineko no Naku Koro Ni)",
@@ -804,7 +1060,15 @@
           "series": "Umineko no Naku Koro Ni"
         },
         {
-          "name": "Benjamin Gui Guo Rou (Hunter x Hunter)",
+          "name": "Beatrice (Umineko no Naku Koro Ni)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 6,
+          "exact": "Beatrice (Umineko no Naku Koro Ni)",
+          "series": "Umineko no Naku Koro Ni"
+        },
+        {
+          "name": "Benjamin Hui Guo Rou (Hunter x Hunter)",
           "year": "2023",
           "tier": 999.0,
           "rank": "HM",
@@ -812,7 +1076,7 @@
           "series": "Hunter x Hunter"
         },
         {
-          "name": "Benjamin Gui Guo Rou (Hunter x Hunter)",
+          "name": "Benjamin Hui Guo Rou (Hunter x Hunter)",
           "year": "2024",
           "tier": 999.0,
           "rank": "HM",
@@ -820,11 +1084,19 @@
           "series": "Hunter x Hunter"
         },
         {
-          "name": "Benjamin Gui Guo Rou (Hunter x Hunter)",
+          "name": "Benjamin Hui Guo Rou (Hunter x Hunter)",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Benjamin Gui Guo Rou (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
+          "name": "Benjamin Hui Guo Rou (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Benjamin Hui Guo Rou (Hunter x Hunter)",
           "series": "Hunter x Hunter"
         },
         {
@@ -854,6 +1126,14 @@
         {
           "name": "Bernkastel (Umineko no Naku Koro Ni)",
           "year": "2025",
+          "tier": 3.0,
+          "rank": 59,
+          "exact": "Bernkastel (Umineko no Naku Koro Ni)",
+          "series": "Umineko no Naku Koro Ni"
+        },
+        {
+          "name": "Bernkastel (Umineko no Naku Koro Ni)",
+          "year": "2026",
           "tier": 3.0,
           "rank": 59,
           "exact": "Bernkastel (Umineko no Naku Koro Ni)",
@@ -892,10 +1172,26 @@
           "series": "Attack On Titan"
         },
         {
+          "name": "Bertholdt Hoover (Attack On Titan)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 149,
+          "exact": "Bertholdt Hoover (Attack On Titan)",
+          "series": "Attack On Titan"
+        },
+        {
           "name": "Beyond Netero (Hunter x Hunter)",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
+          "exact": "Beyond Netero (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
+          "name": "Beyond Netero (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 177,
           "exact": "Beyond Netero (Hunter x Hunter)",
           "series": "Hunter x Hunter"
         },
@@ -916,6 +1212,22 @@
           "series": "One Piece"
         },
         {
+          "name": "Big Mom (One Piece)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Big Mom (One Piece)",
+          "series": "One Piece"
+        },
+        {
+          "name": "Bjorn (Vinland Saga)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Bjorn (Vinland Saga)",
+          "series": "Vinland Saga"
+        },
+        {
           "name": "Blackbeard (One Piece)",
           "year": "2024",
           "tier": 8.0,
@@ -928,6 +1240,14 @@
           "year": "2025",
           "tier": 7.0,
           "rank": 125,
+          "exact": "Blackbeard (One Piece)",
+          "series": "One Piece"
+        },
+        {
+          "name": "Blackbeard (One Piece)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 102,
           "exact": "Blackbeard (One Piece)",
           "series": "One Piece"
         },
@@ -964,6 +1284,14 @@
           "series": "Made in Abyss"
         },
         {
+          "name": "Bondrewd (Made in Abyss)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Bondrewd (Made in Abyss)",
+          "series": "Made in Abyss"
+        },
+        {
           "name": "Bowser (Paper Mario)",
           "year": "2023",
           "tier": 999.0,
@@ -988,6 +1316,14 @@
           "series": "Paper Mario"
         },
         {
+          "name": "Bowser (Paper Mario)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Bowser (Paper Mario)",
+          "series": "Paper Mario"
+        },
+        {
           "name": "Byakuya Kuchiki (Bleach)",
           "year": "2024",
           "tier": 999.0,
@@ -996,8 +1332,24 @@
           "series": "Bleach"
         },
         {
+          "name": "Camilla Hui Gou Rou (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Camilla Hui Gou Rou (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
           "name": "Cedric Arnor (Trails Series)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Cedric Arnor (Trails Series)",
+          "series": "Trails Series"
+        },
+        {
+          "name": "Cedric Arnor (Trails Series)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Cedric Arnor (Trails Series)",
@@ -1036,6 +1388,14 @@
           "series": "A Song of Ice and Fire"
         },
         {
+          "name": "Cersei Lannister (A Song of Ice and Fire)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 85,
+          "exact": "Cersei Lannister (A Song of Ice and Fire)",
+          "series": "A Song of Ice and Fire"
+        },
+        {
           "name": "Charles McGill (Better Call Saul)",
           "year": "2022",
           "tier": 3.0,
@@ -1068,6 +1428,14 @@
           "series": "Better Call Saul"
         },
         {
+          "name": "Charles McGill (Better Call Saul)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 29,
+          "exact": "Charles McGill (Better Call Saul)",
+          "series": "Better Call Saul"
+        },
+        {
           "name": "Charlotte Katakuri (One Piece)",
           "year": "2024",
           "tier": 4.0,
@@ -1084,10 +1452,26 @@
           "series": "One Piece"
         },
         {
+          "name": "Charlotte Katakuri (One Piece)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 93,
+          "exact": "Charlotte Katakuri (One Piece)",
+          "series": "One Piece"
+        },
+        {
           "name": "Cho Sang-woo (Squid Game)",
           "year": "2025",
           "tier": 7.0,
           "rank": 119,
+          "exact": "Cho Sang-woo (Squid Game)",
+          "series": "Squid Game"
+        },
+        {
+          "name": "Cho Sang-woo (Squid Game)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 124,
           "exact": "Cho Sang-woo (Squid Game)",
           "series": "Squid Game"
         },
@@ -1124,6 +1508,30 @@
           "series": "Hunter x Hunter"
         },
         {
+          "name": "Chrollo Lucilfer (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 4,
+          "exact": "Chrollo Lucilfer (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
+          "name": "Clea Dessendre (Clair Obscure: Expedition 33)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 159,
+          "exact": "Clea Dessendre (Clair Obscure: Expedition 33)",
+          "series": "Clair Obscure: Expedition 33"
+        },
+        {
+          "name": "Colonel Stephen J. Lockjaw (One Battle After Another)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Colonel Stephen J. Lockjaw (One Battle After Another)",
+          "series": "One Battle After Another"
+        },
+        {
           "name": "Count Bleck (Super Paper Mario)",
           "year": "2022",
           "tier": 9.0,
@@ -1156,6 +1564,14 @@
           "series": "Super Paper Mario"
         },
         {
+          "name": "Count Bleck (Super Paper Mario)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Count Bleck (Super Paper Mario)",
+          "series": "Super Paper Mario"
+        },
+        {
           "name": "Cutler Beckett (Pirates of the Caribbean)",
           "year": "2022",
           "tier": 999.0,
@@ -1188,6 +1604,14 @@
           "series": "Pirates of the Caribbean"
         },
         {
+          "name": "Cutler Beckett (Pirates of the Caribbean)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Cutler Beckett (Pirates of the Caribbean)",
+          "series": "Pirates of the Caribbean"
+        },
+        {
           "name": "Cyrus (Pokemon Platinum)",
           "year": "2022",
           "tier": 999.0,
@@ -1214,6 +1638,14 @@
         {
           "name": "Cyrus (Pokemon Platinum)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Cyrus (Pokemon Platinum)",
+          "series": "Pokemon Platinum"
+        },
+        {
+          "name": "Cyrus (Pokemon Platinum)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Cyrus (Pokemon Platinum)",
@@ -1230,6 +1662,14 @@
         {
           "name": "Dabi (My Hero Academia)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Dabi (My Hero Academia)",
+          "series": "My Hero Academia"
+        },
+        {
+          "name": "Dabi (My Hero Academia)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Dabi (My Hero Academia)",
@@ -1248,6 +1688,14 @@
           "year": "2025",
           "tier": 7.0,
           "rank": 122,
+          "exact": "Daisaku Kuze (Yakuza/Like A Dragon Series)",
+          "series": "Yakuza/Like A Dragon Series"
+        },
+        {
+          "name": "Daisaku Kuze (Yakuza/Like A Dragon Series)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 127,
           "exact": "Daisaku Kuze (Yakuza/Like A Dragon Series)",
           "series": "Yakuza/Like A Dragon Series"
         },
@@ -1284,6 +1732,14 @@
           "series": "Pirates of the Caribbean Original Trilogy"
         },
         {
+          "name": "Davy Jones (Pirates of the Caribbean Original Trilogy)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Davy Jones (Pirates of the Caribbean Original Trilogy)",
+          "series": "Pirates of the Caribbean Original Trilogy"
+        },
+        {
           "name": "Death (Puss in Boots: The Last Wish)",
           "year": "2023",
           "tier": 999.0,
@@ -1308,6 +1764,22 @@
           "series": "Puss in Boots: The Last Wish"
         },
         {
+          "name": "Death (Puss in Boots: The Last Wish)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Death (Puss in Boots: The Last Wish)",
+          "series": "Puss in Boots: The Last Wish"
+        },
+        {
+          "name": "Dedra Meero (Andor)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 134,
+          "exact": "Dedra Meero (Andor)",
+          "series": "Andor"
+        },
+        {
           "name": "Deidara (Naruto)",
           "year": "2024",
           "tier": 8.0,
@@ -1318,6 +1790,14 @@
         {
           "name": "Deidara (Naruto)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Deidara (Naruto)",
+          "series": "Naruto"
+        },
+        {
+          "name": "Deidara (Naruto)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Deidara (Naruto)",
@@ -1342,6 +1822,14 @@
         {
           "name": "Denshichiro Yoshioka (Vagabond)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Denshichiro Yoshioka (Vagabond)",
+          "series": "Vagabond"
+        },
+        {
+          "name": "Denshichiro Yoshioka (Vagabond)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Denshichiro Yoshioka (Vagabond)",
@@ -1380,10 +1868,42 @@
           "series": "The Witcher 3: Blood and Wine"
         },
         {
+          "name": "Dettlaff (The Witcher 3: Blood and Wine)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Dettlaff (The Witcher 3: Blood and Wine)",
+          "series": "The Witcher 3: Blood and Wine"
+        },
+        {
+          "name": "Diana and Jules Marmont (Alan Wake II: The Lake House)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Diana and Jules Marmont (Alan Wake II: The Lake House)",
+          "series": "Alan Wake II: The Lake House"
+        },
+        {
+          "name": "Diego Brando (JoJo’s Bizarre Adventure Part 7: Steel Ball Run)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 60,
+          "exact": "Diego Brando (JoJo’s Bizarre Adventure Part 7: Steel Ball Run)",
+          "series": "JoJo’s Bizarre Adventure Part 7: Steel Ball Run"
+        },
+        {
           "name": "Dieter Crois (Trails Series)",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
+          "exact": "Dieter Crois (Trails Series)",
+          "series": "Trails Series"
+        },
+        {
+          "name": "Dieter Crois (Trails Series)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 166,
           "exact": "Dieter Crois (Trails Series)",
           "series": "Trails Series"
         },
@@ -1420,6 +1940,14 @@
           "series": "Super Paper Mario"
         },
         {
+          "name": "Dimentio (Super Paper Mario)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Dimentio (Super Paper Mario)",
+          "series": "Super Paper Mario"
+        },
+        {
           "name": "Doctor Steinman (Bioshock)",
           "year": "2023",
           "tier": 999.0,
@@ -1444,6 +1972,14 @@
           "series": "Bioshock"
         },
         {
+          "name": "Doctor Steinman (Bioshock)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Doctor Steinman (Bioshock)",
+          "series": "Bioshock"
+        },
+        {
           "name": "Don Quixote Doflamingo (One Piece)",
           "year": "2024",
           "tier": 3.0,
@@ -1458,6 +1994,22 @@
           "rank": 43,
           "exact": "Don Quixote Doflamingo (One Piece)",
           "series": "One Piece"
+        },
+        {
+          "name": "Don Quixote Doflamingo (One Piece)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 47,
+          "exact": "Don Quixote Doflamingo (One Piece)",
+          "series": "One Piece"
+        },
+        {
+          "name": "Dr Kano (Tokyo Ghoul)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Dr Kano (Tokyo Ghoul)",
+          "series": "Tokyo Ghoul"
         },
         {
           "name": "Dragon (Ping Pong The Animation)",
@@ -1492,6 +2044,30 @@
           "series": "Ping Pong The Animation"
         },
         {
+          "name": "Dragon (Ping Pong The Animation)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 155,
+          "exact": "Dragon (Ping Pong The Animation)",
+          "series": "Ping Pong The Animation"
+        },
+        {
+          "name": "Dutch Van Der Linde (Red Dead Redemption 2)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 10,
+          "exact": "Dutch Van Der Linde (Red Dead Redemption 2)",
+          "series": "Red Dead Redemption 2"
+        },
+        {
+          "name": "Dycedarg Beoulve (Final Fantasy Tactics: The Ivalice Chronicles)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Dycedarg Beoulve (Final Fantasy Tactics: The Ivalice Chronicles)",
+          "series": "Final Fantasy Tactics: The Ivalice Chronicles"
+        },
+        {
           "name": "Egil (Xenoblade Chronicles)",
           "year": "2022",
           "tier": 4.0,
@@ -1524,6 +2100,14 @@
           "series": "Xenoblade Chronicles"
         },
         {
+          "name": "Egil (Xenoblade Chronicles)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 72,
+          "exact": "Egil (Xenoblade Chronicles)",
+          "series": "Xenoblade Chronicles"
+        },
+        {
           "name": "Ehara (Lost Judgment)",
           "year": "2025",
           "tier": 999.0,
@@ -1532,8 +2116,24 @@
           "series": "Lost Judgment"
         },
         {
+          "name": "Ehara (Lost Judgment)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Ehara (Lost Judgment)",
+          "series": "Lost Judgment"
+        },
+        {
           "name": "Eiji Mitamura (Like A Dragon: Infinite Wealth)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Eiji Mitamura (Like A Dragon: Infinite Wealth)",
+          "series": "Like A Dragon: Infinite Wealth"
+        },
+        {
+          "name": "Eiji Mitamura (Like A Dragon: Infinite Wealth)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Eiji Mitamura (Like A Dragon: Infinite Wealth)",
@@ -1564,6 +2164,14 @@
           "series": "Final Fantasy XIV"
         },
         {
+          "name": "Elidibus (Final Fantasy XIV)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 12,
+          "exact": "Elidibus (Final Fantasy XIV)",
+          "series": "Final Fantasy XIV"
+        },
+        {
           "name": "Emet-Selch (Final Fantasy XIV)",
           "year": "2023",
           "tier": 1.0,
@@ -1588,12 +2196,36 @@
           "series": "Final Fantasy XIV"
         },
         {
+          "name": "Emet-Selch (Final Fantasy XIV)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 1,
+          "exact": "Emet-Selch (Final Fantasy XIV)",
+          "series": "Final Fantasy XIV"
+        },
+        {
+          "name": "Enel (One Piece)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Enel (One Piece)",
+          "series": "One Piece"
+        },
+        {
           "name": "Enoch Drebber (The Great Ace Attorney Chronicles)",
           "year": "2023",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Enoch Drebber (The Great Ace Attorney Chronicles)",
           "series": "The Great Ace Attorney Chronicles"
+        },
+        {
+          "name": "Enoch Drebber (The Great Ace Attorney)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Enoch Drebber (The Great Ace Attorney)",
+          "series": "The Great Ace Attorney"
         },
         {
           "name": "Envy (Fullmetal Alchemist: Brotherhood)",
@@ -1636,6 +2268,22 @@
           "series": "Umineko no Naku Koro Ni"
         },
         {
+          "name": "Erika Furudo (Umineko no Naku Koro Ni)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 73,
+          "exact": "Erika Furudo (Umineko no Naku Koro Ni)",
+          "series": "Umineko no Naku Koro Ni"
+        },
+        {
+          "name": "Eto (Tokyo Ghoul)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Eto (Tokyo Ghoul)",
+          "series": "Tokyo Ghoul"
+        },
+        {
           "name": "Euron Greyjoy (A Song of Ice and Fire)",
           "year": "2022",
           "tier": 8.0,
@@ -1668,6 +2316,14 @@
           "series": "A Song of Ice and Fire"
         },
         {
+          "name": "Euron Greyjoy (A Song of Ice and Fire)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Euron Greyjoy (A Song of Ice and Fire)",
+          "series": "A Song of Ice and Fire"
+        },
+        {
           "name": "Father (Fullmetal Alchemist: Brotherhood)",
           "year": "2022",
           "tier": 999.0,
@@ -1686,6 +2342,14 @@
         {
           "name": "Father (Fullmetal Alchemist: Brotherhood)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Father (Fullmetal Alchemist: Brotherhood)",
+          "series": "Fullmetal Alchemist: Brotherhood"
+        },
+        {
+          "name": "Father (Fullmetal Alchemist: Brotherhood)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Father (Fullmetal Alchemist: Brotherhood)",
@@ -1732,6 +2396,14 @@
           "series": "Attack on Titan"
         },
         {
+          "name": "Floch Forster (Attack on Titan)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 49,
+          "exact": "Floch Forster (Attack on Titan)",
+          "series": "Attack on Titan"
+        },
+        {
           "name": "Frank Fontaine (Bioshock)",
           "year": "2023",
           "tier": 999.0,
@@ -1756,6 +2428,14 @@
           "series": "Bioshock"
         },
         {
+          "name": "Frank Fontaine (Bioshock)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Frank Fontaine (Bioshock)",
+          "series": "Bioshock"
+        },
+        {
           "name": "Franz Bonaparta (Monster)",
           "year": "2024",
           "tier": 999.0,
@@ -1766,6 +2446,14 @@
         {
           "name": "Franz Bonaparta (Monster)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Franz Bonaparta (Monster)",
+          "series": "Monster"
+        },
+        {
+          "name": "Franz Bonaparta (Monster)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Franz Bonaparta (Monster)",
@@ -1804,12 +2492,28 @@
           "series": "Fullmetal Alchemist: Brotherhood"
         },
         {
+          "name": "Fuhrer King Bradley (Fullmetal Alchemist: Brotherhood)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 110,
+          "exact": "Fuhrer King Bradley (Fullmetal Alchemist: Brotherhood)",
+          "series": "Fullmetal Alchemist: Brotherhood"
+        },
+        {
           "name": "Fujioka (Run With the Wind)",
           "year": "2024",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Fujioka (Run With the Wind)",
           "series": "Run With the Wind"
+        },
+        {
+          "name": "Funny Valentine (JoJo’s Bizarre Adventure Part 7: Steel Ball Run)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 43,
+          "exact": "Funny Valentine (JoJo’s Bizarre Adventure Part 7: Steel Ball Run)",
+          "series": "JoJo’s Bizarre Adventure Part 7: Steel Ball Run"
         },
         {
           "name": "Gael (Dark Souls III)",
@@ -1854,6 +2558,14 @@
         {
           "name": "Ganishka (Berserk)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Ganishka (Berserk)",
+          "series": "Berserk"
+        },
+        {
+          "name": "Ganishka (Berserk)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Ganishka (Berserk)",
@@ -1892,6 +2604,14 @@
           "series": "The Legend of Zelda series"
         },
         {
+          "name": "Ganondorf (The Legend of Zelda series)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 130,
+          "exact": "Ganondorf (The Legend of Zelda series)",
+          "series": "The Legend of Zelda series"
+        },
+        {
           "name": "Gaunter O’Dimm (The Witcher 3: Hearts of Stone)",
           "year": "2022",
           "tier": 3.0,
@@ -1922,6 +2642,22 @@
           "rank": 64,
           "exact": "Gaunter O’Dimm (The Witcher 3: Hearts of Stone)",
           "series": "The Witcher 3: Hearts of Stone"
+        },
+        {
+          "name": "Gaunter O’Dimm (The Witcher 3: Hearts of Stone)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 67,
+          "exact": "Gaunter O’Dimm (The Witcher 3: Hearts of Stone)",
+          "series": "The Witcher 3: Hearts of Stone"
+        },
+        {
+          "name": "Gecko Moria (One Piece)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Gecko Moria (One Piece)",
+          "series": "One Piece"
         },
         {
           "name": "Gehrman, The First Hunter (Bloodborne)",
@@ -1972,6 +2708,14 @@
           "series": "Neon Genesis Evangelion + End of Evangelion"
         },
         {
+          "name": "Gendo Ikari (Neon Genesis Evangelion + End of Evangelion)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 112,
+          "exact": "Gendo Ikari (Neon Genesis Evangelion + End of Evangelion)",
+          "series": "Neon Genesis Evangelion + End of Evangelion"
+        },
+        {
           "name": "Genichiro Ashina (Sekiro: Shadows Die Twice)",
           "year": "2023",
           "tier": 999.0,
@@ -1992,6 +2736,14 @@
           "year": "2025",
           "tier": 9.0,
           "rank": 147,
+          "exact": "Genichiro Ashina (Sekiro: Shadows Die Twice)",
+          "series": "Sekiro: Shadows Die Twice"
+        },
+        {
+          "name": "Genichiro Ashina (Sekiro: Shadows Die Twice)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 152,
           "exact": "Genichiro Ashina (Sekiro: Shadows Die Twice)",
           "series": "Sekiro: Shadows Die Twice"
         },
@@ -2020,20 +2772,36 @@
           "series": "My Hero Academia"
         },
         {
-          "name": "Gepetto (Lies of P)",
+          "name": "Gentle Criminal (My Hero Academia)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Gentle Criminal (My Hero Academia)",
+          "series": "My Hero Academia"
+        },
+        {
+          "name": "Geppetto (Lies of P + Overture)",
           "year": "2024",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Gepetto (Lies of P)",
-          "series": "Lies of P"
+          "series": "Lies of P + Overture"
         },
         {
-          "name": "Gepetto (Lies of P)",
+          "name": "Geppetto (Lies of P + Overture)",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Gepetto (Lies of P)",
-          "series": "Lies of P"
+          "series": "Lies of P + Overture"
+        },
+        {
+          "name": "Geppetto (Lies of P + Overture)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 174,
+          "exact": "Geppetto (Lies of P + Overture)",
+          "series": "Lies of P + Overture"
         },
         {
           "name": "Gilgamesh (Fate/Zero)",
@@ -2068,10 +2836,26 @@
           "series": "Fate/Zero"
         },
         {
+          "name": "Gilgamesh (Fate/Zero)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 24,
+          "exact": "Gilgamesh (Fate/Zero)",
+          "series": "Fate/Zero"
+        },
+        {
           "name": "Gilliath Osborne (Trails Series)",
           "year": "2025",
           "tier": 4.0,
           "rank": 71,
+          "exact": "Gilliath Osborne (Trails Series)",
+          "series": "Trails Series"
+        },
+        {
+          "name": "Gilliath Osborne (Trails Series)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 78,
           "exact": "Gilliath Osborne (Trails Series)",
           "series": "Trails Series"
         },
@@ -2088,6 +2872,14 @@
           "year": "2025",
           "tier": 3.0,
           "rank": 41,
+          "exact": "Gin Ichimaru (Bleach)",
+          "series": "Bleach"
+        },
+        {
+          "name": "Gin Ichimaru (Bleach)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 31,
           "exact": "Gin Ichimaru (Bleach)",
           "series": "Bleach"
         },
@@ -2128,6 +2920,14 @@
           "year": "2025",
           "tier": 5.0,
           "rank": 79,
+          "exact": "Godot (The Ace Attorney Original Trilogy)",
+          "series": "The Ace Attorney Original Trilogy"
+        },
+        {
+          "name": "Godot (The Ace Attorney Original Trilogy)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 80,
           "exact": "Godot (The Ace Attorney Original Trilogy)",
           "series": "The Ace Attorney Original Trilogy"
         },
@@ -2180,6 +2980,14 @@
           "series": "Bleach"
         },
         {
+          "name": "Gremmy (Bleach)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 175,
+          "exact": "Gremmy (Bleach)",
+          "series": "Bleach"
+        },
+        {
           "name": "Griffith (Berserk)",
           "year": "2022",
           "tier": 1.0,
@@ -2212,10 +3020,26 @@
           "series": "Berserk"
         },
         {
+          "name": "Griffith (Berserk)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 2,
+          "exact": "Griffith (Berserk)",
+          "series": "Berserk"
+        },
+        {
           "name": "Grimmjow Jaegerjaquez (Bleach)",
           "year": "2025",
           "tier": 5.0,
           "rank": 90,
+          "exact": "Grimmjow Jaegerjaquez (Bleach)",
+          "series": "Bleach"
+        },
+        {
+          "name": "Grimmjow Jaegerjaquez (Bleach)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 118,
           "exact": "Grimmjow Jaegerjaquez (Bleach)",
           "series": "Bleach"
         },
@@ -2252,6 +3076,14 @@
           "series": "Breaking Bad & Better Call Saul"
         },
         {
+          "name": "Gustavo Fring (Breaking Bad & Better Call Saul)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 77,
+          "exact": "Gustavo Fring (Breaking Bad & Better Call Saul)",
+          "series": "Breaking Bad & Better Call Saul"
+        },
+        {
           "name": "Gwyn",
           "year": "2022",
           "tier": 999.0,
@@ -2300,6 +3132,14 @@
           "series": "Hannibal"
         },
         {
+          "name": "Hannibal Lecter (Hannibal)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Hannibal Lecter (Hannibal)",
+          "series": "Hannibal"
+        },
+        {
           "name": "Hector Salamanca (Breaking Bad + Better Call Saul)",
           "year": "2022",
           "tier": 999.0,
@@ -2326,6 +3166,14 @@
         {
           "name": "Hector Salamanca (Breaking Bad + Better Call Saul)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Hector Salamanca (Breaking Bad + Better Call Saul)",
+          "series": "Breaking Bad + Better Call Saul"
+        },
+        {
+          "name": "Hector Salamanca (Breaking Bad + Better Call Saul)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Hector Salamanca (Breaking Bad + Better Call Saul)",
@@ -2356,6 +3204,14 @@
           "series": "Final Fantasy XIV"
         },
         {
+          "name": "Hermes/Fandaniel (Final Fantasy XIV)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 9,
+          "exact": "Hermes/Fandaniel (Final Fantasy XIV)",
+          "series": "Final Fantasy XIV"
+        },
+        {
           "name": "Hideo Kuze (Ghost in the Shell: Stand Alone Complex 2nd Gig)",
           "year": "2022",
           "tier": 999.0,
@@ -2388,6 +3244,22 @@
           "series": "Ghost in the Shell: Stand Alone Complex 2nd Gig"
         },
         {
+          "name": "Hideo Kuze (Ghost in the Shell: Stand Alone Complex 2nd Gig)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Hideo Kuze (Ghost in the Shell: Stand Alone Complex 2nd Gig)",
+          "series": "Ghost in the Shell: Stand Alone Complex 2nd Gig"
+        },
+        {
+          "name": "Higgs (Death Stranding)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Higgs (Death Stranding)",
+          "series": "Death Stranding"
+        },
+        {
           "name": "Hikaru Koragi (Akane-Banashi)",
           "year": "2024",
           "tier": 999.0,
@@ -2402,6 +3274,22 @@
           "rank": "HM",
           "exact": "Hikaru Koragi (Akane-Banashi)",
           "series": "Akane-Banashi"
+        },
+        {
+          "name": "Hikaru Koragi (Akane-Banashi)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Hikaru Koragi (Akane-Banashi)",
+          "series": "Akane-Banashi"
+        },
+        {
+          "name": "Hiruhiko (Kagurabachi)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 145,
+          "exact": "Hiruhiko (Kagurabachi)",
+          "series": "Kagurabachi"
         },
         {
           "name": "Hisoka (Hunter x Hunter)",
@@ -2431,6 +3319,14 @@
           "name": "Hisoka (Hunter x Hunter)",
           "year": "2025",
           "tier": 1.5,
+          "rank": 13,
+          "exact": "Hisoka (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
+          "name": "Hisoka (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 1.0,
           "rank": 13,
           "exact": "Hisoka (Hunter x Hunter)",
           "series": "Hunter x Hunter"
@@ -2468,6 +3364,14 @@
           "series": "The Boys"
         },
         {
+          "name": "Homelander (The Boys)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Homelander (The Boys)",
+          "series": "The Boys"
+        },
+        {
           "name": "Hoshigaki Kisame (Naruto)",
           "year": "2024",
           "tier": 999.0,
@@ -2478,6 +3382,14 @@
         {
           "name": "Hoshigaki Kisame (Naruto)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Hoshigaki Kisame (Naruto)",
+          "series": "Naruto"
+        },
+        {
+          "name": "Hoshigaki Kisame (Naruto)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Hoshigaki Kisame (Naruto)",
@@ -2516,6 +3428,22 @@
           "series": "Haikyuu!!"
         },
         {
+          "name": "Hoshiumi Korai (Haikyuu!!)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 23,
+          "exact": "Hoshiumi Korai (Haikyuu!!)",
+          "series": "Haikyuu!!"
+        },
+        {
+          "name": "Idaeus Glodell (Metaphor)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 171,
+          "exact": "Idaeus Glodell (Metaphor)",
+          "series": "Metaphor"
+        },
+        {
           "name": "Ilberd (Final Fantasy XIV)",
           "year": "2023",
           "tier": 999.0,
@@ -2534,6 +3462,14 @@
         {
           "name": "Ilberd (Final Fantasy XIV)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Ilberd (Final Fantasy XIV)",
+          "series": "Final Fantasy XIV"
+        },
+        {
+          "name": "Ilberd (Final Fantasy XIV)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Ilberd (Final Fantasy XIV)",
@@ -2572,6 +3508,14 @@
           "series": "Hunter x Hunter"
         },
         {
+          "name": "Illumi Zoldyck (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 71,
+          "exact": "Illumi Zoldyck (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
           "name": "Imu (One Piece)",
           "year": "2024",
           "tier": 999.0,
@@ -2588,8 +3532,24 @@
           "series": "One Piece"
         },
         {
+          "name": "Imu (One Piece)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 101,
+          "exact": "Imu (One Piece)",
+          "series": "One Piece"
+        },
+        {
           "name": "In-ho (Squid Game)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "In-ho (Squid Game)",
+          "series": "Squid Game"
+        },
+        {
+          "name": "In-ho (Squid Game)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "In-ho (Squid Game)",
@@ -2620,6 +3580,14 @@
           "series": "Vagabond"
         },
         {
+          "name": "Inshun Hozoin (Vagabond)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Inshun Hozoin (Vagabond)",
+          "series": "Vagabond"
+        },
+        {
           "name": "Issho Arakawa (Akane-banashi)",
           "year": "2024",
           "tier": 9.0,
@@ -2632,6 +3600,14 @@
           "year": "2025",
           "tier": 8.0,
           "rank": 136,
+          "exact": "Issho Arakawa (Akane-banashi)",
+          "series": "Akane-banashi"
+        },
+        {
+          "name": "Issho Arakawa (Akane-banashi)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 84,
           "exact": "Issho Arakawa (Akane-banashi)",
           "series": "Akane-banashi"
         },
@@ -2652,6 +3628,14 @@
           "series": "Naruto"
         },
         {
+          "name": "Itachi Uchiha (Naruto)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 22,
+          "exact": "Itachi Uchiha (Naruto)",
+          "series": "Naruto"
+        },
+        {
           "name": "Ito Itossai (Vagabond)",
           "year": "2024",
           "tier": 999.0,
@@ -2662,6 +3646,14 @@
         {
           "name": "Ito Itossai (Vagabond)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Ito Itossai (Vagabond)",
+          "series": "Vagabond"
+        },
+        {
+          "name": "Ito Itossai (Vagabond)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Ito Itossai (Vagabond)",
@@ -2700,6 +3692,14 @@
           "series": "Durarara!!"
         },
         {
+          "name": "Izaya Orihara (Durarara!!)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 39,
+          "exact": "Izaya Orihara (Durarara!!)",
+          "series": "Durarara!!"
+        },
+        {
           "name": "Jecht (Final Fantasy X)",
           "year": "2023",
           "tier": 999.0,
@@ -2724,10 +3724,26 @@
           "series": "Final Fantasy X"
         },
         {
+          "name": "Jecht (Final Fantasy X)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 132,
+          "exact": "Jecht (Final Fantasy X)",
+          "series": "Final Fantasy X"
+        },
+        {
           "name": "Jin Kuwana (Lost Judgment)",
           "year": "2025",
           "tier": 6.0,
           "rank": 94,
+          "exact": "Jin Kuwana (Lost Judgment)",
+          "series": "Lost Judgment"
+        },
+        {
+          "name": "Jin Kuwana (Lost Judgment)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 162,
           "exact": "Jin Kuwana (Lost Judgment)",
           "series": "Lost Judgment"
         },
@@ -2764,10 +3780,26 @@
           "series": "Gintama"
         },
         {
+          "name": "Jirocho (Gintama)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Jirocho (Gintama)",
+          "series": "Gintama"
+        },
+        {
           "name": "Jo Sawashiro (Yakuza/Like A Dragon Series)",
           "year": "2025",
           "tier": 3.0,
           "rank": 45,
+          "exact": "Jo Sawashiro (Yakuza/Like A Dragon Series)",
+          "series": "Yakuza/Like A Dragon Series"
+        },
+        {
+          "name": "Jo Sawashiro (Yakuza/Like A Dragon Series)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 41,
           "exact": "Jo Sawashiro (Yakuza/Like A Dragon Series)",
           "series": "Yakuza/Like A Dragon Series"
         },
@@ -2820,6 +3852,14 @@
           "series": "Monster"
         },
         {
+          "name": "Johan Liebert (Monster)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 19,
+          "exact": "Johan Liebert (Monster)",
+          "series": "Monster"
+        },
+        {
           "name": "John Doe (Se7en)",
           "year": "2022",
           "tier": 999.0,
@@ -2844,10 +3884,26 @@
           "series": "Yakuza 6: A Song of Life"
         },
         {
+          "name": "Joon-Gi Han (Yakuza 6: A Song of Life)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Joon-Gi Han (Yakuza 6: A Song of Life)",
+          "series": "Yakuza 6: A Song of Life"
+        },
+        {
           "name": "Jugram Haschwalth (Bleach)",
           "year": "2025",
           "tier": 4.0,
           "rank": 65,
+          "exact": "Jugram Haschwalth (Bleach)",
+          "series": "Bleach"
+        },
+        {
+          "name": "Jugram Haschwalth (Bleach)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 68,
           "exact": "Jugram Haschwalth (Bleach)",
           "series": "Bleach"
         },
@@ -2868,6 +3924,14 @@
           "series": "Yakuza 0"
         },
         {
+          "name": "Jun Oda (Yakuza 0)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 133,
+          "exact": "Jun Oda (Yakuza 0)",
+          "series": "Yakuza 0"
+        },
+        {
           "name": "Kaido (One Piece)",
           "year": "2024",
           "tier": 4.0,
@@ -2880,6 +3944,14 @@
           "year": "2025",
           "tier": 4.0,
           "rank": 60,
+          "exact": "Kaido (One Piece)",
+          "series": "One Piece"
+        },
+        {
+          "name": "Kaido (One Piece)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 61,
           "exact": "Kaido (One Piece)",
           "series": "One Piece"
         },
@@ -2916,6 +3988,14 @@
           "series": "SSSS.Dynazenon"
         },
         {
+          "name": "Kaiju Eugenicists (SSSS.Dynazenon)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Kaiju Eugenicists (SSSS.Dynazenon)",
+          "series": "SSSS.Dynazenon"
+        },
+        {
           "name": "Kaisei Arakawa (Akane-Banashi)",
           "year": "2024",
           "tier": 999.0,
@@ -2928,6 +4008,14 @@
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
+          "exact": "Kaisei Arakawa (Akane-Banashi)",
+          "series": "Akane-Banashi"
+        },
+        {
+          "name": "Kaisei Arakawa (Akane-Banashi)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 153,
           "exact": "Kaisei Arakawa (Akane-Banashi)",
           "series": "Akane-Banashi"
         },
@@ -2964,10 +4052,26 @@
           "series": "Gintama"
         },
         {
+          "name": "Kamui (Gintama)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Kamui (Gintama)",
+          "series": "Gintama"
+        },
+        {
           "name": "Kaname Tosen (Bleach)",
           "year": "2025",
           "tier": 7.0,
           "rank": 109,
+          "exact": "Kaname Tosen (Bleach)",
+          "series": "Bleach"
+        },
+        {
+          "name": "Kaname Tosen (Bleach)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 108,
           "exact": "Kaname Tosen (Bleach)",
           "series": "Bleach"
         },
@@ -2982,6 +4086,14 @@
         {
           "name": "Kanjuro (One Piece)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Kanjuro (One Piece)",
+          "series": "One Piece"
+        },
+        {
+          "name": "Kanjuro (One Piece)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Kanjuro (One Piece)",
@@ -3020,6 +4132,14 @@
           "series": "Final Fantasy VI"
         },
         {
+          "name": "Kefka (Final Fantasy VI)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 26,
+          "exact": "Kefka (Final Fantasy VI)",
+          "series": "Final Fantasy VI"
+        },
+        {
           "name": "Keiji Shibusawa (Yakuza 0)",
           "year": "2024",
           "tier": 9.0,
@@ -3030,6 +4150,14 @@
         {
           "name": "Keiji Shibusawa (Yakuza 0)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Keiji Shibusawa (Yakuza 0)",
+          "series": "Yakuza 0"
+        },
+        {
+          "name": "Keiji Shibusawa (Yakuza 0)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Keiji Shibusawa (Yakuza 0)",
@@ -3060,6 +4188,14 @@
           "series": "Jujutsu Kaisen"
         },
         {
+          "name": "Kenjaku (Jujutsu Kaisen)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 136,
+          "exact": "Kenjaku (Jujutsu Kaisen)",
+          "series": "Jujutsu Kaisen"
+        },
+        {
           "name": "Kenny Ackerman (Attack on Titan)",
           "year": "2023",
           "tier": 6.0,
@@ -3084,12 +4220,28 @@
           "series": "Attack on Titan"
         },
         {
+          "name": "Kenny Ackerman (Attack on Titan)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 144,
+          "exact": "Kenny Ackerman (Attack on Titan)",
+          "series": "Attack on Titan"
+        },
+        {
           "name": "Ketheric Thorm (Baldur’s Gate 3)",
           "year": "2024",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Ketheric Thorm (Baldur’s Gate 3)",
           "series": "Baldur’s Gate 3"
+        },
+        {
+          "name": "Ketil (Vinland Saga)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Ketil (Vinland Saga)",
+          "series": "Vinland Saga"
         },
         {
           "name": "King (One Piece)",
@@ -3102,6 +4254,14 @@
         {
           "name": "King (One Piece)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "King (One Piece)",
+          "series": "One Piece"
+        },
+        {
+          "name": "King (One Piece)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "King (One Piece)",
@@ -3140,6 +4300,14 @@
           "series": "Fate Series"
         },
         {
+          "name": "Kirei Kotomine (Fate Series)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 20,
+          "exact": "Kirei Kotomine (Fate Series)",
+          "series": "Fate Series"
+        },
+        {
           "name": "Kise Ryota (Kuroko no Basket)",
           "year": "2022",
           "tier": 999.0,
@@ -3172,8 +4340,32 @@
           "series": "Kuroko no Basket"
         },
         {
+          "name": "Kise Ryota (Kuroko no Basket)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Kise Ryota (Kuroko no Basket)",
+          "series": "Kuroko no Basket"
+        },
+        {
+          "name": "Kishou Arima (Tokyo Ghoul)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 172,
+          "exact": "Kishou Arima (Tokyo Ghoul)",
+          "series": "Tokyo Ghoul"
+        },
+        {
           "name": "Kizaru (One Piece)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Kizaru (One Piece)",
+          "series": "One Piece"
+        },
+        {
+          "name": "Kizaru (One Piece)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Kizaru (One Piece)",
@@ -3184,6 +4376,14 @@
           "year": "2025",
           "tier": 6.0,
           "rank": 105,
+          "exact": "Kokichi Oma (Danganronpa V3)",
+          "series": "Danganronpa V3"
+        },
+        {
+          "name": "Kokichi Oma (Danganronpa V3)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 154,
           "exact": "Kokichi Oma (Danganronpa V3)",
           "series": "Danganronpa V3"
         },
@@ -3220,12 +4420,36 @@
           "series": "Ping Pong The Animation"
         },
         {
+          "name": "Kong Wenge (Ping Pong The Animation)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 74,
+          "exact": "Kong Wenge (Ping Pong The Animation)",
+          "series": "Ping Pong The Animation"
+        },
+        {
           "name": "Kosei Shishido (Yakuza/Like A Dragon Series)",
           "year": "2025",
           "tier": 3.0,
           "rank": 40,
           "exact": "Kosei Shishido (Yakuza/Like A Dragon Series)",
           "series": "Yakuza/Like A Dragon Series"
+        },
+        {
+          "name": "Kosei Shishido (Yakuza/Like A Dragon Series)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 40,
+          "exact": "Kosei Shishido (Yakuza/Like A Dragon Series)",
+          "series": "Yakuza/Like A Dragon Series"
+        },
+        {
+          "name": "Koutarou Amon (Tokyo Ghoul)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 95,
+          "exact": "Koutarou Amon (Tokyo Ghoul)",
+          "series": "Tokyo Ghoul"
         },
         {
           "name": "Kozume Kenma (Haikyuu!!)",
@@ -3260,6 +4484,22 @@
           "series": "Haikyuu!!"
         },
         {
+          "name": "Kozume Kenma (Haikyuu!!)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 42,
+          "exact": "Kozume Kenma (Haikyuu!!)",
+          "series": "Haikyuu!!"
+        },
+        {
+          "name": "Krauser (Resident Evil 4 Remake)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Krauser (Resident Evil 4 Remake)",
+          "series": "Resident Evil 4 Remake"
+        },
+        {
           "name": "Kristoph Gavin (Apollo Justice: Ace Attorney)",
           "year": "2025",
           "tier": 9.0,
@@ -3268,10 +4508,26 @@
           "series": "Apollo Justice: Ace Attorney"
         },
         {
+          "name": "Kristoph Gavin (Apollo Justice: Ace Attorney)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 176,
+          "exact": "Kristoph Gavin (Apollo Justice: Ace Attorney)",
+          "series": "Apollo Justice: Ace Attorney"
+        },
+        {
           "name": "Kugo Ginjo (Bleach)",
           "year": "2025",
           "tier": 4.0,
           "rank": 75,
+          "exact": "Kugo Ginjo (Bleach)",
+          "series": "Bleach"
+        },
+        {
+          "name": "Kugo Ginjo (Bleach)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 76,
           "exact": "Kugo Ginjo (Bleach)",
           "series": "Bleach"
         },
@@ -3308,6 +4564,14 @@
           "series": "Final Fantasy IX"
         },
         {
+          "name": "Kuja (Final Fantasy IX)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 69,
+          "exact": "Kuja (Final Fantasy IX)",
+          "series": "Final Fantasy IX"
+        },
+        {
           "name": "Kyohei Hamura (Judgment)",
           "year": "2024",
           "tier": 7.0,
@@ -3322,6 +4586,22 @@
           "rank": "HM",
           "exact": "Kyohei Hamura (Judgment)",
           "series": "Judgment"
+        },
+        {
+          "name": "Kyohei Hamura (Judgment)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Kyohei Hamura (Judgment)",
+          "series": "Judgment"
+        },
+        {
+          "name": "Kyora Sazanami (Kagurabachi)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 137,
+          "exact": "Kyora Sazanami (Kagurabachi)",
+          "series": "Kagurabachi"
         },
         {
           "name": "Kyouko Kouda (Sangatsu no Lion)",
@@ -3350,6 +4630,14 @@
         {
           "name": "Kyouko Kouda (Sangatsu no Lion)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Kyouko Kouda (Sangatsu no Lion)",
+          "series": "Sangatsu no Lion"
+        },
+        {
+          "name": "Kyouko Kouda (Sangatsu no Lion)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Kyouko Kouda (Sangatsu no Lion)",
@@ -3388,6 +4676,14 @@
           "series": "Death Note"
         },
         {
+          "name": "L (Death Note)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 106,
+          "exact": "L (Death Note)",
+          "series": "Death Note"
+        },
+        {
           "name": "Lady Maria (Bloodborne)",
           "year": "2022",
           "tier": 999.0,
@@ -3416,6 +4712,14 @@
           "year": "2025",
           "tier": 9.0,
           "rank": 144,
+          "exact": "Lahabrea (Final Fantasy XIV)",
+          "series": "Final Fantasy XIV"
+        },
+        {
+          "name": "Lahabrea (Final Fantasy XIV)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 158,
           "exact": "Lahabrea (Final Fantasy XIV)",
           "series": "Final Fantasy XIV"
         },
@@ -3452,6 +4756,14 @@
           "series": "Better Call Saul"
         },
         {
+          "name": "Lalo Salamanca (Better Call Saul)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Lalo Salamanca (Better Call Saul)",
+          "series": "Better Call Saul"
+        },
+        {
           "name": "Lavos (Chrono Trigger)",
           "year": "2022",
           "tier": 999.0,
@@ -3476,6 +4788,14 @@
           "series": "Chrono Trigger"
         },
         {
+          "name": "Lavos (Chrono Trigger)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Lavos (Chrono Trigger)",
+          "series": "Chrono Trigger"
+        },
+        {
           "name": "Lewis Strauss (Oppenheimer)",
           "year": "2024",
           "tier": 999.0,
@@ -3494,6 +4814,14 @@
         {
           "name": "Liquid Snake (MGS)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Liquid Snake (MGS)",
+          "series": "MGS"
+        },
+        {
+          "name": "Liquid Snake (MGS)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Liquid Snake (MGS)",
@@ -3540,6 +4868,14 @@
           "series": "Succession"
         },
         {
+          "name": "Logan Roy (Succession)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 28,
+          "exact": "Logan Roy (Succession)",
+          "series": "Succession"
+        },
+        {
           "name": "Lord of Cinder (Dark Souls)",
           "year": "2022",
           "tier": 999.0,
@@ -3554,6 +4890,14 @@
           "rank": "HM",
           "exact": "Lord of Cinder (Dark Souls)",
           "series": "Dark Souls"
+        },
+        {
+          "name": "Louis Guiabern (Metaphor: ReFantazio)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 63,
+          "exact": "Louis Guiabern (Metaphor: ReFantazio)",
+          "series": "Metaphor: ReFantazio"
         },
         {
           "name": "Lucifer (Supernatural)",
@@ -3620,6 +4964,14 @@
           "series": "The Ace Attorney Original Trilogy"
         },
         {
+          "name": "Luke Atmey (The Ace Attorney Original Trilogy)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Luke Atmey (The Ace Attorney Original Trilogy)",
+          "series": "The Ace Attorney Original Trilogy"
+        },
+        {
           "name": "Mac (Megalo Box Nomad)",
           "year": "2022",
           "tier": 9.0,
@@ -3652,6 +5004,14 @@
           "series": "Megalo Box Nomad"
         },
         {
+          "name": "Mac (Megalo Box Nomad)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Mac (Megalo Box Nomad)",
+          "series": "Megalo Box Nomad"
+        },
+        {
           "name": "Madara Uchiha (Naruto)",
           "year": "2024",
           "tier": 4.0,
@@ -3668,12 +5028,28 @@
           "series": "Naruto"
         },
         {
+          "name": "Madara Uchiha (Naruto)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 65,
+          "exact": "Madara Uchiha (Naruto)",
+          "series": "Naruto"
+        },
+        {
           "name": "Mael Stronghart (The Great Ace Attorney Chronicles)",
           "year": "2023",
           "tier": 9.0,
           "rank": 107,
           "exact": "Mael Stronghart (The Great Ace Attorney Chronicles)",
           "series": "The Great Ace Attorney Chronicles"
+        },
+        {
+          "name": "Mael Stronghart (The Great Ace Attorney)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Mael Stronghart (The Great Ace Attorney)",
+          "series": "The Great Ace Attorney"
         },
         {
           "name": "Magus (Chrono Trigger)",
@@ -3708,6 +5084,14 @@
           "series": "Chrono Trigger"
         },
         {
+          "name": "Magus (Chrono Trigger)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 62,
+          "exact": "Magus (Chrono Trigger)",
+          "series": "Chrono Trigger"
+        },
+        {
           "name": "Mahito (Jujutsu Kaisen)",
           "year": "2023",
           "tier": 999.0,
@@ -3728,6 +5112,14 @@
           "year": "2025",
           "tier": 7.0,
           "rank": 115,
+          "exact": "Mahito (Jujutsu Kaisen)",
+          "series": "Jujutsu Kaisen"
+        },
+        {
+          "name": "Mahito (Jujutsu Kaisen)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 98,
           "exact": "Mahito (Jujutsu Kaisen)",
           "series": "Jujutsu Kaisen"
         },
@@ -3760,6 +5152,14 @@
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
+          "exact": "Makima (Chainsaw Man)",
+          "series": "Chainsaw Man"
+        },
+        {
+          "name": "Makima (Chainsaw Man)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 135,
           "exact": "Makima (Chainsaw Man)",
           "series": "Chainsaw Man"
         },
@@ -3804,10 +5204,26 @@
           "series": "Arcane"
         },
         {
+          "name": "Marcus (Arcane)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Marcus (Arcane)",
+          "series": "Arcane"
+        },
+        {
           "name": "Maria (Silent Hill 2, Original and Remake)",
           "year": "2025",
           "tier": 5.0,
           "rank": 91,
+          "exact": "Maria (Silent Hill 2, Original and Remake)",
+          "series": "Silent Hill 2, Original and Remake"
+        },
+        {
+          "name": "Maria (Silent Hill 2, Original and Remake)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
           "exact": "Maria (Silent Hill 2, Original and Remake)",
           "series": "Silent Hill 2, Original and Remake"
         },
@@ -3822,6 +5238,14 @@
         {
           "name": "Marik (Yu-Gi-Oh)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Marik (Yu-Gi-Oh)",
+          "series": "Yu-Gi-Oh"
+        },
+        {
+          "name": "Marik (Yu-Gi-Oh)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Marik (Yu-Gi-Oh)",
@@ -3844,10 +5268,26 @@
           "series": "Elden Ring"
         },
         {
+          "name": "Marlo Stanfield (The Wire)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 116,
+          "exact": "Marlo Stanfield (The Wire)",
+          "series": "The Wire"
+        },
+        {
           "name": "Masataka Ebina (Yakuza/Like A Dragon Series)",
           "year": "2025",
           "tier": 7.0,
           "rank": 127,
+          "exact": "Masataka Ebina (Yakuza/Like A Dragon Series)",
+          "series": "Yakuza/Like A Dragon Series"
+        },
+        {
+          "name": "Masataka Ebina (Yakuza/Like A Dragon Series)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 142,
           "exact": "Masataka Ebina (Yakuza/Like A Dragon Series)",
           "series": "Yakuza/Like A Dragon Series"
         },
@@ -3868,9 +5308,25 @@
           "series": "Yakuza 5"
         },
         {
+          "name": "Masato Aizawa (Yakuza 5)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Masato Aizawa (Yakuza 5)",
+          "series": "Yakuza 5"
+        },
+        {
           "name": "Masato Arakawa (Yakuza/Like A Dragon Series)",
           "year": "2025",
           "tier": 2.0,
+          "rank": 30,
+          "exact": "Masato Arakawa (Yakuza/Like A Dragon Series)",
+          "series": "Yakuza/Like A Dragon Series"
+        },
+        {
+          "name": "Masato Arakawa (Yakuza/Like A Dragon Series)",
+          "year": "2026",
+          "tier": 1.5,
           "rank": 30,
           "exact": "Masato Arakawa (Yakuza/Like A Dragon Series)",
           "series": "Yakuza/Like A Dragon Series"
@@ -3888,6 +5344,14 @@
           "year": "2025",
           "tier": 7.0,
           "rank": 131,
+          "exact": "Maximillion Pegasus (Yu-Gi-Oh)",
+          "series": "Yu-Gi-Oh"
+        },
+        {
+          "name": "Maximillion Pegasus (Yu-Gi-Oh)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 143,
           "exact": "Maximillion Pegasus (Yu-Gi-Oh)",
           "series": "Yu-Gi-Oh"
         },
@@ -3924,6 +5388,14 @@
           "series": "Beastars"
         },
         {
+          "name": "Melon (Beastars)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Melon (Beastars)",
+          "series": "Beastars"
+        },
+        {
           "name": "Menthuthuyoupi (Hunter x Hunter)",
           "year": "2022",
           "tier": 6.0,
@@ -3952,6 +5424,14 @@
           "year": "2025",
           "tier": 7.0,
           "rank": 110,
+          "exact": "Menthuthuyoupi (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
+          "name": "Menthuthuyoupi (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 117,
           "exact": "Menthuthuyoupi (Hunter x Hunter)",
           "series": "Hunter x Hunter"
         },
@@ -3988,6 +5468,14 @@
           "series": "Hunter x Hunter"
         },
         {
+          "name": "Meruem (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 7,
+          "exact": "Meruem (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
           "name": "Metal Face (Xenoblade Chronicles)",
           "year": "2022",
           "tier": 999.0,
@@ -4020,6 +5508,14 @@
           "series": "Xenoblade Chronicles"
         },
         {
+          "name": "Metal Face (Xenoblade Chronicles)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Metal Face (Xenoblade Chronicles)",
+          "series": "Xenoblade Chronicles"
+        },
+        {
           "name": "Meteion (Final Fantasy XIV)",
           "year": "2024",
           "tier": 5.0,
@@ -4036,8 +5532,32 @@
           "series": "Final Fantasy XIV"
         },
         {
+          "name": "Meteion (Final Fantasy XIV)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 103,
+          "exact": "Meteion (Final Fantasy XIV)",
+          "series": "Final Fantasy XIV"
+        },
+        {
+          "name": "Micah Bell (Red Dead Redemption 2)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 87,
+          "exact": "Micah Bell (Red Dead Redemption 2)",
+          "series": "Red Dead Redemption 2"
+        },
+        {
           "name": "Midorima (Kuroko no Basket)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Midorima (Kuroko no Basket)",
+          "series": "Kuroko no Basket"
+        },
+        {
+          "name": "Midorima (Kuroko no Basket)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Midorima (Kuroko no Basket)",
@@ -4060,28 +5580,44 @@
           "series": "Spiderverse series"
         },
         {
-          "name": "Million Knives/Nai (Trigun Stampede)",
+          "name": "Miguel O’Hara (Spiderverse series)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Miguel O’Hara (Spiderverse series)",
+          "series": "Spiderverse series"
+        },
+        {
+          "name": "Million Knives/Nai (Trigun Stampede + Stargaze)",
           "year": "2023",
           "tier": 8.0,
           "rank": 102,
           "exact": "Million Knives/Nai (Trigun Stampede)",
-          "series": "Trigun Stampede"
+          "series": "Trigun Stampede + Stargaze"
         },
         {
-          "name": "Million Knives/Nai (Trigun Stampede)",
+          "name": "Million Knives/Nai (Trigun Stampede + Stargaze)",
           "year": "2024",
           "tier": 8.0,
           "rank": 123,
           "exact": "Million Knives/Nai (Trigun Stampede)",
-          "series": "Trigun Stampede"
+          "series": "Trigun Stampede + Stargaze"
         },
         {
-          "name": "Million Knives/Nai (Trigun Stampede)",
+          "name": "Million Knives/Nai (Trigun Stampede + Stargaze)",
           "year": "2025",
           "tier": 7.0,
           "rank": 130,
           "exact": "Million Knives/Nai (Trigun Stampede)",
-          "series": "Trigun Stampede"
+          "series": "Trigun Stampede + Stargaze"
+        },
+        {
+          "name": "Million Knives/Nai (Trigun Stampede + Stargaze)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Million Knives/Nai (Trigun Stampede + Stargaze)",
+          "series": "Trigun Stampede + Stargaze"
         },
         {
           "name": "Mindhunter Criminals (Mindhunter)",
@@ -4128,6 +5664,14 @@
           "series": "Mindhunter"
         },
         {
+          "name": "Mindhunter Criminals (Mindhunter)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Mindhunter Criminals (Mindhunter)",
+          "series": "Mindhunter"
+        },
+        {
           "name": "Mitsuru Kuroiwa (Judgment)",
           "year": "2024",
           "tier": 999.0,
@@ -4138,6 +5682,14 @@
         {
           "name": "Mitsuru Kuroiwa (Judgment)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Mitsuru Kuroiwa (Judgment)",
+          "series": "Judgment"
+        },
+        {
+          "name": "Mitsuru Kuroiwa (Judgment)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Mitsuru Kuroiwa (Judgment)",
@@ -4176,6 +5728,14 @@
           "series": "Haikyuu!!"
         },
         {
+          "name": "Miya Osamu (Haikyuu!!)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 114,
+          "exact": "Miya Osamu (Haikyuu!!)",
+          "series": "Haikyuu!!"
+        },
+        {
           "name": "Momochi Zabuza and Haku (Naruto)",
           "year": "2024",
           "tier": 7.0,
@@ -4200,6 +5760,14 @@
           "year": "2025",
           "tier": 7.0,
           "rank": 108,
+          "exact": "Momochi Zabuza and Haku (Naruto)",
+          "series": "Naruto"
+        },
+        {
+          "name": "Momochi Zabuza and Haku (Naruto)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 119,
           "exact": "Momochi Zabuza and Haku (Naruto)",
           "series": "Naruto"
         },
@@ -4236,6 +5804,14 @@
           "series": "Hunter x Hunter"
         },
         {
+          "name": "Morena Prudo (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 122,
+          "exact": "Morena Prudo (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
           "name": "Morgana (The House in Fata Morgana + A Requiem for Innocence)",
           "year": "2022",
           "tier": 2.0,
@@ -4268,6 +5844,14 @@
           "series": "The House in Fata Morgana + A Requiem for Innocence"
         },
         {
+          "name": "Morgana (The House in Fata Morgana + A Requiem for Innocence)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 45,
+          "exact": "Morgana (The House in Fata Morgana + A Requiem for Innocence)",
+          "series": "The House in Fata Morgana + A Requiem for Innocence"
+        },
+        {
           "name": "Morgott",
           "year": "2022",
           "tier": 999.0,
@@ -4290,6 +5874,14 @@
           "rank": "HM",
           "exact": "Mozgus (Berserk)",
           "series": "Berserk"
+        },
+        {
+          "name": "Mr. Scratch (Alan Wake Series)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Mr. Scratch (Alan Wake Series)",
+          "series": "Alan Wake Series"
         },
         {
           "name": "N (Pokemon Black & White)",
@@ -4324,6 +5916,14 @@
           "series": "Pokemon Black & White"
         },
         {
+          "name": "N (Pokemon Black & White)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "N (Pokemon Black & White)",
+          "series": "Pokemon Black & White"
+        },
+        {
           "name": "N (Xenoblade Chronicles 3)",
           "year": "2023",
           "tier": 6.0,
@@ -4348,6 +5948,14 @@
           "series": "Xenoblade Chronicles 3"
         },
         {
+          "name": "N (Xenoblade Chronicles 3)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 139,
+          "exact": "N (Xenoblade Chronicles 3)",
+          "series": "Xenoblade Chronicles 3"
+        },
+        {
           "name": "Nagato/Pain (Naruto)",
           "year": "2024",
           "tier": 3.0,
@@ -4360,6 +5968,14 @@
           "year": "2025",
           "tier": 3.0,
           "rank": 39,
+          "exact": "Nagato/Pain (Naruto)",
+          "series": "Naruto"
+        },
+        {
+          "name": "Nagato/Pain (Naruto)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 64,
           "exact": "Nagato/Pain (Naruto)",
           "series": "Naruto"
         },
@@ -4378,6 +5994,22 @@
           "rank": "HM",
           "exact": "Naoya Zenin (Jujutsu Kaisen)",
           "series": "Jujutsu Kaisen"
+        },
+        {
+          "name": "Naoya Zenin (Jujutsu Kaisen)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Naoya Zenin (Jujutsu Kaisen)",
+          "series": "Jujutsu Kaisen"
+        },
+        {
+          "name": "Nasubi Hui Gou Rou (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Nasubi Hui Gou Rou (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
         },
         {
           "name": "Near & Mello (Death Note)",
@@ -4420,6 +6052,14 @@
           "series": "Hunter x Hunter"
         },
         {
+          "name": "Neferpitou (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 88,
+          "exact": "Neferpitou (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
           "name": "Nidhogg (Final Fantasy XIV)",
           "year": "2023",
           "tier": 999.0,
@@ -4444,10 +6084,26 @@
           "series": "Final Fantasy XIV"
         },
         {
+          "name": "Nidhogg (Final Fantasy XIV)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Nidhogg (Final Fantasy XIV)",
+          "series": "Final Fantasy XIV"
+        },
+        {
           "name": "Nnoitra Gilga (Bleach)",
           "year": "2025",
           "tier": 7.0,
           "rank": 128,
+          "exact": "Nnoitra Gilga (Bleach)",
+          "series": "Bleach"
+        },
+        {
+          "name": "Nnoitra Gilga (Bleach)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 163,
           "exact": "Nnoitra Gilga (Bleach)",
           "series": "Bleach"
         },
@@ -4468,6 +6124,14 @@
           "series": "Orb: On The Movements Of The Earth"
         },
         {
+          "name": "Nowak (Orb: On The Movements Of The Earth)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 121,
+          "exact": "Nowak (Orb: On The Movements Of The Earth)",
+          "series": "Orb: On The Movements Of The Earth"
+        },
+        {
           "name": "Obito Uchiha (Naruto)",
           "year": "2024",
           "tier": 2.0,
@@ -4479,6 +6143,14 @@
           "name": "Obito Uchiha (Naruto)",
           "year": "2025",
           "tier": 2.0,
+          "rank": 21,
+          "exact": "Obito Uchiha (Naruto)",
+          "series": "Naruto"
+        },
+        {
+          "name": "Obito Uchiha (Naruto)",
+          "year": "2026",
+          "tier": 1.5,
           "rank": 21,
           "exact": "Obito Uchiha (Naruto)",
           "series": "Naruto"
@@ -4516,6 +6188,14 @@
           "series": "Gintama"
         },
         {
+          "name": "Oboro (Gintama)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Oboro (Gintama)",
+          "series": "Gintama"
+        },
+        {
           "name": "Officer Heinrich Lunge (Monster)",
           "year": "2024",
           "tier": 6.0,
@@ -4532,6 +6212,14 @@
           "series": "Monster"
         },
         {
+          "name": "Officer Heinrich Lunge (Monster)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 138,
+          "exact": "Officer Heinrich Lunge (Monster)",
+          "series": "Monster"
+        },
+        {
           "name": "Orochi (One Piece)",
           "year": "2024",
           "tier": 999.0,
@@ -4542,6 +6230,14 @@
         {
           "name": "Orochi (One Piece)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Orochi (One Piece)",
+          "series": "One Piece"
+        },
+        {
+          "name": "Orochi (One Piece)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Orochi (One Piece)",
@@ -4562,6 +6258,22 @@
           "rank": "HM",
           "exact": "Orochimaru (Naruto)",
           "series": "Naruto"
+        },
+        {
+          "name": "Orochimaru (Naruto)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 179,
+          "exact": "Orochimaru (Naruto)",
+          "series": "Naruto"
+        },
+        {
+          "name": "Orson Krennic (Andor + Rogue One)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Orson Krennic (Andor + Rogue One)",
+          "series": "Andor + Rogue One"
         },
         {
           "name": "Ougi Oshino (Monogatari Series)",
@@ -4596,6 +6308,22 @@
           "series": "Monogatari Series"
         },
         {
+          "name": "Ougi Oshino (Monogatari Series)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 100,
+          "exact": "Ougi Oshino (Monogatari Series)",
+          "series": "Monogatari Series"
+        },
+        {
+          "name": "Painted Renoir (Clair Obscur: Expedition 33)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 99,
+          "exact": "Painted Renoir (Clair Obscur: Expedition 33)",
+          "series": "Clair Obscur: Expedition 33"
+        },
+        {
           "name": "Pariston Hill (Hunter x Hunter)",
           "year": "2022",
           "tier": 3.0,
@@ -4624,6 +6352,14 @@
           "year": "2025",
           "tier": 2.0,
           "rank": 33,
+          "exact": "Pariston Hill (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
+          "name": "Pariston Hill (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 34,
           "exact": "Pariston Hill (Hunter x Hunter)",
           "series": "Hunter x Hunter"
         },
@@ -4660,12 +6396,36 @@
           "series": "A Song of Ice and Fire"
         },
         {
+          "name": "Petyr Baelish/Littlefinger (A Song of Ice and Fire)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 164,
+          "exact": "Petyr Baelish/Littlefinger (A Song of Ice and Fire)",
+          "series": "A Song of Ice and Fire"
+        },
+        {
+          "name": "Piccolo (Dragon Ball)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Piccolo (Dragon Ball)",
+          "series": "Dragon Ball"
+        },
+        {
           "name": "Pride (Fullmetal Alchemist: Brotherhood)",
           "year": "2022",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Pride (Fullmetal Alchemist: Brotherhood)",
           "series": "Fullmetal Alchemist: Brotherhood"
+        },
+        {
+          "name": "Professor Hojo (Final Fantasy VII Franchise)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Professor Hojo (Final Fantasy VII Franchise)",
+          "series": "Final Fantasy VII Franchise"
         },
         {
           "name": "Psycho Mantis (Metal Gear Solid)",
@@ -4678,6 +6438,14 @@
         {
           "name": "Psycho Mantis (Metal Gear Solid)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Psycho Mantis (Metal Gear Solid)",
+          "series": "Metal Gear Solid"
+        },
+        {
+          "name": "Psycho Mantis (Metal Gear Solid)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Psycho Mantis (Metal Gear Solid)",
@@ -4700,7 +6468,15 @@
           "series": "Silent Hill 2"
         },
         {
-          "name": "Quintus (Final Fantasy XIV)",
+          "name": "Pyramid Head (Silent Hill 2)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Pyramid Head (Silent Hill 2)",
+          "series": "Silent Hill 2"
+        },
+        {
+          "name": "Quintus Cinna (Final Fantasy XIV)",
           "year": "2024",
           "tier": 999.0,
           "rank": "HM",
@@ -4708,11 +6484,19 @@
           "series": "Final Fantasy XIV"
         },
         {
-          "name": "Quintus (Final Fantasy XIV)",
+          "name": "Quintus Cinna (Final Fantasy XIV)",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Quintus (Final Fantasy XIV)",
+          "series": "Final Fantasy XIV"
+        },
+        {
+          "name": "Quintus Cinna (Final Fantasy XIV)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 181,
+          "exact": "Quintus Cinna (Final Fantasy XIV)",
           "series": "Final Fantasy XIV"
         },
         {
@@ -4756,6 +6540,14 @@
           "series": "Baldur’s Gate 3"
         },
         {
+          "name": "Raphael (Baldur’s Gate 3)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Raphael (Baldur’s Gate 3)",
+          "series": "Baldur’s Gate 3"
+        },
+        {
           "name": "Reiner Braun (Attack on Titan)",
           "year": "2022",
           "tier": 2.0,
@@ -4788,6 +6580,14 @@
           "series": "Attack on Titan"
         },
         {
+          "name": "Reiner Braun (Attack on Titan)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 33,
+          "exact": "Reiner Braun (Attack on Titan)",
+          "series": "Attack on Titan"
+        },
+        {
           "name": "Renji Abarai (Bleach)*",
           "year": "2024",
           "tier": 999.0,
@@ -4812,6 +6612,14 @@
           "series": "Elden Ring"
         },
         {
+          "name": "Renoir Dessendre (Clair Obscur: Expedition 33)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 44,
+          "exact": "Renoir Dessendre (Clair Obscur: Expedition 33)",
+          "series": "Clair Obscur: Expedition 33"
+        },
+        {
           "name": "Revolver Ocelot (Metal Gear Solid Series)",
           "year": "2024",
           "tier": 6.0,
@@ -4826,6 +6634,22 @@
           "rank": 95,
           "exact": "Revolver Ocelot (Metal Gear Solid Series)",
           "series": "Metal Gear Solid Series"
+        },
+        {
+          "name": "Revolver Ocelot (Metal Gear Solid Series)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 105,
+          "exact": "Revolver Ocelot (Metal Gear Solid Series)",
+          "series": "Metal Gear Solid Series"
+        },
+        {
+          "name": "Reze (Chainsaw Man)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 151,
+          "exact": "Reze (Chainsaw Man)",
+          "series": "Chainsaw Man"
         },
         {
           "name": "Riz (Beastars)",
@@ -4860,6 +6684,14 @@
           "series": "Beastars"
         },
         {
+          "name": "Riz (Beastars)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Riz (Beastars)",
+          "series": "Beastars"
+        },
+        {
           "name": "Rob Lucci (One Piece)",
           "year": "2024",
           "tier": 999.0,
@@ -4870,6 +6702,14 @@
         {
           "name": "Rob Lucci (One Piece)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Rob Lucci (One Piece)",
+          "series": "One Piece"
+        },
+        {
+          "name": "Rob Lucci (One Piece)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Rob Lucci (One Piece)",
@@ -4908,6 +6748,14 @@
           "series": "Cyberpunk 2077: Phantom Liberty"
         },
         {
+          "name": "Rosalind Myers (Cyberpunk 2077: Phantom Liberty)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Rosalind Myers (Cyberpunk 2077: Phantom Liberty)",
+          "series": "Cyberpunk 2077: Phantom Liberty"
+        },
+        {
           "name": "Rosine (Berserk)",
           "year": "2023",
           "tier": 6.0,
@@ -4932,6 +6780,14 @@
           "series": "Berserk"
         },
         {
+          "name": "Rosine (Berserk)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 125,
+          "exact": "Rosine (Berserk)",
+          "series": "Berserk"
+        },
+        {
           "name": "Rufus Shinra (Final Fantasy VII Franchise)",
           "year": "2024",
           "tier": 9.0,
@@ -4943,6 +6799,14 @@
           "name": "Rufus Shinra (Final Fantasy VII Franchise)",
           "year": "2025",
           "tier": 7.0,
+          "rank": 120,
+          "exact": "Rufus Shinra (Final Fantasy VII Franchise)",
+          "series": "Final Fantasy VII Franchise"
+        },
+        {
+          "name": "Rufus Shinra (Final Fantasy VII Franchise)",
+          "year": "2026",
+          "tier": 6.0,
           "rank": 120,
           "exact": "Rufus Shinra (Final Fantasy VII Franchise)",
           "series": "Final Fantasy VII Franchise"
@@ -4964,6 +6828,14 @@
           "series": "Jujutsu Kaisen"
         },
         {
+          "name": "Ryomen Sukuna (Jujutsu Kaisen)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 35,
+          "exact": "Ryomen Sukuna (Jujutsu Kaisen)",
+          "series": "Jujutsu Kaisen"
+        },
+        {
           "name": "Ryou Bakura (Yu-Gi-Oh)",
           "year": "2024",
           "tier": 999.0,
@@ -4980,6 +6852,22 @@
           "series": "Yu-Gi-Oh"
         },
         {
+          "name": "Ryou Bakura (Yu-Gi-Oh)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Ryou Bakura (Yu-Gi-Oh)",
+          "series": "Yu-Gi-Oh"
+        },
+        {
+          "name": "Ryu Ishigori (Jujutsu Kaisen)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Ryu Ishigori (Jujutsu Kaisen)",
+          "series": "Jujutsu Kaisen"
+        },
+        {
           "name": "Ryuji Goda (Yakuza/Like A Dragon Series)",
           "year": "2024",
           "tier": 3.0,
@@ -4992,6 +6880,14 @@
           "year": "2025",
           "tier": 4.0,
           "rank": 68,
+          "exact": "Ryuji Goda (Yakuza/Like A Dragon Series)",
+          "series": "Yakuza/Like A Dragon Series"
+        },
+        {
+          "name": "Ryuji Goda (Yakuza/Like A Dragon Series)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 104,
           "exact": "Ryuji Goda (Yakuza/Like A Dragon Series)",
           "series": "Yakuza/Like A Dragon Series"
         },
@@ -5028,6 +6924,14 @@
           "series": "Fate/Zero"
         },
         {
+          "name": "Ryunosuke & Caster (Fate/Zero)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Ryunosuke & Caster (Fate/Zero)",
+          "series": "Fate/Zero"
+        },
+        {
           "name": "Sachiro Hirugami (Haikyuu!!)",
           "year": "2024",
           "tier": 7.0,
@@ -5040,6 +6944,14 @@
           "year": "2025",
           "tier": 8.0,
           "rank": 135,
+          "exact": "Sachiro Hirugami (Haikyuu!!)",
+          "series": "Haikyuu!!"
+        },
+        {
+          "name": "Sachiro Hirugami (Haikyuu!!)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 157,
           "exact": "Sachiro Hirugami (Haikyuu!!)",
           "series": "Haikyuu!!"
         },
@@ -5084,6 +6996,14 @@
           "series": "Megalo Box Nomad"
         },
         {
+          "name": "Sakuma (Megalo Box Nomad)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Sakuma (Megalo Box Nomad)",
+          "series": "Megalo Box Nomad"
+        },
+        {
           "name": "Sander Cohen (Bioshock)",
           "year": "2023",
           "tier": 999.0,
@@ -5102,6 +7022,14 @@
         {
           "name": "Sander Cohen (Bioshock)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Sander Cohen (Bioshock)",
+          "series": "Bioshock"
+        },
+        {
+          "name": "Sander Cohen (Bioshock)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Sander Cohen (Bioshock)",
@@ -5140,6 +7068,14 @@
           "series": "Mawaru Penguindrum"
         },
         {
+          "name": "Sanetoshi (Mawaru Penguindrum)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Sanetoshi (Mawaru Penguindrum)",
+          "series": "Mawaru Penguindrum"
+        },
+        {
           "name": "Sasaki Isaburo (Gintama)",
           "year": "2022",
           "tier": 7.0,
@@ -5172,6 +7108,14 @@
           "series": "Gintama"
         },
         {
+          "name": "Sasaki Isaburo (Gintama)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 141,
+          "exact": "Sasaki Isaburo (Gintama)",
+          "series": "Gintama"
+        },
+        {
           "name": "Sasori (Naruto)",
           "year": "2024",
           "tier": 999.0,
@@ -5182,6 +7126,14 @@
         {
           "name": "Sasori (Naruto)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Sasori (Naruto)",
+          "series": "Naruto"
+        },
+        {
+          "name": "Sasori (Naruto)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Sasori (Naruto)",
@@ -5200,6 +7152,14 @@
           "year": "2025",
           "tier": 1.5,
           "rank": 10,
+          "exact": "Sasuke Uchiha (Naruto)",
+          "series": "Naruto"
+        },
+        {
+          "name": "Sasuke Uchiha (Naruto)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 17,
           "exact": "Sasuke Uchiha (Naruto)",
           "series": "Naruto"
         },
@@ -5236,12 +7196,28 @@
           "series": "Haikyuu!!"
         },
         {
+          "name": "Satori Tendou (Haikyuu!!)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 115,
+          "exact": "Satori Tendou (Haikyuu!!)",
+          "series": "Haikyuu!!"
+        },
+        {
           "name": "Scar (The Lion King)",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Scar (The Lion King)",
           "series": "The Lion King"
+        },
+        {
+          "name": "Seifer Almasy (Final Fantasy VIII)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 170,
+          "exact": "Seifer Almasy (Final Fantasy VIII)",
+          "series": "Final Fantasy VIII"
         },
         {
           "name": "Seijuro Yoshioka (Vagabond)",
@@ -5308,6 +7284,14 @@
           "series": "Final Fantasy 7 Franchise"
         },
         {
+          "name": "Sephiroth (Final Fantasy 7 Franchise)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 70,
+          "exact": "Sephiroth (Final Fantasy 7 Franchise)",
+          "series": "Final Fantasy 7 Franchise"
+        },
+        {
           "name": "Seto Kaiba (Yu-Gi-Oh)",
           "year": "2022",
           "tier": 999.0,
@@ -5336,6 +7320,14 @@
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
+          "exact": "Seto Kaiba (Yu-Gi-Oh)",
+          "series": "Yu-Gi-Oh"
+        },
+        {
+          "name": "Seto Kaiba (Yu-Gi-Oh)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 167,
           "exact": "Seto Kaiba (Yu-Gi-Oh)",
           "series": "Yu-Gi-Oh"
         },
@@ -5372,6 +7364,14 @@
           "series": "Final Fantasy X"
         },
         {
+          "name": "Seymour Guado (Final Fantasy X)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Seymour Guado (Final Fantasy X)",
+          "series": "Final Fantasy X"
+        },
+        {
           "name": "Shadowlord (NieR:Replicant)",
           "year": "2023",
           "tier": 999.0,
@@ -5390,6 +7390,14 @@
         {
           "name": "Shadowlord (NieR:Replicant)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Shadowlord (NieR:Replicant)",
+          "series": "NieR:Replicant"
+        },
+        {
+          "name": "Shadowlord (NieR:Replicant)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Shadowlord (NieR:Replicant)",
@@ -5428,6 +7436,14 @@
           "series": "Hunter x Hunter"
         },
         {
+          "name": "Shaiapouf (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 3,
+          "exact": "Shaiapouf (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
           "name": "Shimura Danzo (Naruto)",
           "year": "2024",
           "tier": 8.0,
@@ -5438,6 +7454,14 @@
         {
           "name": "Shimura Danzo (Naruto)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Shimura Danzo (Naruto)",
+          "series": "Naruto"
+        },
+        {
+          "name": "Shimura Danzo (Naruto)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Shimura Danzo (Naruto)",
@@ -5476,6 +7500,14 @@
           "series": "Yu Yu Hakusho"
         },
         {
+          "name": "Shinobu Sensui (Yu Yu Hakusho)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Shinobu Sensui (Yu Yu Hakusho)",
+          "series": "Yu Yu Hakusho"
+        },
+        {
           "name": "Shinsuke Kita (Haikyuu!!)",
           "year": "2022",
           "tier": 3.0,
@@ -5504,6 +7536,14 @@
           "year": "2025",
           "tier": 3.0,
           "rank": 50,
+          "exact": "Shinsuke Kita (Haikyuu!!)",
+          "series": "Haikyuu!!"
+        },
+        {
+          "name": "Shinsuke Kita (Haikyuu!!)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 51,
           "exact": "Shinsuke Kita (Haikyuu!!)",
           "series": "Haikyuu!!"
         },
@@ -5540,6 +7580,14 @@
           "series": "Gintama"
         },
         {
+          "name": "Shinsuke Takasugi (Gintama)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 57,
+          "exact": "Shinsuke Takasugi (Gintama)",
+          "series": "Gintama"
+        },
+        {
           "name": "Shougo Makishima (Psycho-Pass)",
           "year": "2022",
           "tier": 1.0,
@@ -5572,10 +7620,26 @@
           "series": "Psycho-Pass"
         },
         {
+          "name": "Shougo Makishima (Psycho-Pass)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 52,
+          "exact": "Shougo Makishima (Psycho-Pass)",
+          "series": "Psycho-Pass"
+        },
+        {
           "name": "Shukuro Tsukishima (Bleach)",
           "year": "2025",
           "tier": 7.0,
           "rank": 112,
+          "exact": "Shukuro Tsukishima (Bleach)",
+          "series": "Bleach"
+        },
+        {
+          "name": "Shukuro Tsukishima (Bleach)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 128,
           "exact": "Shukuro Tsukishima (Bleach)",
           "series": "Bleach"
         },
@@ -5612,8 +7676,32 @@
           "series": "Arcane"
         },
         {
+          "name": "Silco (Arcane)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 18,
+          "exact": "Silco (Arcane)",
+          "series": "Arcane"
+        },
+        {
+          "name": "Silva Zoldyck (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Silva Zoldyck (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
           "name": "Singed (Arcane)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Singed (Arcane)",
+          "series": "Arcane"
+        },
+        {
+          "name": "Singed (Arcane)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Singed (Arcane)",
@@ -5652,12 +7740,36 @@
           "series": "The Legend of Zelda: Majora’s Mask"
         },
         {
+          "name": "Skull Kid/Majora (The Legend of Zelda: Majora’s Mask)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 161,
+          "exact": "Skull Kid/Majora (The Legend of Zelda: Majora’s Mask)",
+          "series": "The Legend of Zelda: Majora’s Mask"
+        },
+        {
           "name": "Sofia Falcone (The Penguin)",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Sofia Falcone (The Penguin)",
           "series": "The Penguin"
+        },
+        {
+          "name": "Sofia Falcone (The Penguin)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Sofia Falcone (The Penguin)",
+          "series": "The Penguin"
+        },
+        {
+          "name": "Sojo (Kagurabachi)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 173,
+          "exact": "Sojo (Kagurabachi)",
+          "series": "Kagurabachi"
         },
         {
           "name": "Solf J. Kimblee (Fullmetal Alchemist: Brotherhood)",
@@ -5692,6 +7804,14 @@
           "series": "Fullmetal Alchemist: Brotherhood"
         },
         {
+          "name": "Solf J. Kimblee (Fullmetal Alchemist: Brotherhood)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 92,
+          "exact": "Solf J. Kimblee (Fullmetal Alchemist: Brotherhood)",
+          "series": "Fullmetal Alchemist: Brotherhood"
+        },
+        {
           "name": "Solidus Snake (Metal Gear Solid 2)",
           "year": "2024",
           "tier": 7.0,
@@ -5708,6 +7828,14 @@
           "series": "Metal Gear Solid 2"
         },
         {
+          "name": "Solidus Snake (Metal Gear Solid 2)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Solidus Snake (Metal Gear Solid 2)",
+          "series": "Metal Gear Solid 2"
+        },
+        {
           "name": "Soma (Lost Judgment)",
           "year": "2025",
           "tier": 999.0,
@@ -5716,12 +7844,52 @@
           "series": "Lost Judgment"
         },
         {
+          "name": "Soma (Lost Judgment)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Soma (Lost Judgment)",
+          "series": "Lost Judgment"
+        },
+        {
+          "name": "Sommers (One Piece)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Sommers (One Piece)",
+          "series": "One Piece"
+        },
+        {
           "name": "Sosuke Aizen (Bleach)",
           "year": "2025",
           "tier": 1.5,
           "rank": 9,
           "exact": "Sosuke Aizen (Bleach)",
           "series": "Bleach"
+        },
+        {
+          "name": "Sosuke Aizen (Bleach)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 5,
+          "exact": "Sosuke Aizen (Bleach)",
+          "series": "Bleach"
+        },
+        {
+          "name": "Sota (Tokyo Ghoul)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 183,
+          "exact": "Sota (Tokyo Ghoul)",
+          "series": "Tokyo Ghoul"
+        },
+        {
+          "name": "Soya Sazanami (Kagurabachi)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 178,
+          "exact": "Soya Sazanami (Kagurabachi)",
+          "series": "Kagurabachi"
         },
         {
           "name": "Spamton (Deltarune)",
@@ -5756,6 +7924,14 @@
           "series": "Deltarune"
         },
         {
+          "name": "Spamton (Deltarune)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 156,
+          "exact": "Spamton (Deltarune)",
+          "series": "Deltarune"
+        },
+        {
           "name": "Spot (Across The Spiderverse)",
           "year": "2024",
           "tier": 999.0,
@@ -5772,8 +7948,24 @@
           "series": "Across The Spiderverse"
         },
         {
+          "name": "Spot (Across The Spiderverse)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Spot (Across The Spiderverse)",
+          "series": "Across The Spiderverse"
+        },
+        {
           "name": "Starrk (Bleach)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Starrk (Bleach)",
+          "series": "Bleach"
+        },
+        {
+          "name": "Starrk (Bleach)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Starrk (Bleach)",
@@ -5796,6 +7988,14 @@
           "series": "Elden Ring"
         },
         {
+          "name": "Stringer Bell (The Wire)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 37,
+          "exact": "Stringer Bell (The Wire)",
+          "series": "The Wire"
+        },
+        {
           "name": "Suguru Getou (Jujutsu Kaisen)",
           "year": "2023",
           "tier": 4.0,
@@ -5816,6 +8016,14 @@
           "year": "2025",
           "tier": 4.0,
           "rank": 74,
+          "exact": "Suguru Getou (Jujutsu Kaisen)",
+          "series": "Jujutsu Kaisen"
+        },
+        {
+          "name": "Suguru Getou (Jujutsu Kaisen)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 75,
           "exact": "Suguru Getou (Jujutsu Kaisen)",
           "series": "Jujutsu Kaisen"
         },
@@ -5852,6 +8060,14 @@
           "series": "Code Geass"
         },
         {
+          "name": "Suzaku Kururugi (Code Geass)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Suzaku Kururugi (Code Geass)",
+          "series": "Code Geass"
+        },
+        {
           "name": "Syanna (The Witcher 3: Wild Hunt - Blood & Wine)",
           "year": "2022",
           "tier": 999.0,
@@ -5868,6 +8084,22 @@
           "series": "The Witcher 3: Wild Hunt - Blood & Wine"
         },
         {
+          "name": "Syanna (The Witcher 3: Wild Hunt - Blood & Wine)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Syanna (The Witcher 3: Wild Hunt - Blood & Wine)",
+          "series": "The Witcher 3: Wild Hunt - Blood & Wine"
+        },
+        {
+          "name": "Syril Karn (Andor)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 38,
+          "exact": "Syril Karn (Andor)",
+          "series": "Andor"
+        },
+        {
           "name": "Takaya Sakaki (Persona 3 FES)",
           "year": "2024",
           "tier": 999.0,
@@ -5878,6 +8110,14 @@
         {
           "name": "Takaya Sakaki (Persona 3 FES)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Takaya Sakaki (Persona 3 FES)",
+          "series": "Persona 3 FES"
+        },
+        {
+          "name": "Takaya Sakaki (Persona 3 FES)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Takaya Sakaki (Persona 3 FES)",
@@ -5900,6 +8140,14 @@
           "series": "Yakuza/Like A Dragon Series"
         },
         {
+          "name": "Takeru Kurusu (Yakuza/Like A Dragon Series)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 131,
+          "exact": "Takeru Kurusu (Yakuza/Like A Dragon Series)",
+          "series": "Yakuza/Like A Dragon Series"
+        },
+        {
           "name": "Takumi Ichinose (Nana)",
           "year": "2024",
           "tier": 6.0,
@@ -5916,6 +8164,14 @@
           "series": "Nana"
         },
         {
+          "name": "Takumi Ichinose (Nana)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 97,
+          "exact": "Takumi Ichinose (Nana)",
+          "series": "Nana"
+        },
+        {
           "name": "Takumi Someya (Yakuza/Like A Dragon Series)",
           "year": "2024",
           "tier": 6.0,
@@ -5928,6 +8184,14 @@
           "year": "2025",
           "tier": 7.0,
           "rank": 117,
+          "exact": "Takumi Someya (Yakuza/Like A Dragon Series)",
+          "series": "Yakuza/Like A Dragon Series"
+        },
+        {
+          "name": "Takumi Someya (Yakuza/Like A Dragon Series)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 146,
           "exact": "Takumi Someya (Yakuza/Like A Dragon Series)",
           "series": "Yakuza/Like A Dragon Series"
         },
@@ -5959,6 +8223,14 @@
           "name": "Takuto Maruki (Persona 5 Royal)",
           "year": "2025",
           "tier": 1.5,
+          "rank": 15,
+          "exact": "Takuto Maruki (Persona 5 Royal)",
+          "series": "Persona 5 Royal"
+        },
+        {
+          "name": "Takuto Maruki (Persona 5 Royal)",
+          "year": "2026",
+          "tier": 1.0,
           "rank": 15,
           "exact": "Takuto Maruki (Persona 5 Royal)",
           "series": "Persona 5 Royal"
@@ -5996,6 +8268,14 @@
           "series": "Haikyuu!!"
         },
         {
+          "name": "Tanji Washijou (Haikyuu!!)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 8,
+          "exact": "Tanji Washijou (Haikyuu!!)",
+          "series": "Haikyuu!!"
+        },
+        {
           "name": "Tarrlok (The Legend of Korra)",
           "year": "2022",
           "tier": 999.0,
@@ -6028,39 +8308,23 @@
           "series": "The Legend of Korra"
         },
         {
-          "name": "Terran Loghain (Dragon Age Origins)",
-          "year": "2022",
+          "name": "Tarrlok (The Legend of Korra)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
-          "exact": "Terran Loghain (Dragon Age Origins)",
-          "series": "Dragon Age Origins"
+          "exact": "Tarrlok (The Legend of Korra)",
+          "series": "The Legend of Korra"
         },
         {
-          "name": "Terran Loghain (Dragon Age Origins)",
-          "year": "2023",
-          "tier": 999.0,
-          "rank": "HM",
-          "exact": "Terran Loghain (Dragon Age Origins)",
-          "series": "Dragon Age Origins"
+          "name": "Tenna (Deltarune)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 180,
+          "exact": "Tenna (Deltarune)",
+          "series": "Deltarune"
         },
         {
-          "name": "Terran Loghain (Dragon Age Origins)",
-          "year": "2024",
-          "tier": 999.0,
-          "rank": "HM",
-          "exact": "Terran Loghain (Dragon Age Origins)",
-          "series": "Dragon Age Origins"
-        },
-        {
-          "name": "Terran Loghain (Dragon Age Origins)",
-          "year": "2025",
-          "tier": 999.0,
-          "rank": "HM",
-          "exact": "Terran Loghain (Dragon Age Origins)",
-          "series": "Dragon Age Origins"
-        },
-        {
-          "name": "Terrence Fletcher (Whiplash)",
+          "name": "Terence Fletcher (Whiplash)",
           "year": "2022",
           "tier": 6.0,
           "rank": 63,
@@ -6068,7 +8332,7 @@
           "series": "Whiplash"
         },
         {
-          "name": "Terrence Fletcher (Whiplash)",
+          "name": "Terence Fletcher (Whiplash)",
           "year": "2023",
           "tier": 6.0,
           "rank": 70,
@@ -6076,7 +8340,7 @@
           "series": "Whiplash"
         },
         {
-          "name": "Terrence Fletcher (Whiplash)",
+          "name": "Terence Fletcher (Whiplash)",
           "year": "2024",
           "tier": 7.0,
           "rank": 94,
@@ -6084,12 +8348,60 @@
           "series": "Whiplash"
         },
         {
-          "name": "Terrence Fletcher (Whiplash)",
+          "name": "Terence Fletcher (Whiplash)",
           "year": "2025",
           "tier": 7.0,
           "rank": 107,
           "exact": "Terrence Fletcher (Whiplash)",
           "series": "Whiplash"
+        },
+        {
+          "name": "Terence Fletcher (Whiplash)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 111,
+          "exact": "Terence Fletcher (Whiplash)",
+          "series": "Whiplash"
+        },
+        {
+          "name": "Terran Loghain (Dragon Age Origins)",
+          "year": "2022",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Terran Loghain (Dragon Age Origins)",
+          "series": "Dragon Age Origins"
+        },
+        {
+          "name": "Terran Loghain (Dragon Age Origins)",
+          "year": "2023",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Terran Loghain (Dragon Age Origins)",
+          "series": "Dragon Age Origins"
+        },
+        {
+          "name": "Terran Loghain (Dragon Age Origins)",
+          "year": "2024",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Terran Loghain (Dragon Age Origins)",
+          "series": "Dragon Age Origins"
+        },
+        {
+          "name": "Terran Loghain (Dragon Age Origins)",
+          "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Terran Loghain (Dragon Age Origins)",
+          "series": "Dragon Age Origins"
+        },
+        {
+          "name": "Terran Loghain (Dragon Age Origins)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Terran Loghain (Dragon Age Origins)",
+          "series": "Dragon Age Origins"
         },
         {
           "name": "Tetsuya Ida (13 Sentinels: Aegis Rim)",
@@ -6124,6 +8436,14 @@
           "series": "13 Sentinels: Aegis Rim"
         },
         {
+          "name": "Tetsuya Ida (13 Sentinels: Aegis Rim)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 126,
+          "exact": "Tetsuya Ida (13 Sentinels: Aegis Rim)",
+          "series": "13 Sentinels: Aegis Rim"
+        },
+        {
           "name": "Thanos (The Avengers)",
           "year": "2022",
           "tier": 999.0,
@@ -6144,6 +8464,14 @@
           "year": "2025",
           "tier": 3.0,
           "rank": 38,
+          "exact": "The Boss (Metal Gear Solid 3: Snake Eater)",
+          "series": "Metal Gear Solid 3: Snake Eater"
+        },
+        {
+          "name": "The Boss (Metal Gear Solid 3: Snake Eater)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 53,
           "exact": "The Boss (Metal Gear Solid 3: Snake Eater)",
           "series": "Metal Gear Solid 3: Snake Eater"
         },
@@ -6180,6 +8508,14 @@
           "series": "The Witcher 3: Wild Hunt"
         },
         {
+          "name": "The Crones of Crookback Bog (The Witcher 3: Wild Hunt)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Crones of Crookback Bog (The Witcher 3: Wild Hunt)",
+          "series": "The Witcher 3: Wild Hunt"
+        },
+        {
           "name": "The Deserter (Disco Elysium)",
           "year": "2024",
           "tier": 9.0,
@@ -6196,6 +8532,14 @@
           "series": "Disco Elysium"
         },
         {
+          "name": "The Deserter (Disco Elysium)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Deserter (Disco Elysium)",
+          "series": "Disco Elysium"
+        },
+        {
           "name": "The Emperor (Baldur’s Gate 3)",
           "year": "2024",
           "tier": 999.0,
@@ -6212,8 +8556,24 @@
           "series": "Baldur’s Gate 3"
         },
         {
+          "name": "The Emperor (Baldur’s Gate 3)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Emperor (Baldur’s Gate 3)",
+          "series": "Baldur’s Gate 3"
+        },
+        {
           "name": "The Gorosei (One Piece)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Gorosei (One Piece)",
+          "series": "One Piece"
+        },
+        {
+          "name": "The Gorosei (One Piece)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "The Gorosei (One Piece)",
@@ -6252,6 +8612,14 @@
           "series": "The Dark Knight"
         },
         {
+          "name": "The Joker (The Dark Knight)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 89,
+          "exact": "The Joker (The Dark Knight)",
+          "series": "The Dark Knight"
+        },
+        {
           "name": "The Laughing Man (Ghost in the Shell: Stand Alone Complex)",
           "year": "2022",
           "tier": 9.0,
@@ -6284,6 +8652,22 @@
           "series": "Sekiro: Shadows Die Twice"
         },
         {
+          "name": "The Owl (Sekiro: Shadows Die Twice)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Owl (Sekiro: Shadows Die Twice)",
+          "series": "Sekiro: Shadows Die Twice"
+        },
+        {
+          "name": "The Paintress (Clair Obscur: Expedition 33)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 147,
+          "exact": "The Paintress (Clair Obscur: Expedition 33)",
+          "series": "Clair Obscur: Expedition 33"
+        },
+        {
           "name": "The Patriots (Metal Gear Solid 2)",
           "year": "2024",
           "tier": 7.0,
@@ -6294,6 +8678,14 @@
         {
           "name": "The Patriots (Metal Gear Solid 2)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Patriots (Metal Gear Solid 2)",
+          "series": "Metal Gear Solid 2"
+        },
+        {
+          "name": "The Patriots (Metal Gear Solid 2)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "The Patriots (Metal Gear Solid 2)",
@@ -6332,6 +8724,14 @@
           "series": "Hunter x Hunter"
         },
         {
+          "name": "The Phantom Troupe (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 25,
+          "exact": "The Phantom Troupe (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
           "name": "The Riddler (The Batman)",
           "year": "2022",
           "tier": 999.0,
@@ -6356,6 +8756,14 @@
           "series": "Metal Gear Solid 3: Snake Eater"
         },
         {
+          "name": "The Sorrow (Metal Gear Solid 3: Snake Eater)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Sorrow (Metal Gear Solid 3: Snake Eater)",
+          "series": "Metal Gear Solid 3: Snake Eater"
+        },
+        {
           "name": "Toga (My Hero Academia)",
           "year": "2024",
           "tier": 999.0,
@@ -6372,28 +8780,44 @@
           "series": "My Hero Academia"
         },
         {
-          "name": "Tohru Adachi (Persona 4)",
+          "name": "Toga (My Hero Academia)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Toga (My Hero Academia)",
+          "series": "My Hero Academia"
+        },
+        {
+          "name": "Tohru Adachi (Persona 4 Golden)",
           "year": "2023",
           "tier": 8.0,
           "rank": 94,
           "exact": "Tohru Adachi (Persona 4 Golden)",
-          "series": "Persona 4"
+          "series": "Persona 4 Golden"
         },
         {
-          "name": "Tohru Adachi (Persona 4)",
+          "name": "Tohru Adachi (Persona 4 Golden)",
           "year": "2024",
           "tier": 8.0,
           "rank": 124,
           "exact": "Tohru Adachi (Persona 4 Golden)",
-          "series": "Persona 4"
+          "series": "Persona 4 Golden"
         },
         {
-          "name": "Tohru Adachi (Persona 4)",
+          "name": "Tohru Adachi (Persona 4 Golden)",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Tohru Adachi (Persona 4)",
-          "series": "Persona 4"
+          "series": "Persona 4 Golden"
+        },
+        {
+          "name": "Tohru Adachi (Persona 4 Golden)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 169,
+          "exact": "Tohru Adachi (Persona 4 Golden)",
+          "series": "Persona 4 Golden"
         },
         {
           "name": "Toji Zenin (Jujutsu Kaisen)",
@@ -6420,6 +8844,22 @@
           "series": "Jujutsu Kaisen"
         },
         {
+          "name": "Toji Zenin (Jujutsu Kaisen)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 81,
+          "exact": "Toji Zenin (Jujutsu Kaisen)",
+          "series": "Jujutsu Kaisen"
+        },
+        {
+          "name": "Tokinada Tsunayashiro (Bleach)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Tokinada Tsunayashiro (Bleach)",
+          "series": "Bleach"
+        },
+        {
           "name": "Tomura Shigaraki (My Hero Academia)",
           "year": "2022",
           "tier": 6.0,
@@ -6444,6 +8884,14 @@
           "series": "My Hero Academia"
         },
         {
+          "name": "Tomura Shigaraki (My Hero Academia)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Tomura Shigaraki (My Hero Academia)",
+          "series": "My Hero Academia"
+        },
+        {
           "name": "Toru Hirose (Yakuza/Like A Dragon Series)",
           "year": "2024",
           "tier": 6.0,
@@ -6456,6 +8904,14 @@
           "year": "2025",
           "tier": 5.0,
           "rank": 82,
+          "exact": "Toru Hirose (Yakuza/Like A Dragon Series)",
+          "series": "Yakuza/Like A Dragon Series"
+        },
+        {
+          "name": "Toru Hirose (Yakuza/Like A Dragon Series)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 83,
           "exact": "Toru Hirose (Yakuza/Like A Dragon Series)",
           "series": "Yakuza/Like A Dragon Series"
         },
@@ -6487,6 +8943,14 @@
           "name": "Toru Oikawa (Haikyuu!!)",
           "year": "2025",
           "tier": 1.5,
+          "rank": 14,
+          "exact": "Toru Oikawa (Haikyuu!!)",
+          "series": "Haikyuu!!"
+        },
+        {
+          "name": "Toru Oikawa (Haikyuu!!)",
+          "year": "2026",
+          "tier": 1.0,
           "rank": 14,
           "exact": "Toru Oikawa (Haikyuu!!)",
           "series": "Haikyuu!!"
@@ -6524,6 +8988,14 @@
           "series": "Hunter x Hunter"
         },
         {
+          "name": "Tserriednich (Hunter x Hunter)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 90,
+          "exact": "Tserriednich (Hunter x Hunter)",
+          "series": "Hunter x Hunter"
+        },
+        {
           "name": "Tsubasa Kurosawa (Yakuza/Like A Dragon Series)",
           "year": "2024",
           "tier": 7.0,
@@ -6536,6 +9008,14 @@
           "year": "2025",
           "tier": 7.0,
           "rank": 123,
+          "exact": "Tsubasa Kurosawa (Yakuza/Like A Dragon Series)",
+          "series": "Yakuza/Like A Dragon Series"
+        },
+        {
+          "name": "Tsubasa Kurosawa (Yakuza/Like A Dragon Series)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 129,
           "exact": "Tsubasa Kurosawa (Yakuza/Like A Dragon Series)",
           "series": "Yakuza/Like A Dragon Series"
         },
@@ -6556,8 +9036,24 @@
           "series": "Yakuza/Like A Dragon Series"
         },
         {
+          "name": "Tsukasa Sagawa (Yakuza/Like A Dragon Series)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 55,
+          "exact": "Tsukasa Sagawa (Yakuza/Like A Dragon Series)",
+          "series": "Yakuza/Like A Dragon Series"
+        },
+        {
           "name": "Tsuneo Iwami (Yakuza 6: A Song of Life)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Tsuneo Iwami (Yakuza 6: A Song of Life)",
+          "series": "Yakuza 6: A Song of Life"
+        },
+        {
+          "name": "Tsuneo Iwami (Yakuza 6: A Song of Life)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Tsuneo Iwami (Yakuza 6: A Song of Life)",
@@ -6582,6 +9078,14 @@
         {
           "name": "Twice (My Hero Academia)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Twice (My Hero Academia)",
+          "series": "My Hero Academia"
+        },
+        {
+          "name": "Twice (My Hero Academia)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Twice (My Hero Academia)",
@@ -6620,6 +9124,14 @@
           "series": "Fight Club"
         },
         {
+          "name": "Tyler Durden (Fight Club)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Tyler Durden (Fight Club)",
+          "series": "Fight Club"
+        },
+        {
           "name": "Tywin Lannister (A Song of Ice and Fire + Game of Thrones)",
           "year": "2022",
           "tier": 5.0,
@@ -6652,10 +9164,26 @@
           "series": "A Song of Ice and Fire + Game of Thrones"
         },
         {
+          "name": "Tywin Lannister (A Song of Ice and Fire + Game of Thrones)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 113,
+          "exact": "Tywin Lannister (A Song of Ice and Fire + Game of Thrones)",
+          "series": "A Song of Ice and Fire + Game of Thrones"
+        },
+        {
           "name": "Ulquiorra (Bleach)",
           "year": "2025",
           "tier": 3.0,
           "rank": 54,
+          "exact": "Ulquiorra (Bleach)",
+          "series": "Bleach"
+        },
+        {
+          "name": "Ulquiorra (Bleach)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 56,
           "exact": "Ulquiorra (Bleach)",
           "series": "Bleach"
         },
@@ -6692,6 +9220,14 @@
           "series": "Haikyuu!!"
         },
         {
+          "name": "Ushijima Wakatoshi (Haikyuu!!)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 50,
+          "exact": "Ushijima Wakatoshi (Haikyuu!!)",
+          "series": "Haikyuu!!"
+        },
+        {
           "name": "Varis zos Galvus (Final Fantasy XIV)",
           "year": "2023",
           "tier": 8.0,
@@ -6716,6 +9252,14 @@
           "series": "Final Fantasy XIV"
         },
         {
+          "name": "Varis zos Galvus (Final Fantasy XIV)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 58,
+          "exact": "Varis zos Galvus (Final Fantasy XIV)",
+          "series": "Final Fantasy XIV"
+        },
+        {
           "name": "Vauthry (Final Fantasy XIV)",
           "year": "2024",
           "tier": 999.0,
@@ -6726,6 +9270,14 @@
         {
           "name": "Vauthry (Final Fantasy XIV)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Vauthry (Final Fantasy XIV)",
+          "series": "Final Fantasy XIV"
+        },
+        {
+          "name": "Vauthry (Final Fantasy XIV)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Vauthry (Final Fantasy XIV)",
@@ -6764,10 +9316,26 @@
           "series": "Final Fantasy XII"
         },
         {
+          "name": "Vayne Solidor (Final Fantasy XII)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Vayne Solidor (Final Fantasy XII)",
+          "series": "Final Fantasy XII"
+        },
+        {
           "name": "Viktor (Arcane)",
           "year": "2025",
           "tier": 3.0,
           "rank": 46,
+          "exact": "Viktor (Arcane)",
+          "series": "Arcane"
+        },
+        {
+          "name": "Viktor (Arcane)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 94,
           "exact": "Viktor (Arcane)",
           "series": "Arcane"
         },
@@ -6804,12 +9372,36 @@
           "series": "Berserk"
         },
         {
+          "name": "Void (Berserk)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Void (Berserk)",
+          "series": "Berserk"
+        },
+        {
+          "name": "W. D. Gaster (Undertale + Deltarune)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "W. D. Gaster (Undertale + Deltarune)",
+          "series": "Undertale + Deltarune"
+        },
+        {
           "name": "Walder Frey (A Song of Ice and Fire)",
           "year": "2022",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Walder Frey (A Song of Ice and Fire)",
           "series": "A Song of Ice and Fire"
+        },
+        {
+          "name": "Wesker (Resident Evil)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Wesker (Resident Evil)",
+          "series": "Resident Evil"
         },
         {
           "name": "Woodes Rogers (Black Sails)",
@@ -6844,6 +9436,14 @@
           "series": "Black Sails"
         },
         {
+          "name": "Woodes Rogers (Black Sails)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 140,
+          "exact": "Woodes Rogers (Black Sails)",
+          "series": "Black Sails"
+        },
+        {
           "name": "Yachiru Kusajishi (Bleach)",
           "year": "2024",
           "tier": 999.0,
@@ -6864,6 +9464,14 @@
           "year": "2025",
           "tier": 5.0,
           "rank": 83,
+          "exact": "Yakushi Kabuto (Naruto)",
+          "series": "Naruto"
+        },
+        {
+          "name": "Yakushi Kabuto (Naruto)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 86,
           "exact": "Yakushi Kabuto (Naruto)",
           "series": "Naruto"
         },
@@ -6900,6 +9508,14 @@
           "series": "Bleach"
         },
         {
+          "name": "Yhwach (Bleach)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 48,
+          "exact": "Yhwach (Bleach)",
+          "series": "Bleach"
+        },
+        {
           "name": "Yoji Shono (Judgment)",
           "year": "2024",
           "tier": 999.0,
@@ -6924,12 +9540,36 @@
           "series": "Ghost Trick"
         },
         {
+          "name": "Yomiel (Ghost Trick)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Yomiel (Ghost Trick)",
+          "series": "Ghost Trick"
+        },
+        {
           "name": "Yorinobu Arasaka (Cyberpunk 2077)",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Yorinobu Arasaka (Cyberpunk 2077)",
           "series": "Cyberpunk 2077"
+        },
+        {
+          "name": "Yorinobu Arasaka (Cyberpunk 2077)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Yorinobu Arasaka (Cyberpunk 2077)",
+          "series": "Cyberpunk 2077"
+        },
+        {
+          "name": "Yoshikage Kira (JoJo’s Bizarre Adventure Part 4: DIamond Is Unbreakable)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Yoshikage Kira (JoJo’s Bizarre Adventure Part 4: DIamond Is Unbreakable)",
+          "series": "JoJo’s Bizarre Adventure Part 4: DIamond Is Unbreakable"
         },
         {
           "name": "Yoshitaka Mine (Yakuza 3)",
@@ -6942,6 +9582,14 @@
         {
           "name": "Yoshitaka Mine (Yakuza 3)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Yoshitaka Mine (Yakuza 3)",
+          "series": "Yakuza 3"
+        },
+        {
+          "name": "Yoshitaka Mine (Yakuza 3)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Yoshitaka Mine (Yakuza 3)",
@@ -6980,6 +9628,14 @@
           "series": "Yu Yu Hakusho"
         },
         {
+          "name": "Younger Toguro (Yu Yu Hakusho)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Younger Toguro (Yu Yu Hakusho)",
+          "series": "Yu Yu Hakusho"
+        },
+        {
           "name": "Yukio Oikawa (Digimon Adventures 02)",
           "year": "2025",
           "tier": 9.0,
@@ -6988,6 +9644,22 @@
           "series": "Digimon Adventures 02"
         },
         {
+          "name": "Yukio Oikawa (Digimon Adventures 02)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 165,
+          "exact": "Yukio Oikawa (Digimon Adventures 02)",
+          "series": "Digimon Adventures 02"
+        },
+        {
+          "name": "Yura (Kagurabachi)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 150,
+          "exact": "Yura (Kagurabachi)",
+          "series": "Kagurabachi"
+        },
+        {
           "name": "Yuri (Megalo Box)",
           "year": "2022",
           "tier": 999.0,
@@ -7020,6 +9692,14 @@
           "series": "Megalo Box"
         },
         {
+          "name": "Yuri (Megalo Box)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Yuri (Megalo Box)",
+          "series": "Megalo Box"
+        },
+        {
           "name": "Zaheer (The Legend of Korra)",
           "year": "2022",
           "tier": 999.0,
@@ -7046,6 +9726,14 @@
         {
           "name": "Zaheer (The Legend of Korra)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Zaheer (The Legend of Korra)",
+          "series": "The Legend of Korra"
+        },
+        {
+          "name": "Zaheer (The Legend of Korra)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Zaheer (The Legend of Korra)",
@@ -7084,6 +9772,14 @@
           "series": "The Legend of Zelda: Twilight Princess"
         },
         {
+          "name": "Zant (The Legend of Zelda: Twilight Princess)",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 46,
+          "exact": "Zant (The Legend of Zelda: Twilight Princess)",
+          "series": "The Legend of Zelda: Twilight Princess"
+        },
+        {
           "name": "Zanza (Xenoblade Chronicles)",
           "year": "2022",
           "tier": 8.0,
@@ -7110,6 +9806,14 @@
         {
           "name": "Zanza (Xenoblade Chronicles)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Zanza (Xenoblade Chronicles)",
+          "series": "Xenoblade Chronicles"
+        },
+        {
+          "name": "Zanza (Xenoblade Chronicles)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Zanza (Xenoblade Chronicles)",
@@ -7148,6 +9852,14 @@
           "series": "Attack on Titan"
         },
         {
+          "name": "Zeke Yeager (Attack on Titan)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 32,
+          "exact": "Zeke Yeager (Attack on Titan)",
+          "series": "Attack on Titan"
+        },
+        {
           "name": "Zenos zos Galvus (Final Fantasy XIV)",
           "year": "2023",
           "tier": 7.0,
@@ -7170,6 +9882,22 @@
           "rank": 12,
           "exact": "Zenos zos Galvus (Final Fantasy XIV)",
           "series": "Final Fantasy XIV"
+        },
+        {
+          "name": "Zenos zos Galvus (Final Fantasy XIV)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 11,
+          "exact": "Zenos zos Galvus (Final Fantasy XIV)",
+          "series": "Final Fantasy XIV"
+        },
+        {
+          "name": "Zorba (Metaphor: Refantazio)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Zorba (Metaphor: Refantazio)",
+          "series": "Metaphor: Refantazio"
         }
       ]
     },
@@ -8865,21 +11593,21 @@
           "exact": "Final Fantasy XII"
         },
         {
-          "name": "Final Fantasy XIV",
+          "name": "Final Fantasy XIV (Up until the end of Endwalker 6.55)",
           "year": "2023",
           "tier": 2.0,
           "rank": 18,
           "exact": "Final Fantasy XIV (Up until the end of Shadowbringers 5.3)"
         },
         {
-          "name": "Final Fantasy XIV",
+          "name": "Final Fantasy XIV (Up until the end of Endwalker 6.55)",
           "year": "2024",
           "tier": 1.0,
           "rank": 2,
           "exact": "Final Fantasy XIV (Up until the end of Endwalker 6.55)"
         },
         {
-          "name": "Final Fantasy XIV",
+          "name": "Final Fantasy XIV (Up until the end of Endwalker 6.55)",
           "year": "2025",
           "tier": 1.0,
           "rank": 3,

@@ -87,6 +87,23 @@ def tier_color(tier: float, index: int) -> str:
     return TIER_COLORS.get(index + 1, "#94a3b8")
 
 
+def split_hm(text: str) -> list[str]:
+    parts, depth, current = [], 0, []
+    for ch in text:
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+        if ch == "," and depth == 0:
+            parts.append("".join(current).strip())
+            current = []
+        else:
+            current.append(ch)
+    if current:
+        parts.append("".join(current).strip())
+    return parts
+
+
 def next_nonempty(lines: list[str], start: int) -> str | None:
     for i in range(start, len(lines)):
         candidate = lines[i].strip()
@@ -230,7 +247,7 @@ def process_type(type_name: str, input_dir: str, name_map: dict) -> dict | None:
                 current_tier = 999.0
                 tiers_seen.add(current_tier)
                 file_tier_labels[current_tier] = "Honorable Mentions"
-                for raw in m.group(1).split(","):
+                for raw in split_hm(m.group(1)):
                     raw = raw.strip()
                     if not raw:
                         continue

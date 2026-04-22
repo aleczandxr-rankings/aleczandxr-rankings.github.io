@@ -2,10 +2,8 @@ NAME_MAPS: dict[str, dict[str, str]] = {
     "fiction": {
         "Haikyuu":                                          "Haikyuu!!",
         "Animal Crossing":                                  "Animal Crossing (Gamecube)",
-        "Final Fantasy XIV (Up until the end of Endwalker 6.55)":
-                                                            "Final Fantasy XIV",
         "Final Fantasy XIV (Up until the end of Shadowbringers 5.3)":
-                                                            "Final Fantasy XIV",
+                                                            "Final Fantasy XIV (Up until the end of Endwalker 6.55)",
         "The Witcher video game series":                    "The Witcher Video Game Series",
         "Cyberpunk: Edgerunners":                           "Cyberpunk Universe (2077 + Phantom Liberty + Edgerunners)",
         "Final Fantasy VII Remake":                         "Final Fantasy VII Remake + Rebirth",
@@ -97,7 +95,7 @@ NAME_MAPS: dict[str, dict[str, str]] = {
         "Ed Kemper (Mindhunter)": "Mindhunter Criminals (Mindhunter)",
         "Momochi Zabuza (Naruto)":                          "Momochi Zabuza and Haku (Naruto)",
         "Haku (Naruto)":                                    "Momochi Zabuza and Haku (Naruto)",
-        "Tohru Adachi (Persona 4 Golden)":                  "Tohru Adachi (Persona 4)",
+        "Tohru Adachi (Persona 4)":                         "Tohru Adachi (Persona 4 Golden)",
         "Genichiro Ashina (Sekiro)":                        "Genichiro Ashina (Sekiro: Shadows Die Twice)",
         "Majora (The Legend of Zelda: Majora’s Mask)": "Skull Kid/Majora (The Legend of Zelda: Majora’s Mask)",
         "General Radahn (Elden Ring)": "Starscourge Radahn (Elden Ring)",
@@ -111,9 +109,17 @@ NAME_MAPS: dict[str, dict[str, str]] = {
         "Kaiba (Yu-Gi-Oh)": "Seto Kaiba (Yu-Gi-Oh)",
         "Pegasus (Yu-Gi-Oh)": "Maximillion Pegasus (Yu-Gi-Oh)",
         "Bakura (Yu-Gi-Oh)": "Ryou Bakura (Yu-Gi-Oh)",
-        "Benjamin (Hunter x Hunter)": "Benjamin Gui Guo Rou (Hunter x Hunter)",
+        "Benjamin (Hunter x Hunter)":                       "Benjamin Hui Guo Rou (Hunter x Hunter)",
+        "Benjamin Gui Guo Rou (Hunter x Hunter)":           "Benjamin Hui Guo Rou (Hunter x Hunter)",
         "Kyohei Haruma (Judgment)": "Kyohei Hamura (Judgment)",
         "Aizawa (Yakuza 5)": "Masato Aizawa (Yakuza 5)",
+        "Asriel (Undertale)":                               "Asriel Dreemur (Undertale)",
+        "Terrence Fletcher (Whiplash)":                     "Terence Fletcher (Whiplash)",
+        "Quintus (Final Fantasy XIV)":                      "Quintus Cinna (Final Fantasy XIV)",
+        "Gepetto (Lies of P)":                              "Geppetto (Lies of P + Overture)",
+        "Argath Thadalfus (Final Fantasy Tactics: War of the Lions)":
+            "Argath Thadalfus (Final Fantasy Tactics: The Ivalice Chronicles)",
+        "Million Knives/Nai (Trigun Stampede)":             "Million Knives/Nai (Trigun Stampede + Stargaze)",
     },
 }
 
