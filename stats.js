@@ -4,6 +4,7 @@ const statsState = {
     yearFrom: null,
     yearTo: null,
     dropdownsInit: false,
+    includeHm: true,
 };
 
 
@@ -126,7 +127,7 @@ function renderStatsPage() {
 
 
 function rankNum(rank) {
-    return rank === "HM" ? 101 : Number(rank);
+    return Number(rank);
 }
 
 function buildHistoryMap(data) {
@@ -179,8 +180,25 @@ function isConsecutive(yA, yB, typeYears) {
     return i >= 0 && typeYears[i + 1] === yB;
 }
 
+function rankDisplay(rank) {
+    return rank === "HM" ? "HM" : `#${rank}`;
+}
 
-function computeBiggestRise(hm, years, typeYears) {
+function getRankedCountPerYear(data) {
+    const map = {};
+    for (const d of data) {
+        if (d.rank !== "HM") map[d.year] = (map[d.year] || 0) + 1;
+    }
+    return map;
+}
+
+function rankNumCtx(rank, year, rankedCountPerYear) {
+    if (rank !== "HM") return Number(rank);
+    return (rankedCountPerYear[year] || 100) + 1;
+}
+
+
+function computeBiggestRise(hm, years, typeYears, includeHm = false, rankedCount = {}) {
     const out = [];
     for (const [name, hist] of hm) {
         let best = null;
@@ -188,8 +206,12 @@ function computeBiggestRise(hm, years, typeYears) {
             const yA = years[i], yB = years[i + 1];
             if (!isConsecutive(yA, yB, typeYears)) continue;
             const a = hist.get(yA), b = hist.get(yB);
-            if (!a || !b || a.rank === "HM" || b.rank === "HM") continue;
-            const d = rankNum(a.rank) - rankNum(b.rank);
+            if (!a || !b) continue;
+            if (!includeHm && (a.rank === "HM" || b.rank === "HM")) continue;
+            if (a.rank === "HM" && b.rank === "HM") continue;
+            const rA = a.rank === "HM" ? (rankedCount[yB] || 100) + 1 : Number(a.rank);
+            const rB = b.rank === "HM" ? (rankedCount[yB] || 100) + 1 : Number(b.rank);
+            const d = rA - rB;
             if (d > 0 && (!best || d > best.delta))
                 best = {name, fromYear: yA, toYear: yB, fromRank: a.rank, toRank: b.rank, delta: d};
         }
@@ -198,7 +220,7 @@ function computeBiggestRise(hm, years, typeYears) {
     return out.sort((a, b) => b.delta - a.delta);
 }
 
-function computeBiggestDrop(hm, years, typeYears) {
+function computeBiggestDrop(hm, years, typeYears, includeHm = false, rankedCount = {}) {
     const out = [];
     for (const [name, hist] of hm) {
         let worst = null;
@@ -206,8 +228,10 @@ function computeBiggestDrop(hm, years, typeYears) {
             const yA = years[i], yB = years[i + 1];
             if (!isConsecutive(yA, yB, typeYears)) continue;
             const a = hist.get(yA), b = hist.get(yB);
-            if (!a || !b || a.rank === "HM" || b.rank === "HM") continue;
-            const d = rankNum(b.rank) - rankNum(a.rank);
+            if (!a || !b) continue;
+            if (!includeHm && (a.rank === "HM" || b.rank === "HM")) continue;
+            if (a.rank === "HM" && b.rank === "HM") continue;
+            const d = rankNumCtx(b.rank, yB, rankedCount) - rankNumCtx(a.rank, yA, rankedCount);
             if (d > 0 && (!worst || d > worst.delta))
                 worst = {name, fromYear: yA, toYear: yB, fromRank: a.rank, toRank: b.rank, delta: d};
         }
@@ -216,57 +240,64 @@ function computeBiggestDrop(hm, years, typeYears) {
     return out.sort((a, b) => b.delta - a.delta);
 }
 
-function computeHighestFluctuation(hm, years) {
+function computeHighestFluctuation(hm, years, includeHm = false, rankedCount = {}) {
     const out = [];
     for (const [name, hist] of hm) {
-        const ranks = years.filter(y => hist.has(y) && hist.get(y).rank !== "HM")
-            .map(y => rankNum(hist.get(y).rank));
-        if (ranks.length < 2) continue;
-        const lo = Math.min(...ranks), hi = Math.max(...ranks);
-        out.push({name, swing: hi - lo, minRank: lo, maxRank: hi});
+        const entries = years
+            .filter(y => hist.has(y) && (includeHm || hist.get(y).rank !== "HM"))
+            .map(y => {
+                const r = hist.get(y).rank;
+                const isHm = r === "HM";
+                return {num: rankNumCtx(r, y, rankedCount), isHm};
+            });
+        if (entries.length < 2) continue;
+        const nums = entries.map(e => e.num);
+        const lo = Math.min(...nums), hi = Math.max(...nums);
+        if (hi === lo) continue;
+        out.push({
+            name, swing: hi - lo, minRank: lo, maxRank: hi,
+            minIsHm: entries.find(e => e.num === lo)?.isHm ?? false,
+            maxIsHm: entries.find(e => e.num === hi)?.isHm ?? false,
+        });
     }
     return out.sort((a, b) => b.swing - a.swing);
 }
 
-function computeBestHmToRankEntry(hm, years, typeYears) {
+function computeHighestDebut(filteredHm, years, typeYears, allTypeData, includeHm) {
+    const firstListYear = typeYears[0];
+    const fullHistory = buildHistoryMap(allTypeData);
+
     const out = [];
-    for (const [name, hist] of hm) {
-        for (let i = 1; i < years.length; i++) {
-            const yA = years[i - 1], yB = years[i];
-            if (!isConsecutive(yA, yB, typeYears)) continue;
-            const a = hist.get(yA), b = hist.get(yB);
-            if (!a || !b) continue;
-            if (Number(a.tier) === 999 && b.rank !== "HM") {
-                out.push({name, hmYear: yA, entryYear: yB, entryRank: rankNum(b.rank)});
-                break;
-            }
-        }
+    for (const [name] of filteredHm) {
+        const fullHist = fullHistory.get(name);
+        if (!fullHist) continue;
+
+        const allItemYears = [...fullHist.keys()].sort();
+        const firstEverYear = allItemYears[0];
+
+        if (firstEverYear === firstListYear) continue;
+        if (!years.includes(firstEverYear)) continue;
+
+        const debutEntry = fullHist.get(firstEverYear);
+        if (!debutEntry) continue;
+        if (!includeHm && debutEntry.rank === "HM") continue;
+
+        out.push({name, debutYear: firstEverYear, debutRank: debutEntry.rank});
     }
-    return out.sort((a, b) => a.entryRank - b.entryRank);
+
+    return out.sort((a, b) => {
+        const ra = a.debutRank === "HM" ? 102 : Number(a.debutRank);
+        const rb = b.debutRank === "HM" ? 102 : Number(b.debutRank);
+        return ra - rb;
+    });
 }
 
-function computeWorstRankToHmDrop(hm, years, typeYears) {
+function computeMostConsistent(hm, years, includeHm = false, rankedCount = {}) {
     const out = [];
     for (const [name, hist] of hm) {
-        for (let i = 1; i < years.length; i++) {
-            const yA = years[i - 1], yB = years[i];
-            if (!isConsecutive(yA, yB, typeYears)) continue;
-            const a = hist.get(yA), b = hist.get(yB);
-            if (!a || !b) continue;
-            if (a.rank !== "HM" && Number(b.tier) === 999) {
-                out.push({name, lastRankedYear: yA, lastRank: rankNum(a.rank), hmYear: yB});
-                break;
-            }
-        }
-    }
-    return out.sort((a, b) => a.lastRank - b.lastRank);
-}
-
-function computeMostConsistent(hm, years) {
-    const out = [];
-    for (const [name, hist] of hm) {
-        const ranks = years.filter(y => hist.has(y) && hist.get(y).rank !== "HM")
-            .map(y => rankNum(hist.get(y).rank));
+        const ranks = years
+            .filter(y => hist.has(y) && (includeHm || hist.get(y).rank !== "HM"))
+            .map(y => rankNumCtx(hist.get(y).rank, y, rankedCount));
         if (ranks.length < 2) continue;
         const sd = stdDev(ranks);
         const avg = ranks.reduce((a, b) => a + b, 0) / ranks.length;
@@ -275,11 +306,12 @@ function computeMostConsistent(hm, years) {
     return out.sort((a, b) => a.stdDev - b.stdDev);
 }
 
-function computeMostVolatile(hm, years) {
+function computeMostVolatile(hm, years, includeHm = false, rankedCount = {}) {
     const out = [];
     for (const [name, hist] of hm) {
-        const ranks = years.filter(y => hist.has(y) && hist.get(y).rank !== "HM")
-            .map(y => rankNum(hist.get(y).rank));
+        const ranks = years
+            .filter(y => hist.has(y) && (includeHm || hist.get(y).rank !== "HM"))
+            .map(y => rankNumCtx(hist.get(y).rank, y, rankedCount));
         if (ranks.length < 2) continue;
         out.push({name, stdDev: stdDev(ranks)});
     }
@@ -307,11 +339,12 @@ function computeTierHopper(hm, years) {
 }
 
 
-function computeAverageRank(hm, years) {
+function computeAverageRank(hm, years, includeHm = false, rankedCount = {}) {
     const out = [];
     for (const [name, hist] of hm) {
-        const ranks = years.filter(y => hist.has(y) && hist.get(y).rank !== "HM")
-            .map(y => rankNum(hist.get(y).rank));
+        const ranks = years
+            .filter(y => hist.has(y) && (includeHm || hist.get(y).rank !== "HM"))
+            .map(y => rankNumCtx(hist.get(y).rank, y, rankedCount));
         if (!ranks.length) continue;
         out.push({name, avgRank: ranks.reduce((a, b) => a + b, 0) / ranks.length, years: ranks.length});
     }
@@ -337,22 +370,17 @@ function computeYearOverYearCorrelation(data, years, typeYears) {
 }
 
 
-function computeSeriesMostChars(seriesMap) {
+function computeSeriesMostChars(seriesMap, includeHm = true) {
     const out = [];
-    for (const [series, {chars}] of seriesMap) {
-        if (chars.size > 0) out.push({name: series, count: chars.size});
+    for (const [series, {chars, entries}] of seriesMap) {
+        const effectiveChars = includeHm
+            ? chars
+            : new Set(entries.filter(e => e.rank !== "HM").map(e => e.name));
+        if (effectiveChars.size > 0) out.push({name: series, count: effectiveChars.size});
     }
     return out.sort((a, b) => b.count - a.count);
 }
 
-function computeSeriesDominance(seriesMap, years) {
-    const out = [];
-    for (const [series, {entries}] of seriesMap) {
-        const chars = new Set(entries.filter(e => years.includes(e.year) && e.rank !== "HM").map(e => e.name));
-        if (chars.size > 0) out.push({name: series, count: chars.size});
-    }
-    return out.sort((a, b) => b.count - a.count);
-}
 
 function computeMediaTypeBreakdown(data, years) {
     const yearSet = new Set(years);
@@ -465,20 +493,31 @@ function showStatsBarTooltip(event, name, typeObj) {
     const presentYears = (typeObj.years || []).filter(y => slots[y]);
     if (!presentYears.length) return;
 
+    const rankedCount = getRankedCountPerYear(typeObj.data || []);
     let prevNum = null;
+
     const rows = presentYears.map(yr => {
         const {rank, tier, sub_entries: subEntries} = slots[yr];
         const isHm = rank === "HM";
         const currNum = isHm ? Infinity : rankNum(rank);
 
         let arrow;
-        if (prevNum === null) arrow = `<span class="t-prog-arrow t-prog-neu">·</span>`;
-        else if (currNum < prevNum) {
-            const d = (prevNum !== Infinity && currNum !== Infinity) ? prevNum - currNum : '';
-            arrow = `<span class="t-prog-arrow t-prog-up">↑${d}</span>`;
+        if (prevNum === null) {
+            arrow = `<span class="t-prog-arrow t-prog-neu">·</span>`;
+        } else if (currNum < prevNum) {
+            if (prevNum === Infinity) {
+                const d = (rankedCount[yr] ?? 100) + 1 - currNum;
+                arrow = `<span class="t-prog-arrow t-prog-up">↑${d} HM</span>`;
+            } else {
+                arrow = `<span class="t-prog-arrow t-prog-up">↑${prevNum - currNum}</span>`;
+            }
         } else if (currNum > prevNum) {
-            const d = (prevNum !== Infinity && currNum !== Infinity) ? currNum - prevNum : '';
-            arrow = `<span class="t-prog-arrow t-prog-down">↓${d}</span>`;
+            if (currNum === Infinity) {
+                const d = (rankedCount[yr] ?? 100) + 1 - prevNum;
+                arrow = `<span class="t-prog-arrow t-prog-down">↓${d} HM</span>`;
+            } else {
+                arrow = `<span class="t-prog-arrow t-prog-down">↓${currNum - prevNum}</span>`;
+            }
         } else {
             arrow = `<span class="t-prog-arrow t-prog-neu">~</span>`;
         }
@@ -652,10 +691,8 @@ function renderHorizBar(sec, items, typeObjFallback) {
         const startIdx = page * PAGE_SIZE;
         const pageItems = items.slice(startIdx, startIdx + PAGE_SIZE);
 
-        const nameColW = 294;
-        const valueColW = 225;
-        const barH = 26, barGap = 5;
         const padL = 16, padTop = 6, padBot = 6;
+        const barH = 26, barGap = 5;
         const svgH = padTop + pageItems.length * (barH + barGap) - barGap + padBot;
 
         const svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -665,9 +702,17 @@ function renderHorizBar(sec, items, typeObjFallback) {
         const svg = d3.select(svgEl);
 
         requestAnimationFrame(() => {
-            const w = wrapper.getBoundingClientRect().width || 700;
+            const clientW = wrapper.getBoundingClientRect().width || 1000;
+            const w = Math.max(1000, clientW);
             svgEl.setAttribute("width", w);
-            const barW = Math.max(60, w - padL - nameColW - valueColW - 8);
+
+            const nameX = 32;
+            const nameW = 480;
+            const valueX = nameX + nameW; // 512
+            const valueW = 280;
+            const barX = valueX + valueW; // 792
+            const barW = Math.max(100, w - barX - 32);
+
             const maxVal = Math.max(...pageItems.map(d => d.barValue ?? d.value), 1);
             const xSc = d3.scaleLinear().domain([0, maxVal]).range([0, barW]);
 
@@ -682,25 +727,29 @@ function renderHorizBar(sec, items, typeObjFallback) {
                     .attr("transform", `translate(${padL},${y})`);
 
                 g.append("text").attr("class", "stats-bar-rank-num")
-                    .attr("x", 12).attr("y", barH / 2).text(startIdx + i + 1);
+                    .attr("x", 8).attr("y", barH / 2).text(startIdx + i + 1)
+                    .attr("text-anchor", "middle");
 
-                const nm = item.name.length > 37 ? item.name.slice(0, 36) + "…" : item.name;
+                const maxChars = Math.floor(nameW / 6.5);
+                const nm = item.name.length > maxChars ? item.name.slice(0, maxChars - 1) + "…" : item.name;
                 const nameText = g.append("text").attr("class", "stats-bar-name")
-                    .attr("x", nameColW - 6).attr("y", barH / 2).text(nm);
+                    .attr("x", nameX).attr("y", barH / 2).text(nm)
+                    .attr("text-anchor", "start");
 
-                const barTrack = g.append("rect").attr("x", nameColW).attr("y", 3)
+                const displayValue = String(item.displayValue ?? item.value);
+                const valueText = g.append("text").attr("class", "stats-bar-value")
+                    .attr("x", valueX).attr("y", barH / 2)
+                    .text(displayValue)
+                    .attr("text-anchor", "start");
+
+                const barTrack = g.append("rect").attr("x", barX).attr("y", 3)
                     .attr("width", barW).attr("height", barH - 6)
                     .attr("rx", 3).attr("fill", "var(--bg-soft)");
 
                 const barFill = g.append("rect").attr("class", "stats-bar-rect")
-                    .attr("x", nameColW).attr("y", 3)
+                    .attr("x", barX).attr("y", 3)
                     .attr("width", bw).attr("height", barH - 6)
                     .attr("rx", 3).attr("fill", color);
-
-                const displayValue = String(item.displayValue ?? item.value);
-                const valueText = g.append("text").attr("class", "stats-bar-value")
-                    .attr("x", nameColW + barW + 8).attr("y", barH / 2)
-                    .text(displayValue);
 
                 if (item.hoverFn || typeObj) {
                     barTrack.style("cursor", "pointer")
@@ -908,8 +957,8 @@ function renderMediaTypeHorizBar(sec, items) {
     wrapper.className = "stats-bar-wrapper";
     sec.appendChild(wrapper);
 
-    const nameColW = 180, valueColW = 240;
-    const barH = 26, barGap = 5, padL = 16, padTop = 6, padBot = 6;
+    const padL = 16, padTop = 6, padBot = 6;
+    const barH = 26, barGap = 5;
     const svgH = padTop + items.length * (barH + barGap) - barGap + padBot;
     const svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     svgEl.setAttribute("class", "stats-bar-chart");
@@ -918,16 +967,23 @@ function renderMediaTypeHorizBar(sec, items) {
     const svg = d3.select(svgEl);
 
     requestAnimationFrame(() => {
-        const w = wrapper.getBoundingClientRect().width || 700;
+        const clientW = wrapper.getBoundingClientRect().width || 900;
+        const w = Math.max(900, clientW);
         svgEl.setAttribute("width", w);
-        const barW = Math.max(60, w - padL - nameColW - valueColW - 8);
+
+        const nameX = 24;
+        const nameW = 380;
+        const valueX = nameX + nameW; // 404
+        const valueW = 260;
+        const barX = valueX + valueW; // 664
+        const barW = Math.max(100, w - barX - 32);
+
         const maxVal = Math.max(...items.map(d => d.barValue), 1);
         const xSc = d3.scaleLinear().domain([0, maxVal]).range([0, barW]);
 
         items.forEach((item, i) => {
             const yPos = padTop + i * (barH + barGap);
             const rawColor = MEDIA_TYPE_COLORS[item.mediaType] || "#888";
-            const vc = visibleColor(rawColor);
             const bw = Math.max(2, xSc(item.barValue));
             const label = MEDIA_TYPE_LABELS[item.mediaType] || item.mediaType;
 
@@ -936,19 +992,25 @@ function renderMediaTypeHorizBar(sec, items) {
 
             g.append("circle").attr("cx", 9).attr("cy", barH / 2).attr("r", 4.5)
                 .attr("fill", rawColor).attr("fill-opacity", 0.85);
+
             const nameText = g.append("text").attr("class", "stats-bar-name")
-                .attr("x", nameColW - 6).attr("y", barH / 2).text(label);
-            const barTrack = g.append("rect").attr("x", nameColW).attr("y", 3)
-                .attr("width", barW).attr("height", barH - 6)
-                .attr("rx", 3).attr("fill", "var(--bg-soft)");
-            const barFill = g.append("rect").attr("class", "stats-bar-rect")
-                .attr("x", nameColW).attr("y", 3)
-                .attr("width", bw).attr("height", barH - 6)
-                .attr("rx", 3).attr("fill", rawColor).attr("fill-opacity", 0.6);
+                .attr("x", nameX).attr("y", barH / 2).text(label)
+                .attr("text-anchor", "start");
+
             const displayValue = String(item.displayValue ?? "");
             const valueText = g.append("text").attr("class", "stats-bar-value")
-                .attr("x", nameColW + barW + 8).attr("y", barH / 2)
-                .text(displayValue);
+                .attr("x", valueX).attr("y", barH / 2)
+                .text(displayValue)
+                .attr("text-anchor", "start");
+
+            const barTrack = g.append("rect").attr("x", barX).attr("y", 3)
+                .attr("width", barW).attr("height", barH - 6)
+                .attr("rx", 3).attr("fill", "var(--bg-soft)");
+
+            const barFill = g.append("rect").attr("class", "stats-bar-rect")
+                .attr("x", barX).attr("y", 3)
+                .attr("width", bw).attr("height", barH - 6)
+                .attr("rx", 3).attr("fill", rawColor).attr("fill-opacity", 0.6);
 
             if (item.hoverFn) {
                 barTrack.style("cursor", "pointer")
@@ -1077,56 +1139,49 @@ function renderTypeTab(container, typeObj) {
     renderStatCard(cardsRow, {value: data.filter(d => d.rank !== "HM").length, label: "Total ranked entries"});
 
     const t = typeObj;
+    const rankedCount = getRankedCountPerYear(data);
+    const incHm = statsState.includeHm;
 
 
     {
         const sec = makeSection(container);
         addSectionHeader(sec, "Biggest Single-Year Rise",
-            "Largest rank number improvement between two consecutive years.");
-        renderHorizBar(sec, computeBiggestRise(hm, years, typeYears).map(r => ({
+            "Largest rank improvement between two consecutive years.");
+        renderHorizBar(sec, computeBiggestRise(hm, years, typeYears, incHm, rankedCount).map(r => ({
             name: r.name,
             value: r.delta, barValue: r.delta,
-            displayValue: `#${r.fromRank} → #${r.toRank} (+${r.delta}) in ${r.toYear}`
+            displayValue: `${rankDisplay(r.fromRank)} → ${rankDisplay(r.toRank)} (+${r.delta}) in ${r.toYear}[of ${rankedCount[r.toYear] ?? "?"}]`
         })), t);
     }
     {
         const sec = makeSection(container);
         addSectionHeader(sec, "Biggest Single-Year Drop",
             "Largest rank decline between two consecutive years.");
-        renderHorizBar(sec, computeBiggestDrop(hm, years, typeYears).map(r => ({
+        renderHorizBar(sec, computeBiggestDrop(hm, years, typeYears, incHm, rankedCount).map(r => ({
             name: r.name,
             value: r.delta, barValue: r.delta,
-            displayValue: `#${r.fromRank} → #${r.toRank} (−${r.delta}) in ${r.toYear}`
+            displayValue: `${rankDisplay(r.fromRank)} → ${rankDisplay(r.toRank)} (−${r.delta}) in ${r.toYear}  [of ${rankedCount[r.toYear] ?? "?"}]`
         })), t);
     }
     {
         const sec = makeSection(container);
         addSectionHeader(sec, "Highest Rank Fluctuation",
-            "Difference between best and worst rank number achieved across all years.");
-        renderHorizBar(sec, computeHighestFluctuation(hm, years).map(r => ({
+            "Difference between best and worst rank achieved across all years.");
+        renderHorizBar(sec, computeHighestFluctuation(hm, years, incHm, rankedCount).map(r => ({
             name: r.name,
             value: r.swing, barValue: r.swing,
-            displayValue: `#${r.minRank}–#${r.maxRank} (swing: ${r.swing})`
+            displayValue: `${r.minIsHm ? "HM" : `#${r.minRank}`}–${r.maxIsHm ? "HM" : `#${r.maxRank}`} (swing: ${r.swing})`
         })), t);
     }
     {
         const sec = makeSection(container);
-        addSectionHeader(sec, "Best HM → Ranking Entry",
-            "Highest rank after rising from honorable mention.");
-        renderHorizBar(sec, computeBestHmToRankEntry(hm, years, typeYears).map(r => ({
+        addSectionHeader(sec, "Highest Debut",
+            "Best rank on first appearance (entries from the list's first year are excluded).");
+        renderHorizBar(sec, computeHighestDebut(hm, years, typeYears, typeObj.data, incHm).map(r => ({
             name: r.name,
-            value: r.entryRank, barValue: 102 - r.entryRank,
-            displayValue: `HM (${r.hmYear}) → #${r.entryRank} (${r.entryYear})`
-        })), t);
-    }
-    {
-        const sec = makeSection(container);
-        addSectionHeader(sec, "Worst Ranking → HM Drop",
-            "Items that fell to HM from a ranked position.");
-        renderHorizBar(sec, computeWorstRankToHmDrop(hm, years, typeYears).map(r => ({
-            name: r.name,
-            value: r.lastRank, barValue: 102 - r.lastRank,
-            displayValue: `#${r.lastRank} (${r.lastRankedYear}) → HM (${r.hmYear})`
+            value: r.debutRank === "HM" ? 102 : Number(r.debutRank),
+            barValue: r.debutRank === "HM" ? 1 : 102 - Number(r.debutRank),
+            displayValue: `${rankDisplay(r.debutRank)} debut in ${r.debutYear}  [of ${rankedCount[r.debutYear] ?? "?"}]`
         })), t);
     }
 
@@ -1135,7 +1190,7 @@ function renderTypeTab(container, typeObj) {
         const sec = makeSection(container);
         addSectionHeader(sec, "Best Average Rank",
             "Mean rank across all years with a numeric ranking.");
-        renderHorizBar(sec, computeAverageRank(hm, years).map(r => ({
+        renderHorizBar(sec, computeAverageRank(hm, years, incHm, rankedCount).map(r => ({
             name: r.name, value: r.avgRank, barValue: 102 - r.avgRank,
             displayValue: `avg #${r.avgRank.toFixed(1)} over ${r.years}yr`
         })), t);
@@ -1144,7 +1199,7 @@ function renderTypeTab(container, typeObj) {
         const sec = makeSection(container);
         addSectionHeader(sec, "Most Consistent",
             "Lowest standard deviation of rank - barely moved year to year (min. 2 years).");
-        renderHorizBar(sec, computeMostConsistent(hm, years).map(r => ({
+        renderHorizBar(sec, computeMostConsistent(hm, years, incHm, rankedCount).map(r => ({
             name: r.name, value: r.stdDev, barValue: Math.max(0, 50 - r.stdDev),
             displayValue: `σ=${r.stdDev.toFixed(1)}, avg #${r.avgRank.toFixed(1)}`
         })), t);
@@ -1153,7 +1208,7 @@ function renderTypeTab(container, typeObj) {
         const sec = makeSection(container);
         addSectionHeader(sec, "Most Volatile",
             "Highest standard deviation of rank - position changed dramatically (min. 2 years).");
-        renderHorizBar(sec, computeMostVolatile(hm, years).map(r => ({
+        renderHorizBar(sec, computeMostVolatile(hm, years, incHm, rankedCount).map(r => ({
             name: r.name, value: r.stdDev, barValue: r.stdDev,
             displayValue: `σ=${r.stdDev.toFixed(1)}`
         })), t);
@@ -1250,23 +1305,14 @@ function renderTypeTab(container, typeObj) {
         {
             const sec = makeSection(container);
             addSectionHeader(sec, "Most Characters Per Series",
-                "Series with the most distinct characters appearing anywhere in the data.");
-            renderHorizBar(sec, computeSeriesMostChars(seriesMap).map(r => ({
+                incHm
+                    ? "Series with the most distinct characters appearing anywhere in the data (ranked + HM)."
+                    : "Series with the most distinct characters in ranked entries (HM excluded).");
+            renderHorizBar(sec, computeSeriesMostChars(seriesMap, incHm).map(r => ({
                 name: r.name,
                 value: r.count, barValue: r.count,
                 displayValue: `${r.count} character${r.count !== 1 ? "s" : ""}`,
-                hoverFn: ev => showSeriesBarTooltip(ev, r.name, seriesMap, t),
-            })), null);
-        }
-        {
-            const sec = makeSection(container);
-            addSectionHeader(sec, "Series Ranked Presence",
-                "Unique characters from this series that achieved a numeric rank (HM excluded) across the selected years.");
-            renderHorizBar(sec, computeSeriesDominance(seriesMap, seriesYears).map(r => ({
-                name: r.name,
-                value: r.count, barValue: r.count,
-                displayValue: `${r.count} character${r.count !== 1 ? "s" : ""}`,
-                hoverFn: ev => showSeriesBarTooltip(ev, r.name, seriesMap, t, true),
+                hoverFn: ev => showSeriesBarTooltip(ev, r.name, seriesMap, t, !incHm),
             })), null);
         }
     }
@@ -1306,7 +1352,8 @@ function renderOverviewTab(container) {
         const {data, years} = getFilteredDataForType(typeObj);
         const typeYears = typeObj.years || [];
         const hm = buildHistoryMap(data);
-        const rise = computeBiggestRise(hm, years, typeYears)[0];
+        const rc = getRankedCountPerYear(data);
+        const rise = computeBiggestRise(hm, years, typeYears, statsState.includeHm, rc)[0];
         const bestAvg = computeAverageRank(hm, years)[0];
         const mediaBreakdown = computeMediaTypeBreakdown(data, years);
         const topMediaTypes = [...mediaBreakdown]
@@ -1350,8 +1397,9 @@ function renderOverviewTab(container) {
     for (const typeObj of types) {
         const {data, years} = getFilteredDataForType(typeObj);
         const hm = buildHistoryMap(data);
-        computeBiggestRise(hm, years, typeObj.years || []).forEach(r =>
-            allRises.push({...r, _typeLabel: typeObj.label, _typeObj: typeObj}));
+        const rc = getRankedCountPerYear(data);
+        computeBiggestRise(hm, years, typeObj.years || [], statsState.includeHm, rc).forEach(r =>
+            allRises.push({...r, _typeLabel: typeObj.label, _typeObj: typeObj, _rc: rc}));
     }
     allRises.sort((a, b) => b.delta - a.delta);
     const topRises = [];
@@ -1366,7 +1414,7 @@ function renderOverviewTab(container) {
     renderHorizBar(risesSec, topRises.map(r => ({
         name: r.name,
         value: r.delta, barValue: r.delta,
-        displayValue: `${r._typeLabel}: #${r.fromRank}→#${r.toRank} (+${r.delta}) ${r.toYear}`,
+        displayValue: `${r._typeLabel}: ${rankDisplay(r.fromRank)}→${rankDisplay(r.toRank)} (+${r.delta}) ${r.toYear}  [of ${r._rc[r.toYear] ?? "?"}]`,
         typeObj: r._typeObj,
     })), null);
 
@@ -1376,8 +1424,9 @@ function renderOverviewTab(container) {
     for (const typeObj of types) {
         const {data, years} = getFilteredDataForType(typeObj);
         const hm = buildHistoryMap(data);
-        computeBiggestDrop(hm, years, typeObj.years || []).forEach(r =>
-            allDrops.push({...r, _typeLabel: typeObj.label, _typeObj: typeObj}));
+        const rc = getRankedCountPerYear(data);
+        computeBiggestDrop(hm, years, typeObj.years || [], statsState.includeHm, rc).forEach(r =>
+            allDrops.push({...r, _typeLabel: typeObj.label, _typeObj: typeObj, _rc: rc}));
     }
     allDrops.sort((a, b) => b.delta - a.delta);
     const topDrops = [];
@@ -1392,9 +1441,44 @@ function renderOverviewTab(container) {
     renderHorizBar(dropsSec, topDrops.map(r => ({
         name: r.name,
         value: r.delta, barValue: r.delta,
-        displayValue: `${r._typeLabel}: #${r.fromRank}→#${r.toRank} (−${r.delta}) ${r.toYear}`,
+        displayValue: `${r._typeLabel}: ${rankDisplay(r.fromRank)}→${rankDisplay(r.toRank)} (−${r.delta}) ${r.toYear}  [of ${r._rc[r.toYear] ?? "?"}]`,
         typeObj: r._typeObj,
     })), null);
+
+    {
+        const debutsSec = makeSection(container);
+        addSectionHeader(debutsSec, "Highest Debuts",
+            "Best debut rank on first appearance across all types (each list's first year excluded).");
+        const allDebuts = [];
+        for (const typeObj of types) {
+            const {data, years} = getFilteredDataForType(typeObj);
+            const hm = buildHistoryMap(data);
+            const rc = getRankedCountPerYear(data);
+            computeHighestDebut(hm, years, typeObj.years || [], typeObj.data, statsState.includeHm).forEach(r =>
+                allDebuts.push({...r, _typeLabel: typeObj.label, _typeObj: typeObj, _rc: rc}));
+        }
+        allDebuts.sort((a, b) => {
+            const ra = a.debutRank === "HM" ? 102 : Number(a.debutRank);
+            const rb = b.debutRank === "HM" ? 102 : Number(b.debutRank);
+            return ra - rb;
+        });
+        const topDebuts = [];
+        const seenDeb = new Set();
+        for (const r of allDebuts) {
+            const k = `${r._typeObj.id}::${r.name}`;
+            if (!seenDeb.has(k)) {
+                seenDeb.add(k);
+                topDebuts.push(r);
+            }
+        }
+        renderHorizBar(debutsSec, topDebuts.map(r => ({
+            name: r.name,
+            value: r.debutRank === "HM" ? 102 : Number(r.debutRank),
+            barValue: r.debutRank === "HM" ? 1 : 102 - Number(r.debutRank),
+            displayValue: `${r._typeLabel}: ${rankDisplay(r.debutRank)} debut in ${r.debutYear}[of ${r._rc[r.debutYear] ?? "?"}]`,
+            typeObj: r._typeObj,
+        })), null);
+    }
 
 
     const charTypes = types.filter(t => t.data && t.data.some(d => d.series));
@@ -1408,14 +1492,17 @@ function renderOverviewTab(container) {
         for (const typeObj of charTypes) {
             const {data, years} = getFilteredDataForType(typeObj);
             const seriesMap = buildSeriesMap(data);
+            const incHm = statsState.includeHm;
             const domSec = makeSection(container);
             addSectionHeader(domSec, `${typeObj.label} - Most Characters per Series`,
-                `Series with the most distinct characters in ${typeObj.label} (ranked + HM).`);
-            renderHorizBar(domSec, computeSeriesMostChars(seriesMap).map(r => ({
+                incHm
+                    ? `Series with the most distinct characters in ${typeObj.label} (ranked + HM).`
+                    : `Series with the most distinct characters in ${typeObj.label} (ranked entries only).`);
+            renderHorizBar(domSec, computeSeriesMostChars(seriesMap, incHm).map(r => ({
                 name: r.name,
                 value: r.count, barValue: r.count,
                 displayValue: `${r.count} character${r.count !== 1 ? "s" : ""}`,
-                hoverFn: ev => showSeriesBarTooltip(ev, r.name, seriesMap, typeObj),
+                hoverFn: ev => showSeriesBarTooltip(ev, r.name, seriesMap, typeObj, !incHm),
             })), null);
         }
     }
@@ -1480,6 +1567,16 @@ function renderOverviewTab(container) {
 }
 
 
+function initHmToggle() {
+    const cb = document.getElementById("stats-hm-switch");
+    if (!cb) return;
+    cb.checked = statsState.includeHm;
+    cb.addEventListener("change", () => {
+        statsState.includeHm = cb.checked;
+        renderStatsPage();
+    });
+}
+
 function initStats() {
     const navBtn = document.getElementById("stats-nav-btn");
     if (navBtn) navBtn.addEventListener("click", showStatsPage);
@@ -1491,6 +1588,8 @@ function initStats() {
     document.getElementById("theme-toggle").addEventListener("click", () => {
         if (statsState.active) setTimeout(renderStatsPage, 50);
     });
+
+    initHmToggle();
 }
 
 document.addEventListener("DOMContentLoaded", initStats);

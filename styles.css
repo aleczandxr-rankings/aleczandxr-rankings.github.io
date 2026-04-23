@@ -936,6 +936,53 @@ header.masthead {
     font-size: 13px;
 }
 
+.stats-hm-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.stats-hm-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.stats-hm-track {
+    display: inline-block;
+    width: 32px;
+    height: 18px;
+    background: var(--border);
+    border-radius: 9px;
+    position: relative;
+    flex-shrink: 0;
+    transition: background 180ms ease;
+}
+
+.stats-hm-track::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background: var(--ink-faint);
+    border-radius: 50%;
+    transition: transform 180ms ease, background 180ms ease;
+}
+
+.stats-hm-checkbox:checked + .stats-hm-track {
+    background: var(--accent);
+}
+
+.stats-hm-checkbox:checked + .stats-hm-track::after {
+    transform: translateX(14px);
+    background: #fff;
+}
+
 
 .stats-tabs {
     display: flex;
@@ -1101,7 +1148,7 @@ header.masthead {
     font-size: 12px;
     fill: var(--ink-dim);
     dominant-baseline: middle;
-    text-anchor: end;
+    text-anchor: start;
 }
 
 .stats-bar-value {
@@ -1109,6 +1156,7 @@ header.masthead {
     font-size: 10.5px;
     fill: var(--ink-dim);
     dominant-baseline: middle;
+    text-anchor: start;
 }
 
 

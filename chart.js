@@ -263,7 +263,7 @@ const state = {
     manifestTypes: [],
     exactLookup: {},
     splitPeerGroups: {},
-    yearSpacing: 340,
+    yearSpacing: 320,
     selectedYear: null,
     yearColumnCaption: {},
     enabledMediaTypes: new Set(MEDIA_TYPE_ORDER),
@@ -694,6 +694,7 @@ function renderChart() {
         }
     }
 
+    const rankedCountForLabels = getRankedCountPerYear(state.data);
     for (const row of labelRows) {
         const {name, lastPoint, active, hasFilter, color} = row;
         const isLatest = lastPoint.year === latestYear;
@@ -720,11 +721,19 @@ function renderChart() {
                     const currNum = lastPoint.rank === "HM" ? Infinity : lastPoint.rank;
                     const prevNum = prevSlot.rank === "HM" ? Infinity : prevSlot.rank;
                     if (currNum < prevNum) {
-                        const delta = (currNum !== Infinity && prevNum !== Infinity) ? prevNum - currNum : '';
-                        labelEl.append("tspan").attr("fill", "#4ade80").text("  ↑" + delta);
+                        if (prevNum === Infinity) {
+                            const delta = (rankedCountForLabels[latestYear] ?? 100) + 1 - currNum;
+                            labelEl.append("tspan").attr("fill", "#4ade80").text("  ↑" + delta + " From Honourable Mentions");
+                        } else {
+                            labelEl.append("tspan").attr("fill", "#4ade80").text("  ↑" + (prevNum - currNum));
+                        }
                     } else if (currNum > prevNum) {
-                        const delta = (currNum !== Infinity && prevNum !== Infinity) ? currNum - prevNum : '';
-                        labelEl.append("tspan").attr("fill", "#f87171").text("  ↓" + delta);
+                        if (currNum === Infinity) {
+                            const delta = (rankedCountForLabels[latestYear] ?? 100) + 1 - prevNum;
+                            labelEl.append("tspan").attr("fill", "#f87171").text("  ↓" + delta + " To Honourable Mentions");
+                        } else {
+                            labelEl.append("tspan").attr("fill", "#f87171").text("  ↓" + (currNum - prevNum));
+                        }
                     } else {
                         labelEl.append("tspan").text("  ~");
                     }
@@ -987,6 +996,7 @@ function showSeriesLineTooltip(event, name) {
     const i1 = axisYears.indexOf(maxY);
     const spanYears = axisYears.slice(i0, i1 + 1);
 
+    const rankedCount = getRankedCountPerYear(state.data);
     let prevNum = null;
     const progRows = spanYears.map(yr => {
         const slot = slots[yr];
@@ -1005,11 +1015,19 @@ function showSeriesLineTooltip(event, name) {
         if (prevNum === null) {
             arrowHtml = `<span class="t-prog-arrow t-prog-neu">·</span>`;
         } else if (currNum < prevNum) {
-            const delta = (prevNum !== Infinity && currNum !== Infinity) ? prevNum - currNum : '';
-            arrowHtml = `<span class="t-prog-arrow t-prog-up">↑${delta}</span>`;
+            if (prevNum === Infinity) {
+                const d = (rankedCount[yr] ?? 100) + 1 - currNum;
+                arrowHtml = `<span class="t-prog-arrow t-prog-up">↑${d} HM</span>`;
+            } else {
+                arrowHtml = `<span class="t-prog-arrow t-prog-up">↑${prevNum - currNum}</span>`;
+            }
         } else if (currNum > prevNum) {
-            const delta = (prevNum !== Infinity && currNum !== Infinity) ? currNum - prevNum : '';
-            arrowHtml = `<span class="t-prog-arrow t-prog-down">↓${delta}</span>`;
+            if (currNum === Infinity) {
+                const d = (rankedCount[yr] ?? 100) + 1 - prevNum;
+                arrowHtml = `<span class="t-prog-arrow t-prog-down">↓${d} HM</span>`;
+            } else {
+                arrowHtml = `<span class="t-prog-arrow t-prog-down">↓${currNum - prevNum}</span>`;
+            }
         } else {
             arrowHtml = `<span class="t-prog-arrow t-prog-neu">~</span>`;
         }
