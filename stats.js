@@ -1115,8 +1115,34 @@ function renderMediaBreakdownTable(sec, rows) {
 }
 
 
+function getMergeAwareTypeData(typeObj) {
+    const mergeMap = typeObj.merge_map ?? {};
+    const allData = typeObj.data ?? [];
+    if (!Object.keys(mergeMap).length) return allData;
+
+    const byTarget = {};
+    for (const [src, tgt] of Object.entries(mergeMap)) (byTarget[tgt] ??= []).push(src);
+
+    const extras = [];
+    for (const [tgt, srcs] of Object.entries(byTarget)) {
+        const tgtFirstYear = allData.filter(d => d.name === tgt).map(d => d.year).sort()[0];
+        if (!tgtFirstYear) continue;
+        const yearBest = new Map();
+        for (const src of srcs) {
+            for (const e of allData.filter(d => d.name === src && d.year < tgtFirstYear)) {
+                const best = yearBest.get(e.year);
+                if (!best || (e.rank !== "HM" && (best.rank === "HM" || Number(e.rank) < Number(best.rank))))
+                    yearBest.set(e.year, e);
+            }
+        }
+        for (const [, entry] of yearBest) extras.push({...entry, name: tgt});
+    }
+    return [...allData, ...extras];
+}
+
 function renderTypeTab(container, typeObj) {
-    const {data, years} = getFilteredDataForType(typeObj);
+    const mergeAwareData = getMergeAwareTypeData(typeObj);
+    const {data, years} = getFilteredDataForType({...typeObj, data: mergeAwareData});
     const typeYears = typeObj.years || [];
     const hm = buildHistoryMap(data);
 
@@ -1138,7 +1164,7 @@ function renderTypeTab(container, typeObj) {
     renderStatCard(cardsRow, {value: totalRanked, label: "Ever ranked"});
     renderStatCard(cardsRow, {value: data.filter(d => d.rank !== "HM").length, label: "Total ranked entries"});
 
-    const t = typeObj;
+    const t = {...typeObj, data: mergeAwareData};
     const rankedCount = getRankedCountPerYear(data);
     const incHm = statsState.includeHm;
 
@@ -1177,7 +1203,7 @@ function renderTypeTab(container, typeObj) {
         const sec = makeSection(container);
         addSectionHeader(sec, "Highest Debut",
             "Best rank on first appearance (entries from the list's first year are excluded).");
-        renderHorizBar(sec, computeHighestDebut(hm, years, typeYears, typeObj.data, incHm).map(r => ({
+        renderHorizBar(sec, computeHighestDebut(hm, years, typeYears, mergeAwareData, incHm).map(r => ({
             name: r.name,
             value: r.debutRank === "HM" ? 102 : Number(r.debutRank),
             barValue: r.debutRank === "HM" ? 1 : 102 - Number(r.debutRank),
@@ -1281,7 +1307,7 @@ function renderTypeTab(container, typeObj) {
         const sec = makeSection(container);
         addSectionHeader(sec, "New Entries Per Year",
             "Number of items appearing in the rankings for the first time each year.");
-        renderVertBar(sec, computeNewEntriesPerYear(data, years, typeObj.data));
+        renderVertBar(sec, computeNewEntriesPerYear(data, years, mergeAwareData));
     }
 
     {
@@ -1322,7 +1348,7 @@ function renderTypeTab(container, typeObj) {
 
 
 function renderOverviewTab(container) {
-    const types = state.manifestTypes || [];
+    const types = (state.manifestTypes || []).map(t => ({...t, data: getMergeAwareTypeData(t)}));
 
 
     const allItems = new Set();

@@ -146,6 +146,7 @@
           "999.0": "Honorable Mentions"
         }
       },
+      "merge_map": {},
       "data": [
         {
           "name": "*Zaraki Kenpachi (Bleach)",
@@ -5124,6 +5125,14 @@
           "series": "Jujutsu Kaisen"
         },
         {
+          "name": "Majora (The Legend of Zelda: Majora’s Mask)",
+          "year": "2022",
+          "tier": 7.0,
+          "rank": 79,
+          "exact": "Majora (The Legend of Zelda: Majora’s Mask)",
+          "series": "The Legend of Zelda: Majora’s Mask"
+        },
+        {
           "name": "Makima (Chainsaw Man)",
           "year": "2022",
           "tier": 6.0,
@@ -7709,14 +7718,6 @@
         },
         {
           "name": "Skull Kid/Majora (The Legend of Zelda: Majora’s Mask)",
-          "year": "2022",
-          "tier": 7.0,
-          "rank": 79,
-          "exact": "Majora (The Legend of Zelda: Majora’s Mask)",
-          "series": "The Legend of Zelda: Majora’s Mask"
-        },
-        {
-          "name": "Skull Kid/Majora (The Legend of Zelda: Majora’s Mask)",
           "year": "2023",
           "tier": 6.0,
           "rank": 72,
@@ -9955,6 +9956,7 @@
           "999.0": "Honorable Mentions"
         }
       },
+      "merge_map": {},
       "data": [
         {
           "name": "13th Chairman Election (Hunter x Hunter)",
@@ -10499,7 +10501,7 @@
         },
         {
           "tier": 9.0,
-          "label": "Love’s a Strong Word",
+          "label": "Just Missed Out",
           "color": "#0000ff"
         },
         {
@@ -10512,19 +10514,22 @@
         "2022",
         "2023",
         "2024",
-        "2025"
+        "2025",
+        "2026"
       ],
       "as_of_by_year": {
         "2022": "(As of April 3rd, 2022)",
         "2023": "(As of March 29th, 2023)",
         "2024": "(As of April 22nd, 2024)",
-        "2025": "(As of May 6th, 2025)"
+        "2025": "(As of May 6th, 2025)",
+        "2026": "(As of April 27th, 2026)"
       },
       "year_column_caption": {
         "2022": "As of April 3rd",
         "2023": "As of March 29th",
         "2024": "As of April 22nd",
-        "2025": "As of May 6th"
+        "2025": "As of May 6th",
+        "2026": "As of April 27th"
       },
       "tier_labels_by_year": {
         "2022": {
@@ -10574,9 +10579,34 @@
           "7.0": "You Know My Weakness",
           "8.0": "Love’s an Appropriate Word",
           "999.0": "Honorable Mentions"
+        },
+        "2026": {
+          "1.0": "My Heart and Soul",
+          "1.5": "Moves Heavens And Earth",
+          "2.0": "You Were Made For Me",
+          "3.0": "I Cannot Believe These Exist",
+          "4.0": "You Complete Me",
+          "5.0": "I’m Head Over Heels",
+          "6.0": "You Understand Me",
+          "7.0": "You Know My Weakness",
+          "8.0": "Love’s an Appropriate Word",
+          "9.0": "Just Missed Out",
+          "999.0": "Honorable Mentions"
         }
       },
+      "merge_map": {
+        "Metal Gear Solid 3: Snake Eater": "Metal Gear Solid Series",
+        "Metal Gear Solid 2: Sons of Liberty": "Metal Gear Solid Series",
+        "Metal Gear Solid": "Metal Gear Solid Series"
+      },
       "data": [
+        {
+          "name": "100 Meters",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "100 Meters"
+        },
         {
           "name": "13 Sentinels: Aegis Rim",
           "year": "2022",
@@ -10606,32 +10636,46 @@
           "exact": "13 Sentinels: Aegis Rim"
         },
         {
-          "name": "A Song of Ice and Fire (Books)",
+          "name": "13 Sentinels: Aegis Rim",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 31,
+          "exact": "13 Sentinels: Aegis Rim"
+        },
+        {
+          "name": "A Song of Ice and Fire Universe",
           "year": "2022",
           "tier": 1.0,
           "rank": 4,
           "exact": "A Song of Ice and Fire (Books)"
         },
         {
-          "name": "A Song of Ice and Fire (Books)",
+          "name": "A Song of Ice and Fire Universe",
           "year": "2023",
           "tier": 1.0,
           "rank": 6,
           "exact": "A Song of Ice and Fire (Books)"
         },
         {
-          "name": "A Song of Ice and Fire (Books)",
+          "name": "A Song of Ice and Fire Universe",
           "year": "2024",
           "tier": 1.0,
           "rank": 8,
           "exact": "A Song of Ice and Fire (Books)"
         },
         {
-          "name": "A Song of Ice and Fire (Books)",
+          "name": "A Song of Ice and Fire Universe",
           "year": "2025",
           "tier": 1.0,
           "rank": 9,
           "exact": "A Song of Ice and Fire (Books)"
+        },
+        {
+          "name": "A Song of Ice and Fire Universe",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 8,
+          "exact": "A Song of Ice and Fire Universe"
         },
         {
           "name": "Akane-banashi",
@@ -10646,6 +10690,20 @@
           "tier": 7.0,
           "rank": 85,
           "exact": "Akane-banashi"
+        },
+        {
+          "name": "Akane-banashi",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 80,
+          "exact": "Akane-banashi"
+        },
+        {
+          "name": "Andor + Rogue One",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 53,
+          "exact": "Andor + Rogue One"
         },
         {
           "name": "Animal Crossing (Gamecube)",
@@ -10671,6 +10729,13 @@
         {
           "name": "Animal Crossing (Gamecube)",
           "year": "2025",
+          "tier": 1.5,
+          "rank": 19,
+          "exact": "Animal Crossing (Gamecube)"
+        },
+        {
+          "name": "Animal Crossing (Gamecube)",
+          "year": "2026",
           "tier": 1.5,
           "rank": 19,
           "exact": "Animal Crossing (Gamecube)"
@@ -10704,6 +10769,13 @@
           "exact": "Arcane"
         },
         {
+          "name": "Arcane",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 51,
+          "exact": "Arcane"
+        },
+        {
           "name": "Attack on Titan",
           "year": "2022",
           "tier": 1.0,
@@ -10732,6 +10804,13 @@
           "exact": "Attack on Titan"
         },
         {
+          "name": "Attack on Titan",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 5,
+          "exact": "Attack on Titan"
+        },
+        {
           "name": "Baccano!",
           "year": "2024",
           "tier": 999.0,
@@ -10741,6 +10820,13 @@
         {
           "name": "Baccano!",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Baccano!"
+        },
+        {
+          "name": "Baccano!",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Baccano!"
@@ -10760,32 +10846,46 @@
           "exact": "Baldur’s Gate 3"
         },
         {
-          "name": "Beastars (Primarily the anime)",
+          "name": "Baldur’s Gate 3",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Baldur’s Gate 3"
+        },
+        {
+          "name": "Beastars",
           "year": "2022",
           "tier": 4.0,
           "rank": 42,
           "exact": "Beastars (Primarily the anime)"
         },
         {
-          "name": "Beastars (Primarily the anime)",
+          "name": "Beastars",
           "year": "2023",
           "tier": 4.0,
           "rank": 46,
           "exact": "Beastars (Primarily the anime)"
         },
         {
-          "name": "Beastars (Primarily the anime)",
+          "name": "Beastars",
           "year": "2024",
           "tier": 4.0,
           "rank": 51,
           "exact": "Beastars (Primarily the anime)"
         },
         {
-          "name": "Beastars (Primarily the anime)",
+          "name": "Beastars",
           "year": "2025",
           "tier": 4.0,
           "rank": 52,
           "exact": "Beastars (Primarily the anime)"
+        },
+        {
+          "name": "Beastars",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 94,
+          "exact": "Beastars"
         },
         {
           "name": "Berserk",
@@ -10816,32 +10916,46 @@
           "exact": "Berserk"
         },
         {
-          "name": "Bioshock",
+          "name": "Berserk",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 9,
+          "exact": "Berserk"
+        },
+        {
+          "name": "Bioshock Series",
           "year": "2022",
           "tier": 6.0,
           "rank": 55,
           "exact": "Bioshock"
         },
         {
-          "name": "Bioshock",
+          "name": "Bioshock Series",
           "year": "2023",
           "tier": 5.0,
           "rank": 54,
           "exact": "Bioshock"
         },
         {
-          "name": "Bioshock",
+          "name": "Bioshock Series",
           "year": "2024",
           "tier": 5.0,
           "rank": 64,
           "exact": "Bioshock"
         },
         {
-          "name": "Bioshock",
+          "name": "Bioshock Series",
           "year": "2025",
           "tier": 4.0,
           "rank": 60,
           "exact": "Bioshock"
+        },
+        {
+          "name": "Bioshock Series",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 59,
+          "exact": "Bioshock Series"
         },
         {
           "name": "Black Sails",
@@ -10869,6 +10983,13 @@
           "year": "2025",
           "tier": 2.0,
           "rank": 28,
+          "exact": "Black Sails"
+        },
+        {
+          "name": "Black Sails",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 30,
           "exact": "Black Sails"
         },
         {
@@ -10883,6 +11004,13 @@
           "year": "2025",
           "tier": 2.0,
           "rank": 25,
+          "exact": "Bleach"
+        },
+        {
+          "name": "Bleach",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 20,
           "exact": "Bleach"
         },
         {
@@ -10914,8 +11042,22 @@
           "exact": "Bloodborne"
         },
         {
+          "name": "Bloodborne",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 22,
+          "exact": "Bloodborne"
+        },
+        {
           "name": "Blue Lock",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Blue Lock"
+        },
+        {
+          "name": "Blue Lock",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Blue Lock"
@@ -10949,6 +11091,13 @@
           "exact": "Blue Period (Manga)"
         },
         {
+          "name": "Blue Period (Manga)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 54,
+          "exact": "Blue Period (Manga)"
+        },
+        {
           "name": "Breaking Bad + Better Call Saul",
           "year": "2022",
           "tier": 1.0,
@@ -10977,18 +11126,39 @@
           "exact": "Breaking Bad + Better Call Saul"
         },
         {
-          "name": "Chainsaw Man",
+          "name": "Breaking Bad + Better Call Saul",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 48,
+          "exact": "Breaking Bad + Better Call Saul"
+        },
+        {
+          "name": "Celeste",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Celeste"
+        },
+        {
+          "name": "Chainsaw Man (Part 1)",
           "year": "2023",
           "tier": 9.0,
           "rank": 98,
           "exact": "Chainsaw Man"
         },
         {
-          "name": "Chainsaw Man",
+          "name": "Chainsaw Man (Part 1)",
           "year": "2024",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Chainsaw Man"
+        },
+        {
+          "name": "Chainsaw Man (Part 1)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 100,
+          "exact": "Chainsaw Man (Part 1)"
         },
         {
           "name": "Chihayafuru",
@@ -11010,6 +11180,13 @@
           "tier": 999.0,
           "rank": "HM",
           "exact": "Chihayafuru"
+        },
+        {
+          "name": "Chrono Cross",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 110,
+          "exact": "Chrono Cross"
         },
         {
           "name": "Chrono Trigger",
@@ -11040,6 +11217,20 @@
           "exact": "Chrono Trigger"
         },
         {
+          "name": "Chrono Trigger",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 21,
+          "exact": "Chrono Trigger"
+        },
+        {
+          "name": "Clair Obscur: Expedition 33",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 28,
+          "exact": "Clair Obscur: Expedition 33"
+        },
+        {
           "name": "Community",
           "year": "2022",
           "tier": 9.0,
@@ -11068,6 +11259,13 @@
           "exact": "Community"
         },
         {
+          "name": "Community",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Community"
+        },
+        {
           "name": "Cyberpunk Universe (2077 + Phantom Liberty + Edgerunners)",
           "year": "2023",
           "tier": 9.0,
@@ -11089,6 +11287,13 @@
           "exact": "Cyberpunk Universe (2077 + Phantom Liberty + Edgerunners)"
         },
         {
+          "name": "Cyberpunk Universe (2077 + Phantom Liberty + Edgerunners)",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 11,
+          "exact": "Cyberpunk Universe (2077 + Phantom Liberty + Edgerunners)"
+        },
+        {
           "name": "Danganronpa V3",
           "year": "2024",
           "tier": 999.0,
@@ -11100,6 +11305,13 @@
           "year": "2025",
           "tier": 8.0,
           "rank": 104,
+          "exact": "Danganronpa V3"
+        },
+        {
+          "name": "Danganronpa V3",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 111,
           "exact": "Danganronpa V3"
         },
         {
@@ -11131,6 +11343,13 @@
           "exact": "Dark Souls"
         },
         {
+          "name": "Dark Souls",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Dark Souls"
+        },
+        {
           "name": "Dark Souls III",
           "year": "2022",
           "tier": 999.0,
@@ -11154,6 +11373,13 @@
         {
           "name": "Dark Souls III",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Dark Souls III"
+        },
+        {
+          "name": "Dark Souls III",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Dark Souls III"
@@ -11187,11 +11413,67 @@
           "exact": "Death Note"
         },
         {
-          "name": "Digimon (S1-S3)",
+          "name": "Death Note",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 78,
+          "exact": "Death Note"
+        },
+        {
+          "name": "Death Stranding",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Death Stranding"
+        },
+        {
+          "name": "Deltarune (Chapters 1-4)",
+          "year": "2022",
+          "tier": 5.0,
+          "rank": 52,
+          "exact": "Undertale & Deltarune"
+        },
+        {
+          "name": "Deltarune (Chapters 1-4)",
+          "year": "2023",
+          "tier": 5.0,
+          "rank": 52,
+          "exact": "Undertale & Deltarune"
+        },
+        {
+          "name": "Deltarune (Chapters 1-4)",
+          "year": "2024",
+          "tier": 4.0,
+          "rank": 52,
+          "exact": "Undertale & Deltarune"
+        },
+        {
+          "name": "Deltarune (Chapters 1-4)",
+          "year": "2025",
+          "tier": 4.0,
+          "rank": 51,
+          "exact": "Undertale & Deltarune (Chapters 1 and 2)"
+        },
+        {
+          "name": "Deltarune (Chapters 1-4)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 42,
+          "exact": "Deltarune (Chapters 1-4)"
+        },
+        {
+          "name": "Digimon (Seasons 1-3)",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Digimon (S1-S3)"
+        },
+        {
+          "name": "Digimon (Seasons 1-3)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 103,
+          "exact": "Digimon (Seasons 1-3)"
         },
         {
           "name": "Disco Elysium",
@@ -11205,6 +11487,13 @@
           "year": "2025",
           "tier": 6.0,
           "rank": 79,
+          "exact": "Disco Elysium"
+        },
+        {
+          "name": "Disco Elysium",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 67,
           "exact": "Disco Elysium"
         },
         {
@@ -11236,6 +11525,20 @@
           "exact": "Dragon Age Origins"
         },
         {
+          "name": "Dragon Age Origins",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 97,
+          "exact": "Dragon Age Origins"
+        },
+        {
+          "name": "Dragon Ball",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Dragon Ball"
+        },
+        {
           "name": "Dragon Quest XI",
           "year": "2024",
           "tier": 999.0,
@@ -11245,6 +11548,13 @@
         {
           "name": "Dragon Quest XI",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Dragon Quest XI"
+        },
+        {
+          "name": "Dragon Quest XI",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Dragon Quest XI"
@@ -11278,6 +11588,13 @@
           "exact": "Durarara!!"
         },
         {
+          "name": "Durarara!!",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 71,
+          "exact": "Durarara!!"
+        },
+        {
           "name": "Elden Ring",
           "year": "2022",
           "tier": 3.0,
@@ -11304,6 +11621,20 @@
           "tier": 3.0,
           "rank": 46,
           "exact": "Elden Ring"
+        },
+        {
+          "name": "Elden Ring",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 58,
+          "exact": "Elden Ring"
+        },
+        {
+          "name": "Eternal Sunshine of the Spotless Mind",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Eternal Sunshine of the Spotless Mind"
         },
         {
           "name": "Fate/Stay Night + Fate/Hollow Ataraxia",
@@ -11334,6 +11665,13 @@
           "exact": "Fate/Stay Night + Fate/Hollow Ataraxia"
         },
         {
+          "name": "Fate/Stay Night + Fate/Hollow Ataraxia",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 79,
+          "exact": "Fate/Stay Night + Fate/Hollow Ataraxia"
+        },
+        {
           "name": "Fate/Zero",
           "year": "2022",
           "tier": 1.0,
@@ -11357,6 +11695,13 @@
         {
           "name": "Fate/Zero",
           "year": "2025",
+          "tier": 1.0,
+          "rank": 10,
+          "exact": "Fate/Zero"
+        },
+        {
+          "name": "Fate/Zero",
+          "year": "2026",
           "tier": 1.0,
           "rank": 10,
           "exact": "Fate/Zero"
@@ -11390,6 +11735,13 @@
           "exact": "Fight Club"
         },
         {
+          "name": "Fight Club",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Fight Club"
+        },
+        {
           "name": "Final Fantasy IX",
           "year": "2022",
           "tier": 2.0,
@@ -11418,25 +11770,39 @@
           "exact": "Final Fantasy IX"
         },
         {
-          "name": "Final Fantasy Tactics: War of the Lions",
+          "name": "Final Fantasy IX",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 15,
+          "exact": "Final Fantasy IX"
+        },
+        {
+          "name": "Final Fantasy Tactics: The Ivalice Chronicles",
           "year": "2023",
           "tier": 9.0,
           "rank": 95,
           "exact": "Final Fantasy Tactics: War of the Lions"
         },
         {
-          "name": "Final Fantasy Tactics: War of the Lions",
+          "name": "Final Fantasy Tactics: The Ivalice Chronicles",
           "year": "2024",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Final Fantasy Tactics: War of the Lions"
         },
         {
-          "name": "Final Fantasy Tactics: War of the Lions",
+          "name": "Final Fantasy Tactics: The Ivalice Chronicles",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Final Fantasy Tactics: War of the Lions"
+        },
+        {
+          "name": "Final Fantasy Tactics: The Ivalice Chronicles",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 107,
+          "exact": "Final Fantasy Tactics: The Ivalice Chronicles"
         },
         {
           "name": "Final Fantasy VI",
@@ -11464,6 +11830,13 @@
           "year": "2025",
           "tier": 5.0,
           "rank": 63,
+          "exact": "Final Fantasy VI"
+        },
+        {
+          "name": "Final Fantasy VI",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 68,
           "exact": "Final Fantasy VI"
         },
         {
@@ -11495,6 +11868,13 @@
           "exact": "Final Fantasy VII (Original)"
         },
         {
+          "name": "Final Fantasy VII (Original)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 82,
+          "exact": "Final Fantasy VII (Original)"
+        },
+        {
           "name": "Final Fantasy VII Remake + Rebirth",
           "year": "2022",
           "tier": 3.0,
@@ -11520,6 +11900,13 @@
           "year": "2025",
           "tier": 1.5,
           "rank": 11,
+          "exact": "Final Fantasy VII Remake + Rebirth"
+        },
+        {
+          "name": "Final Fantasy VII Remake + Rebirth",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 12,
           "exact": "Final Fantasy VII Remake + Rebirth"
         },
         {
@@ -11551,6 +11938,13 @@
           "exact": "Final Fantasy VIII"
         },
         {
+          "name": "Final Fantasy VIII",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 105,
+          "exact": "Final Fantasy VIII"
+        },
+        {
           "name": "Final Fantasy X",
           "year": "2022",
           "tier": 6.0,
@@ -11579,6 +11973,13 @@
           "exact": "Final Fantasy X"
         },
         {
+          "name": "Final Fantasy X",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 34,
+          "exact": "Final Fantasy X"
+        },
+        {
           "name": "Final Fantasy XII",
           "year": "2024",
           "tier": 999.0,
@@ -11593,25 +11994,39 @@
           "exact": "Final Fantasy XII"
         },
         {
-          "name": "Final Fantasy XIV (Up until the end of Endwalker 6.55)",
+          "name": "Final Fantasy XII",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Final Fantasy XII"
+        },
+        {
+          "name": "Final Fantasy XIV (Up until the end of Endwalker 6.0)",
           "year": "2023",
           "tier": 2.0,
           "rank": 18,
           "exact": "Final Fantasy XIV (Up until the end of Shadowbringers 5.3)"
         },
         {
-          "name": "Final Fantasy XIV (Up until the end of Endwalker 6.55)",
+          "name": "Final Fantasy XIV (Up until the end of Endwalker 6.0)",
           "year": "2024",
           "tier": 1.0,
           "rank": 2,
           "exact": "Final Fantasy XIV (Up until the end of Endwalker 6.55)"
         },
         {
-          "name": "Final Fantasy XIV (Up until the end of Endwalker 6.55)",
+          "name": "Final Fantasy XIV (Up until the end of Endwalker 6.0)",
           "year": "2025",
           "tier": 1.0,
           "rank": 3,
           "exact": "Final Fantasy XIV (Up until the end of Endwalker 6.55)"
+        },
+        {
+          "name": "Final Fantasy XIV (Up until the end of Endwalker 6.0)",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 3,
+          "exact": "Final Fantasy XIV (Up until the end of Endwalker 6.0)"
         },
         {
           "name": "Fire Emblem Awakening",
@@ -11637,6 +12052,13 @@
         {
           "name": "Fire Emblem Awakening",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Fire Emblem Awakening"
+        },
+        {
+          "name": "Fire Emblem Awakening",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Fire Emblem Awakening"
@@ -11667,6 +12089,13 @@
           "year": "2025",
           "tier": 8.0,
           "rank": 99,
+          "exact": "Fire Emblem: Three Houses"
+        },
+        {
+          "name": "Fire Emblem: Three Houses",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 98,
           "exact": "Fire Emblem: Three Houses"
         },
         {
@@ -11705,6 +12134,13 @@
           "exact": "Fullmetal Alchemist: Brotherhood"
         },
         {
+          "name": "Fullmetal Alchemist: Brotherhood",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 90,
+          "exact": "Fullmetal Alchemist: Brotherhood"
+        },
+        {
           "name": "Ghost Trick: Phantom Detective",
           "year": "2024",
           "tier": 999.0,
@@ -11714,6 +12150,13 @@
         {
           "name": "Ghost Trick: Phantom Detective",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Ghost Trick: Phantom Detective"
+        },
+        {
+          "name": "Ghost Trick: Phantom Detective",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Ghost Trick: Phantom Detective"
@@ -11747,8 +12190,22 @@
           "exact": "Gintama"
         },
         {
+          "name": "Gintama",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 89,
+          "exact": "Gintama"
+        },
+        {
           "name": "God of War Ragnarok: Valhalla",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "God of War Ragnarok: Valhalla"
+        },
+        {
+          "name": "God of War Ragnarok: Valhalla",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "God of War Ragnarok: Valhalla"
@@ -11777,6 +12234,13 @@
         {
           "name": "Haikyuu!!",
           "year": "2025",
+          "tier": 1.0,
+          "rank": 2,
+          "exact": "Haikyuu!!"
+        },
+        {
+          "name": "Haikyuu!!",
+          "year": "2026",
           "tier": 1.0,
           "rank": 2,
           "exact": "Haikyuu!!"
@@ -11817,8 +12281,22 @@
           "exact": "Harry Potter and the Prisoner of Azkaban (Film)"
         },
         {
+          "name": "Harry Potter and the Prisoner of Azkaban (Film)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 44,
+          "exact": "Harry Potter and the Prisoner of Azkaban (Film)"
+        },
+        {
           "name": "Hibike Euphonium",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Hibike Euphonium"
+        },
+        {
+          "name": "Hibike Euphonium",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Hibike Euphonium"
@@ -11852,6 +12330,13 @@
           "exact": "Houseki no Kuni"
         },
         {
+          "name": "Houseki no Kuni",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 56,
+          "exact": "Houseki no Kuni"
+        },
+        {
           "name": "Hunter x Hunter",
           "year": "2022",
           "tier": 1.0,
@@ -11875,6 +12360,13 @@
         {
           "name": "Hunter x Hunter",
           "year": "2025",
+          "tier": 1.0,
+          "rank": 1,
+          "exact": "Hunter x Hunter"
+        },
+        {
+          "name": "Hunter x Hunter",
+          "year": "2026",
           "tier": 1.0,
           "rank": 1,
           "exact": "Hunter x Hunter"
@@ -11908,6 +12400,20 @@
           "exact": "Hyouka"
         },
         {
+          "name": "Hyouka",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 96,
+          "exact": "Hyouka"
+        },
+        {
+          "name": "Ikoku Nikki",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Ikoku Nikki"
+        },
+        {
           "name": "Inception",
           "year": "2022",
           "tier": 7.0,
@@ -11936,6 +12442,20 @@
           "exact": "Inception"
         },
         {
+          "name": "Inception",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Inception"
+        },
+        {
+          "name": "JoJo’s Bizarre Adventure Part 7: Steel Ball Run",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 75,
+          "exact": "JoJo’s Bizarre Adventure Part 7: Steel Ball Run"
+        },
+        {
           "name": "Judgment Series (Judgment + Lost Judgment)",
           "year": "2025",
           "tier": 999.0,
@@ -11943,53 +12463,81 @@
           "exact": "Judgment Series (Judgment + Lost Judgment)"
         },
         {
-          "name": "Jujutsu Kaisen",
+          "name": "Judgment Series (Judgment + Lost Judgment)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Judgment Series (Judgment + Lost Judgment)"
+        },
+        {
+          "name": "Jujutsu Kaisen + Modulo",
           "year": "2023",
           "tier": 7.0,
           "rank": 77,
           "exact": "Jujutsu Kaisen"
         },
         {
-          "name": "Jujutsu Kaisen",
+          "name": "Jujutsu Kaisen + Modulo",
           "year": "2024",
           "tier": 6.0,
           "rank": 70,
           "exact": "Jujutsu Kaisen"
         },
         {
-          "name": "Jujutsu Kaisen",
+          "name": "Jujutsu Kaisen + Modulo",
           "year": "2025",
           "tier": 6.0,
           "rank": 74,
           "exact": "Jujutsu Kaisen"
         },
         {
-          "name": "Kaguya-Sama: Love is War",
+          "name": "Jujutsu Kaisen + Modulo",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 66,
+          "exact": "Jujutsu Kaisen + Modulo"
+        },
+        {
+          "name": "Kagurabachi (As of Chapter 118)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 93,
+          "exact": "Kagurabachi (As of Chapter 118)"
+        },
+        {
+          "name": "Kaguya-sama: Love is War (Anime)",
           "year": "2022",
           "tier": 5.0,
           "rank": 49,
           "exact": "Kaguya-Sama: Love is War"
         },
         {
-          "name": "Kaguya-Sama: Love is War",
+          "name": "Kaguya-sama: Love is War (Anime)",
           "year": "2023",
           "tier": 5.0,
           "rank": 49,
           "exact": "Kaguya-Sama: Love is War"
         },
         {
-          "name": "Kaguya-Sama: Love is War",
+          "name": "Kaguya-sama: Love is War (Anime)",
           "year": "2024",
           "tier": 5.0,
           "rank": 65,
           "exact": "Kaguya-Sama: Love is War"
         },
         {
-          "name": "Kaguya-Sama: Love is War",
+          "name": "Kaguya-sama: Love is War (Anime)",
           "year": "2025",
           "tier": 5.0,
           "rank": 67,
           "exact": "Kaguya-Sama: Love is War"
+        },
+        {
+          "name": "Kaguya-sama: Love is War (Anime)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 99,
+          "exact": "Kaguya-sama: Love is War (Anime)"
         },
         {
           "name": "Kare Kano (Anime)",
@@ -12020,6 +12568,13 @@
           "exact": "Kare Kano (Anime)"
         },
         {
+          "name": "Kare Kano (Anime)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 106,
+          "exact": "Kare Kano (Anime)"
+        },
+        {
           "name": "Kekkai Sensen",
           "year": "2022",
           "tier": 999.0,
@@ -12043,6 +12598,13 @@
         {
           "name": "Kekkai Sensen",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Kekkai Sensen"
+        },
+        {
+          "name": "Kekkai Sensen",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Kekkai Sensen"
@@ -12076,6 +12638,13 @@
           "exact": "Kuroko no Basket"
         },
         {
+          "name": "Kuroko no Basket",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Kuroko no Basket"
+        },
+        {
           "name": "Kyousougiga",
           "year": "2022",
           "tier": 5.0,
@@ -12104,18 +12673,39 @@
           "exact": "Kyousougiga"
         },
         {
-          "name": "Lies of P",
+          "name": "Kyousougiga",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 69,
+          "exact": "Kyousougiga"
+        },
+        {
+          "name": "Lies of P + Overture",
           "year": "2024",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Lies of P"
         },
         {
-          "name": "Lies of P",
+          "name": "Lies of P + Overture",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Lies of P"
+        },
+        {
+          "name": "Lies of P + Overture",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 84,
+          "exact": "Lies of P + Overture"
+        },
+        {
+          "name": "Macbeth",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Macbeth"
         },
         {
           "name": "Mad Men",
@@ -12144,6 +12734,20 @@
           "tier": 1.0,
           "rank": 5,
           "exact": "Mad Men"
+        },
+        {
+          "name": "Mad Men",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 6,
+          "exact": "Mad Men"
+        },
+        {
+          "name": "Marty Supreme",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Marty Supreme"
         },
         {
           "name": "Mawaru Penguindrum",
@@ -12171,6 +12775,13 @@
           "year": "2025",
           "tier": 7.0,
           "rank": 89,
+          "exact": "Mawaru Penguindrum"
+        },
+        {
+          "name": "Mawaru Penguindrum",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 95,
           "exact": "Mawaru Penguindrum"
         },
         {
@@ -12202,6 +12813,13 @@
           "exact": "Megalo Box + Nomad"
         },
         {
+          "name": "Megalo Box + Nomad",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 87,
+          "exact": "Megalo Box + Nomad"
+        },
+        {
           "name": "Memento",
           "year": "2022",
           "tier": 999.0,
@@ -12225,6 +12843,13 @@
         {
           "name": "Memento",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Memento"
+        },
+        {
+          "name": "Memento",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Memento"
@@ -12265,6 +12890,20 @@
           "exact": "Metal Gear Solid 3: Snake Eater"
         },
         {
+          "name": "Metal Gear Solid Series",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 45,
+          "exact": "Metal Gear Solid Series"
+        },
+        {
+          "name": "Metaphor: ReFantazio",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 104,
+          "exact": "Metaphor: ReFantazio"
+        },
+        {
           "name": "Mindhunter",
           "year": "2022",
           "tier": 6.0,
@@ -12290,6 +12929,13 @@
           "year": "2025",
           "tier": 7.0,
           "rank": 86,
+          "exact": "Mindhunter"
+        },
+        {
+          "name": "Mindhunter",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
           "exact": "Mindhunter"
         },
         {
@@ -12321,6 +12967,13 @@
           "exact": "Monogatari Series"
         },
         {
+          "name": "Monogatari Series",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 52,
+          "exact": "Monogatari Series"
+        },
+        {
           "name": "Monster",
           "year": "2022",
           "tier": 3.0,
@@ -12349,6 +13002,13 @@
           "exact": "Monster"
         },
         {
+          "name": "Monster",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 49,
+          "exact": "Monster"
+        },
+        {
           "name": "Mother 3",
           "year": "2022",
           "tier": 999.0,
@@ -12372,6 +13032,13 @@
         {
           "name": "Mother 3",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Mother 3"
+        },
+        {
+          "name": "Mother 3",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Mother 3"
@@ -12384,32 +13051,46 @@
           "exact": "Mouthwashing"
         },
         {
-          "name": "Nana",
+          "name": "Mouthwashing",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Mouthwashing"
+        },
+        {
+          "name": "Nana (anime and manga)",
           "year": "2022",
           "tier": 8.0,
           "rank": 85,
           "exact": "Nana"
         },
         {
-          "name": "Nana",
+          "name": "Nana (anime and manga)",
           "year": "2023",
           "tier": 7.0,
           "rank": 79,
           "exact": "Nana (Anime)"
         },
         {
-          "name": "Nana",
+          "name": "Nana (anime and manga)",
           "year": "2024",
           "tier": 7.0,
           "rank": 84,
           "exact": "Nana (Anime)"
         },
         {
-          "name": "Nana",
+          "name": "Nana (anime and manga)",
           "year": "2025",
           "tier": 7.0,
           "rank": 84,
           "exact": "Nana"
+        },
+        {
+          "name": "Nana (anime and manga)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 81,
+          "exact": "Nana (anime and manga)"
         },
         {
           "name": "Naruto",
@@ -12423,6 +13104,13 @@
           "year": "2025",
           "tier": 2.0,
           "rank": 22,
+          "exact": "Naruto"
+        },
+        {
+          "name": "Naruto",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 25,
           "exact": "Naruto"
         },
         {
@@ -12454,6 +13142,13 @@
           "exact": "Neon Genesis Evangelion"
         },
         {
+          "name": "Neon Genesis Evangelion",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 24,
+          "exact": "Neon Genesis Evangelion"
+        },
+        {
           "name": "NieR:Replicant + NieR:Automata",
           "year": "2022",
           "tier": 2.0,
@@ -12477,6 +13172,13 @@
         {
           "name": "NieR:Replicant + NieR:Automata",
           "year": "2025",
+          "tier": 2.0,
+          "rank": 23,
+          "exact": "NieR:Replicant + NieR:Automata"
+        },
+        {
+          "name": "NieR:Replicant + NieR:Automata",
+          "year": "2026",
           "tier": 2.0,
           "rank": 23,
           "exact": "NieR:Replicant + NieR:Automata"
@@ -12517,25 +13219,46 @@
           "exact": "Omori"
         },
         {
-          "name": "One Piece",
+          "name": "Omori",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 40,
+          "exact": "Omori"
+        },
+        {
+          "name": "One Battle After Another",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 114,
+          "exact": "One Battle After Another"
+        },
+        {
+          "name": "One Piece (As of Chapter 1181)",
           "year": "2023",
           "tier": 8.0,
           "rank": 88,
           "exact": "One Piece (Up until the end of Impel Down)"
         },
         {
-          "name": "One Piece",
+          "name": "One Piece (As of Chapter 1181)",
           "year": "2024",
           "tier": 3.0,
           "rank": 42,
           "exact": "One Piece (Post-Wano, Pre-Egghead)"
         },
         {
-          "name": "One Piece",
+          "name": "One Piece (As of Chapter 1181)",
           "year": "2025",
           "tier": 3.0,
           "rank": 39,
           "exact": "One Piece (As of Chapter 1147)"
+        },
+        {
+          "name": "One Piece (As of Chapter 1181)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 38,
+          "exact": "One Piece (As of Chapter 1181)"
         },
         {
           "name": "Oppenheimer",
@@ -12552,10 +13275,24 @@
           "exact": "Oppenheimer"
         },
         {
+          "name": "Oppenheimer",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 73,
+          "exact": "Oppenheimer"
+        },
+        {
           "name": "Orb: On The Movements of the Earth",
           "year": "2025",
           "tier": 8.0,
           "rank": 100,
+          "exact": "Orb: On The Movements of the Earth"
+        },
+        {
+          "name": "Orb: On The Movements of the Earth",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 115,
           "exact": "Orb: On The Movements of the Earth"
         },
         {
@@ -12587,6 +13324,13 @@
           "exact": "Ouran High School Host Club"
         },
         {
+          "name": "Ouran High School Host Club",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Ouran High School Host Club"
+        },
+        {
           "name": "Oyasumi PunPun",
           "year": "2022",
           "tier": 8.0,
@@ -12610,6 +13354,13 @@
         {
           "name": "Oyasumi PunPun",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Oyasumi PunPun"
+        },
+        {
+          "name": "Oyasumi PunPun",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Oyasumi PunPun"
@@ -12643,6 +13394,13 @@
           "exact": "P.T."
         },
         {
+          "name": "P.T.",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 77,
+          "exact": "P.T."
+        },
+        {
           "name": "Paper Mario",
           "year": "2022",
           "tier": 3.0,
@@ -12668,6 +13426,13 @@
           "year": "2025",
           "tier": 1.5,
           "rank": 20,
+          "exact": "Paper Mario"
+        },
+        {
+          "name": "Paper Mario",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 17,
           "exact": "Paper Mario"
         },
         {
@@ -12699,6 +13464,13 @@
           "exact": "Paper Mario: The Thousand Year Door (+ Remake)"
         },
         {
+          "name": "Paper Mario: The Thousand Year Door (+ Remake)",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 46,
+          "exact": "Paper Mario: The Thousand Year Door (+ Remake)"
+        },
+        {
           "name": "Parasite",
           "year": "2022",
           "tier": 6.0,
@@ -12727,6 +13499,13 @@
           "exact": "Parasite"
         },
         {
+          "name": "Parasite",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 86,
+          "exact": "Parasite"
+        },
+        {
           "name": "Persona 3 FES",
           "year": "2024",
           "tier": 3.0,
@@ -12738,6 +13517,13 @@
           "year": "2025",
           "tier": 3.0,
           "rank": 35,
+          "exact": "Persona 3 FES"
+        },
+        {
+          "name": "Persona 3 FES",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 33,
           "exact": "Persona 3 FES"
         },
         {
@@ -12769,6 +13555,13 @@
           "exact": "Persona 5 Royal"
         },
         {
+          "name": "Persona 5 Royal",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 50,
+          "exact": "Persona 5 Royal"
+        },
+        {
           "name": "Phoenix Wright: Ace Attorney Original Trilogy",
           "year": "2023",
           "tier": 999.0,
@@ -12785,6 +13578,13 @@
         {
           "name": "Phoenix Wright: Ace Attorney Original Trilogy",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Phoenix Wright: Ace Attorney Original Trilogy"
+        },
+        {
+          "name": "Phoenix Wright: Ace Attorney Original Trilogy",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Phoenix Wright: Ace Attorney Original Trilogy"
@@ -12818,6 +13618,13 @@
           "exact": "Ping Pong The Animation"
         },
         {
+          "name": "Ping Pong The Animation",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 36,
+          "exact": "Ping Pong The Animation"
+        },
+        {
           "name": "Pokemon Black and White",
           "year": "2022",
           "tier": 9.0,
@@ -12841,6 +13648,13 @@
         {
           "name": "Pokemon Black and White",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Pokemon Black and White"
+        },
+        {
+          "name": "Pokemon Black and White",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Pokemon Black and White"
@@ -12874,6 +13688,20 @@
           "exact": "Pokemon Heart Gold/Soul Silver"
         },
         {
+          "name": "Pokemon Heart Gold/Soul Silver",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 62,
+          "exact": "Pokemon Heart Gold/Soul Silver"
+        },
+        {
+          "name": "Pokemon Legends: Arceus",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Pokemon Legends: Arceus"
+        },
+        {
           "name": "Pokemon Platinum",
           "year": "2022",
           "tier": 2.0,
@@ -12897,6 +13725,13 @@
         {
           "name": "Pokemon Platinum",
           "year": "2025",
+          "tier": 1.5,
+          "rank": 18,
+          "exact": "Pokemon Platinum"
+        },
+        {
+          "name": "Pokemon Platinum",
+          "year": "2026",
           "tier": 1.5,
           "rank": 18,
           "exact": "Pokemon Platinum"
@@ -12930,6 +13765,13 @@
           "exact": "Pokemon Ruby/Sapphire/Emerald/Omega Ruby/Alpha Sapphire"
         },
         {
+          "name": "Pokemon Ruby/Sapphire/Emerald/Omega Ruby/Alpha Sapphire",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 47,
+          "exact": "Pokemon Ruby/Sapphire/Emerald/Omega Ruby/Alpha Sapphire"
+        },
+        {
           "name": "Psycho-Pass (Season 1)",
           "year": "2022",
           "tier": 5.0,
@@ -12955,6 +13797,13 @@
           "year": "2025",
           "tier": 5.0,
           "rank": 65,
+          "exact": "Psycho-Pass (Season 1)"
+        },
+        {
+          "name": "Psycho-Pass (Season 1)",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 76,
           "exact": "Psycho-Pass (Season 1)"
         },
         {
@@ -12986,8 +13835,36 @@
           "exact": "Re:Zero (Anime)"
         },
         {
+          "name": "Re:Zero (Anime)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Re:Zero (Anime)"
+        },
+        {
+          "name": "Red Dead Redemption 2",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 27,
+          "exact": "Red Dead Redemption 2"
+        },
+        {
+          "name": "Remedy Connected Universe (Alan Wake + Control)",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 116,
+          "exact": "Remedy Connected Universe (Alan Wake + Control)"
+        },
+        {
           "name": "Resident Evil Series",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Resident Evil Series"
+        },
+        {
+          "name": "Resident Evil Series",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Resident Evil Series"
@@ -13021,32 +13898,46 @@
           "exact": "Run With The Wind"
         },
         {
-          "name": "Rurouni Kenshin: Trust and Betrayal",
+          "name": "Run With The Wind",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 32,
+          "exact": "Run With The Wind"
+        },
+        {
+          "name": "Rurouni Kenshin: Trust & Betrayal",
           "year": "2022",
           "tier": 8.0,
           "rank": 79,
           "exact": "Rurouni Kenshin: Trust and Betrayal"
         },
         {
-          "name": "Rurouni Kenshin: Trust and Betrayal",
+          "name": "Rurouni Kenshin: Trust & Betrayal",
           "year": "2023",
           "tier": 7.0,
           "rank": 81,
           "exact": "Rurouni Kenshin: Trust and Betrayal"
         },
         {
-          "name": "Rurouni Kenshin: Trust and Betrayal",
+          "name": "Rurouni Kenshin: Trust & Betrayal",
           "year": "2024",
           "tier": 8.0,
           "rank": 94,
           "exact": "Rurouni Kenshin: Trust and Betrayal"
         },
         {
-          "name": "Rurouni Kenshin: Trust and Betrayal",
+          "name": "Rurouni Kenshin: Trust & Betrayal",
           "year": "2025",
           "tier": 8.0,
           "rank": 97,
           "exact": "Rurouni Kenshin: Trust and Betrayal"
+        },
+        {
+          "name": "Rurouni Kenshin: Trust & Betrayal",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Rurouni Kenshin: Trust & Betrayal"
         },
         {
           "name": "SSSS.Dynazenon",
@@ -13077,6 +13968,13 @@
           "exact": "SSSS.Dynazenon"
         },
         {
+          "name": "SSSS.Dynazenon",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 85,
+          "exact": "SSSS.Dynazenon"
+        },
+        {
           "name": "Sam Raimi Spiderman Trilogy",
           "year": "2022",
           "tier": 999.0,
@@ -13103,6 +14001,20 @@
           "tier": 999.0,
           "rank": "HM",
           "exact": "Sam Raimi Spiderman Trilogy"
+        },
+        {
+          "name": "Sam Raimi Spiderman Trilogy",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Sam Raimi Spiderman Trilogy"
+        },
+        {
+          "name": "Samurai Champloo",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Samurai Champloo"
         },
         {
           "name": "Sangatsu no Lion (Anime)",
@@ -13128,6 +14040,13 @@
         {
           "name": "Sangatsu no Lion (Anime)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Sangatsu no Lion (Anime)"
+        },
+        {
+          "name": "Sangatsu no Lion (Anime)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Sangatsu no Lion (Anime)"
@@ -13161,6 +14080,13 @@
           "exact": "Se7en"
         },
         {
+          "name": "Se7en",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Se7en"
+        },
+        {
           "name": "Sekiro: Shadows Die Twice",
           "year": "2023",
           "tier": 4.0,
@@ -13179,6 +14105,13 @@
           "year": "2025",
           "tier": 3.0,
           "rank": 40,
+          "exact": "Sekiro: Shadows Die Twice"
+        },
+        {
+          "name": "Sekiro: Shadows Die Twice",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 41,
           "exact": "Sekiro: Shadows Die Twice"
         },
         {
@@ -13210,6 +14143,13 @@
           "exact": "Shouwa Genroku Rakugo Shinjuu"
         },
         {
+          "name": "Shouwa Genroku Rakugo Shinjuu",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 14,
+          "exact": "Shouwa Genroku Rakugo Shinjuu"
+        },
+        {
           "name": "Shutter Island (Film)",
           "year": "2022",
           "tier": 8.0,
@@ -13238,6 +14178,13 @@
           "exact": "Shutter Island (Film)"
         },
         {
+          "name": "Shutter Island (Film)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Shutter Island (Film)"
+        },
+        {
           "name": "Silent Hill 2 (Original and Remake)",
           "year": "2023",
           "tier": 999.0,
@@ -13257,6 +14204,27 @@
           "tier": 6.0,
           "rank": 80,
           "exact": "Silent Hill 2 (Original and Remake)"
+        },
+        {
+          "name": "Silent Hill 2 (Original and Remake)",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 74,
+          "exact": "Silent Hill 2 (Original and Remake)"
+        },
+        {
+          "name": "Silent Hill f",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Silent Hill f"
+        },
+        {
+          "name": "Sinners",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Sinners"
         },
         {
           "name": "Six Feet Under",
@@ -13287,6 +14255,13 @@
           "exact": "Six Feet Under"
         },
         {
+          "name": "Six Feet Under",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Six Feet Under"
+        },
+        {
           "name": "Sonic Adventure 2 Battle",
           "year": "2024",
           "tier": 999.0,
@@ -13296,6 +14271,13 @@
         {
           "name": "Sonic Adventure 2 Battle",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Sonic Adventure 2 Battle"
+        },
+        {
+          "name": "Sonic Adventure 2 Battle",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Sonic Adventure 2 Battle"
@@ -13329,8 +14311,22 @@
           "exact": "Spongebob Squarepants (Seasons 1-3)"
         },
         {
+          "name": "Spongebob Squarepants (Seasons 1-3)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 63,
+          "exact": "Spongebob Squarepants (Seasons 1-3)"
+        },
+        {
           "name": "Star Wars Episode III: Revenge of the Sith",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Star Wars Episode III: Revenge of the Sith"
+        },
+        {
+          "name": "Star Wars Episode III: Revenge of the Sith",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Star Wars Episode III: Revenge of the Sith"
@@ -13340,6 +14336,13 @@
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
+          "exact": "Star Wars: Knights of the Old Republic II - The Sith Lords"
+        },
+        {
+          "name": "Star Wars: Knights of the Old Republic II - The Sith Lords",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 113,
           "exact": "Star Wars: Knights of the Old Republic II - The Sith Lords"
         },
         {
@@ -13371,6 +14374,13 @@
           "exact": "Steins;Gate"
         },
         {
+          "name": "Steins;Gate",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 65,
+          "exact": "Steins;Gate"
+        },
+        {
           "name": "Succession",
           "year": "2023",
           "tier": 6.0,
@@ -13389,6 +14399,13 @@
           "year": "2025",
           "tier": 2.0,
           "rank": 27,
+          "exact": "Succession"
+        },
+        {
+          "name": "Succession",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 29,
           "exact": "Succession"
         },
         {
@@ -13415,6 +14432,13 @@
         {
           "name": "Super Mario Galaxy 1 & 2",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Super Mario Galaxy 1 & 2"
+        },
+        {
+          "name": "Super Mario Galaxy 1 & 2",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Super Mario Galaxy 1 & 2"
@@ -13448,6 +14472,13 @@
           "exact": "Super Mario Sunshine"
         },
         {
+          "name": "Super Mario Sunshine",
+          "year": "2026",
+          "tier": 6.0,
+          "rank": 83,
+          "exact": "Super Mario Sunshine"
+        },
+        {
           "name": "Super Paper Mario",
           "year": "2022",
           "tier": 999.0,
@@ -13473,6 +14504,13 @@
           "year": "2025",
           "tier": 8.0,
           "rank": 106,
+          "exact": "Super Paper Mario"
+        },
+        {
+          "name": "Super Paper Mario",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 112,
           "exact": "Super Paper Mario"
         },
         {
@@ -13504,6 +14542,13 @@
           "exact": "Supernatural (Seasons 1-5)"
         },
         {
+          "name": "Supernatural (Seasons 1-5)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 88,
+          "exact": "Supernatural (Seasons 1-5)"
+        },
+        {
           "name": "Tengen Toppa Gurren Lagann",
           "year": "2022",
           "tier": 3.0,
@@ -13527,6 +14572,13 @@
         {
           "name": "Tengen Toppa Gurren Lagann",
           "year": "2025",
+          "tier": 3.0,
+          "rank": 37,
+          "exact": "Tengen Toppa Gurren Lagann"
+        },
+        {
+          "name": "Tengen Toppa Gurren Lagann",
+          "year": "2026",
           "tier": 3.0,
           "rank": 37,
           "exact": "Tengen Toppa Gurren Lagann"
@@ -13560,10 +14612,24 @@
           "exact": "The Dark Knight"
         },
         {
+          "name": "The Dark Knight",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Dark Knight"
+        },
+        {
           "name": "The Departed",
           "year": "2022",
           "tier": 8.0,
           "rank": 88,
+          "exact": "The Departed"
+        },
+        {
+          "name": "The Departed",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
           "exact": "The Departed"
         },
         {
@@ -13588,6 +14654,13 @@
           "exact": "The Elder Scrolls IV: Oblivion"
         },
         {
+          "name": "The Elder Scrolls IV: Oblivion",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Elder Scrolls IV: Oblivion"
+        },
+        {
           "name": "The Elder Scrolls V: Skyrim",
           "year": "2023",
           "tier": 999.0,
@@ -13609,6 +14682,13 @@
           "exact": "The Elder Scrolls V: Skyrim"
         },
         {
+          "name": "The Elder Scrolls V: Skyrim",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Elder Scrolls V: Skyrim"
+        },
+        {
           "name": "The Grand Budapest Hotel",
           "year": "2024",
           "tier": 999.0,
@@ -13618,6 +14698,13 @@
         {
           "name": "The Grand Budapest Hotel",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Grand Budapest Hotel"
+        },
+        {
+          "name": "The Grand Budapest Hotel",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "The Grand Budapest Hotel"
@@ -13641,6 +14728,13 @@
           "year": "2025",
           "tier": 6.0,
           "rank": 78,
+          "exact": "The Great Ace Attorney Chronicles"
+        },
+        {
+          "name": "The Great Ace Attorney Chronicles",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 35,
           "exact": "The Great Ace Attorney Chronicles"
         },
         {
@@ -13672,11 +14766,25 @@
           "exact": "The House in Fata Morgana + A Requiem for Innocence"
         },
         {
-          "name": "The Legend of Heroes/Trails Series (Up until Trails into Reverie)",
+          "name": "The House in Fata Morgana + A Requiem for Innocence",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 55,
+          "exact": "The House in Fata Morgana + A Requiem for Innocence"
+        },
+        {
+          "name": "The Legend of Heroes/Trails Series (Up to and including Trails Beyond The Horizon)",
           "year": "2025",
           "tier": 5.0,
           "rank": 70,
           "exact": "The Legend of Heroes/Trails Series (Up until Trails into Reverie)"
+        },
+        {
+          "name": "The Legend of Heroes/Trails Series (Up to and including Trails Beyond The Horizon)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Legend of Heroes/Trails Series (Up to and including Trails Beyond The Horizon)"
         },
         {
           "name": "The Legend of Zelda: Breath of the Wild",
@@ -13707,6 +14815,13 @@
           "exact": "The Legend of Zelda: Breath of the Wild"
         },
         {
+          "name": "The Legend of Zelda: Breath of the Wild",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 101,
+          "exact": "The Legend of Zelda: Breath of the Wild"
+        },
+        {
           "name": "The Legend of Zelda: Link’s Awakening",
           "year": "2022",
           "tier": 999.0,
@@ -13735,67 +14850,66 @@
           "exact": "The Legend of Zelda: Link’s Awakening"
         },
         {
-          "name": "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
+          "name": "The Legend of Zelda: Link’s Awakening",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Legend of Zelda: Link’s Awakening"
+        },
+        {
+          "name": "The Legend of Zelda: Majora’s Mask",
           "year": "2022",
           "tier": 5.0,
           "rank": 46,
-          "exact": "The Legend of Zelda: Majora’s Mask",
-          "sub_entries": [
-            {
-              "rank": 46,
-              "tier": 5.0,
-              "exact": "The Legend of Zelda: Majora’s Mask"
-            },
-            {
-              "rank": "HM",
-              "tier": 999.0,
-              "exact": "The Legend of Zelda: Ocarina of Time"
-            }
-          ]
+          "exact": "The Legend of Zelda: Majora’s Mask"
+        },
+        {
+          "name": "The Legend of Zelda: Majora’s Mask",
+          "year": "2023",
+          "tier": 4.0,
+          "rank": 44,
+          "exact": "The Legend of Zelda: Majora’s Mask"
+        },
+        {
+          "name": "The Legend of Zelda: Majora’s Mask",
+          "year": "2024",
+          "tier": 4.0,
+          "rank": 44,
+          "exact": "The Legend of Zelda: Majora’s Mask"
+        },
+        {
+          "name": "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
+          "year": "2022",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Legend of Zelda: Ocarina of Time"
         },
         {
           "name": "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
           "year": "2023",
-          "tier": 4.0,
-          "rank": 44,
-          "exact": "The Legend of Zelda: Majora’s Mask",
-          "sub_entries": [
-            {
-              "rank": 44,
-              "tier": 4.0,
-              "exact": "The Legend of Zelda: Majora’s Mask"
-            },
-            {
-              "rank": "HM",
-              "tier": 999.0,
-              "exact": "The Legend of Zelda: Ocarina of Time"
-            }
-          ]
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Legend of Zelda: Ocarina of Time"
         },
         {
           "name": "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
           "year": "2024",
-          "tier": 4.0,
-          "rank": 44,
-          "exact": "The Legend of Zelda: Majora’s Mask",
-          "sub_entries": [
-            {
-              "rank": 44,
-              "tier": 4.0,
-              "exact": "The Legend of Zelda: Majora’s Mask"
-            },
-            {
-              "rank": "HM",
-              "tier": 999.0,
-              "exact": "The Legend of Zelda: Ocarina of Time"
-            }
-          ]
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Legend of Zelda: Ocarina of Time"
         },
         {
           "name": "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
           "year": "2025",
           "tier": 3.0,
           "rank": 42,
+          "exact": "The Legend of Zelda: Ocarina of Time + Majora’s Mask"
+        },
+        {
+          "name": "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 43,
           "exact": "The Legend of Zelda: Ocarina of Time + Majora’s Mask"
         },
         {
@@ -13822,6 +14936,13 @@
         {
           "name": "The Legend of Zelda: The Wind Waker",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Legend of Zelda: The Wind Waker"
+        },
+        {
+          "name": "The Legend of Zelda: The Wind Waker",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "The Legend of Zelda: The Wind Waker"
@@ -13855,7 +14976,14 @@
           "exact": "The Legend of Zelda: Twilight Princess"
         },
         {
-          "name": "The Lord of the Rings Film Trilogy",
+          "name": "The Legend of Zelda: Twilight Princess",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 13,
+          "exact": "The Legend of Zelda: Twilight Princess"
+        },
+        {
+          "name": "The Lord of the Rings: The Fellowship of the Ring",
           "year": "2022",
           "tier": 3.0,
           "rank": 31,
@@ -13874,7 +15002,7 @@
           ]
         },
         {
-          "name": "The Lord of the Rings Film Trilogy",
+          "name": "The Lord of the Rings: The Fellowship of the Ring",
           "year": "2023",
           "tier": 3.0,
           "rank": 32,
@@ -13893,18 +15021,25 @@
           ]
         },
         {
-          "name": "The Lord of the Rings Film Trilogy",
+          "name": "The Lord of the Rings: The Fellowship of the Ring",
           "year": "2024",
           "tier": 5.0,
           "rank": 56,
           "exact": "The Lord of the Rings Film Trilogy"
         },
         {
-          "name": "The Lord of the Rings Film Trilogy",
+          "name": "The Lord of the Rings: The Fellowship of the Ring",
           "year": "2025",
           "tier": 4.0,
           "rank": 58,
           "exact": "The Lord of the Rings Film Trilogy"
+        },
+        {
+          "name": "The Lord of the Rings: The Fellowship of the Ring",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 64,
+          "exact": "The Lord of the Rings: The Fellowship of the Ring"
         },
         {
           "name": "The Matrix",
@@ -13916,6 +15051,13 @@
         {
           "name": "The Penguin",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Penguin"
+        },
+        {
+          "name": "The Penguin",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "The Penguin"
@@ -13949,6 +15091,20 @@
           "exact": "The Pirates of the Caribbean (Original Trilogy)"
         },
         {
+          "name": "The Pirates of the Caribbean (Original Trilogy)",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 91,
+          "exact": "The Pirates of the Caribbean (Original Trilogy)"
+        },
+        {
+          "name": "The Pitt",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 109,
+          "exact": "The Pitt"
+        },
+        {
           "name": "The Social Network",
           "year": "2022",
           "tier": 4.0,
@@ -13974,6 +15130,13 @@
           "year": "2025",
           "tier": 4.0,
           "rank": 61,
+          "exact": "The Social Network"
+        },
+        {
+          "name": "The Social Network",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 60,
           "exact": "The Social Network"
         },
         {
@@ -14005,6 +15168,13 @@
           "exact": "The Sopranos"
         },
         {
+          "name": "The Sopranos",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 72,
+          "exact": "The Sopranos"
+        },
+        {
           "name": "The Spiderverse Series",
           "year": "2022",
           "tier": 7.0,
@@ -14031,6 +15201,20 @@
           "tier": 6.0,
           "rank": 81,
           "exact": "The Spiderverse Series"
+        },
+        {
+          "name": "The Spiderverse Series",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Spiderverse Series"
+        },
+        {
+          "name": "The Summer Hikaru Died (Anime)",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Summer Hikaru Died (Anime)"
         },
         {
           "name": "The Tatami Galaxy & Time Machine Blues",
@@ -14061,32 +15245,60 @@
           "exact": "The Tatami Galaxy & Time Machine Blues"
         },
         {
-          "name": "The Witcher Video Game Series",
+          "name": "The Tatami Galaxy & Time Machine Blues",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Tatami Galaxy & Time Machine Blues"
+        },
+        {
+          "name": "The Truman Show",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Truman Show"
+        },
+        {
+          "name": "The Wire",
+          "year": "2026",
+          "tier": 3.0,
+          "rank": 39,
+          "exact": "The Wire"
+        },
+        {
+          "name": "The Witcher 3: The Wild Hunt",
           "year": "2022",
           "tier": 3.0,
           "rank": 20,
           "exact": "The Witcher video game series"
         },
         {
-          "name": "The Witcher Video Game Series",
+          "name": "The Witcher 3: The Wild Hunt",
           "year": "2023",
           "tier": 3.0,
           "rank": 24,
           "exact": "The Witcher video game series"
         },
         {
-          "name": "The Witcher Video Game Series",
+          "name": "The Witcher 3: The Wild Hunt",
           "year": "2024",
           "tier": 2.0,
           "rank": 27,
           "exact": "The Witcher Video Game Series"
         },
         {
-          "name": "The Witcher Video Game Series",
+          "name": "The Witcher 3: The Wild Hunt",
           "year": "2025",
           "tier": 2.0,
           "rank": 30,
           "exact": "The Witcher Video Game Series"
+        },
+        {
+          "name": "The Witcher 3: The Wild Hunt",
+          "year": "2026",
+          "tier": 2.0,
+          "rank": 26,
+          "exact": "The Witcher 3: The Wild Hunt"
         },
         {
           "name": "The Wolf of Wall Street",
@@ -14117,6 +15329,27 @@
           "exact": "The Wolf of Wall Street"
         },
         {
+          "name": "The Wolf of Wall Street",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "The Wolf of Wall Street"
+        },
+        {
+          "name": "There Will Be Blood",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "There Will Be Blood"
+        },
+        {
+          "name": "Tokyo Ghoul (Part 1, not including :re)",
+          "year": "2026",
+          "tier": 8.0,
+          "rank": 102,
+          "exact": "Tokyo Ghoul (Part 1, not including :re)"
+        },
+        {
           "name": "Trigun Stampede",
           "year": "2023",
           "tier": 9.0,
@@ -14135,6 +15368,13 @@
           "year": "2025",
           "tier": 8.0,
           "rank": 101,
+          "exact": "Trigun Stampede"
+        },
+        {
+          "name": "Trigun Stampede",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
           "exact": "Trigun Stampede"
         },
         {
@@ -14161,6 +15401,13 @@
         {
           "name": "True Detective (Season 1)",
           "year": "2025",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "True Detective (Season 1)"
+        },
+        {
+          "name": "True Detective (Season 1)",
+          "year": "2026",
           "tier": 999.0,
           "rank": "HM",
           "exact": "True Detective (Season 1)"
@@ -14194,32 +15441,46 @@
           "exact": "Umineko no Naku Koro Ni"
         },
         {
-          "name": "Undertale & Deltarune (Chapters 1 and 2)",
+          "name": "Umineko no Naku Koro Ni",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 4,
+          "exact": "Umineko no Naku Koro Ni"
+        },
+        {
+          "name": "Undertale",
           "year": "2022",
           "tier": 5.0,
           "rank": 52,
           "exact": "Undertale & Deltarune"
         },
         {
-          "name": "Undertale & Deltarune (Chapters 1 and 2)",
+          "name": "Undertale",
           "year": "2023",
           "tier": 5.0,
           "rank": 52,
           "exact": "Undertale & Deltarune"
         },
         {
-          "name": "Undertale & Deltarune (Chapters 1 and 2)",
+          "name": "Undertale",
           "year": "2024",
           "tier": 4.0,
           "rank": 52,
           "exact": "Undertale & Deltarune"
         },
         {
-          "name": "Undertale & Deltarune (Chapters 1 and 2)",
+          "name": "Undertale",
           "year": "2025",
           "tier": 4.0,
           "rank": 51,
           "exact": "Undertale & Deltarune (Chapters 1 and 2)"
+        },
+        {
+          "name": "Undertale",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 57,
+          "exact": "Undertale"
         },
         {
           "name": "Unicorn Overlord",
@@ -14227,6 +15488,20 @@
           "tier": 999.0,
           "rank": "HM",
           "exact": "Unicorn Overlord"
+        },
+        {
+          "name": "Unicorn Overlord",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Unicorn Overlord"
+        },
+        {
+          "name": "Until Then",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Until Then"
         },
         {
           "name": "Vagabond",
@@ -14247,6 +15522,13 @@
           "year": "2025",
           "tier": 5.0,
           "rank": 66,
+          "exact": "Vagabond"
+        },
+        {
+          "name": "Vagabond",
+          "year": "2026",
+          "tier": 5.0,
+          "rank": 70,
           "exact": "Vagabond"
         },
         {
@@ -14278,6 +15560,13 @@
           "exact": "Vinland Saga (Anime + Manga)"
         },
         {
+          "name": "Vinland Saga (Anime + Manga)",
+          "year": "2026",
+          "tier": 4.0,
+          "rank": 61,
+          "exact": "Vinland Saga (Anime + Manga)"
+        },
+        {
           "name": "Violet Evergarden",
           "year": "2022",
           "tier": 5.0,
@@ -14304,6 +15593,20 @@
           "tier": 7.0,
           "rank": 91,
           "exact": "Violet Evergarden"
+        },
+        {
+          "name": "Violet Evergarden",
+          "year": "2026",
+          "tier": 9.0,
+          "rank": 108,
+          "exact": "Violet Evergarden"
+        },
+        {
+          "name": "Warrior",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Warrior"
         },
         {
           "name": "What Remains of Edith Finch",
@@ -14355,6 +15658,13 @@
           "exact": "Whiplash"
         },
         {
+          "name": "Whiplash",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
+          "exact": "Whiplash"
+        },
+        {
           "name": "Xenoblade Chronicles",
           "year": "2022",
           "tier": 2.0,
@@ -14383,6 +15693,13 @@
           "exact": "Xenoblade Chronicles"
         },
         {
+          "name": "Xenoblade Chronicles",
+          "year": "2026",
+          "tier": 1.5,
+          "rank": 16,
+          "exact": "Xenoblade Chronicles"
+        },
+        {
           "name": "Xenoblade Chronicles 3",
           "year": "2023",
           "tier": 999.0,
@@ -14401,6 +15718,13 @@
           "year": "2025",
           "tier": 8.0,
           "rank": 105,
+          "exact": "Xenoblade Chronicles 3"
+        },
+        {
+          "name": "Xenoblade Chronicles 3",
+          "year": "2026",
+          "tier": 999.0,
+          "rank": "HM",
           "exact": "Xenoblade Chronicles 3"
         },
         {
@@ -14430,18 +15754,32 @@
           "exact": "Yakuza/Like A Dragon Series"
         },
         {
-          "name": "Yu-Gi-Oh",
+          "name": "Yakuza/Like A Dragon Series",
+          "year": "2026",
+          "tier": 1.0,
+          "rank": 7,
+          "exact": "Yakuza/Like A Dragon Series"
+        },
+        {
+          "name": "Yu-Gi-Oh!",
           "year": "2024",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Yu-Gi-Oh"
         },
         {
-          "name": "Yu-Gi-Oh",
+          "name": "Yu-Gi-Oh!",
           "year": "2025",
           "tier": 999.0,
           "rank": "HM",
           "exact": "Yu-Gi-Oh"
+        },
+        {
+          "name": "Yu-Gi-Oh!",
+          "year": "2026",
+          "tier": 7.0,
+          "rank": 92,
+          "exact": "Yu-Gi-Oh!"
         }
       ]
     },
@@ -14589,6 +15927,7 @@
           "999.0": "Honorable Mentions"
         }
       },
+      "merge_map": {},
       "data": [
         {
           "name": "2B (NieR:Automata)",
@@ -17607,28 +18946,28 @@
           "series": "Death Note"
         },
         {
-          "name": "Link + The Hero of Time (The Legend of Zelda - Ocarina of Time, Majora’s Mask and Twilight Princess)",
+          "name": "Link + The Hero of Time (The Legend of Zelda - Ocarina of Time, Majora's Mask and Twilight Princess)",
           "year": "2022",
           "tier": 7.0,
           "rank": 79,
           "exact": "Link (The Legend of Zelda)",
-          "series": "The Legend of Zelda - Ocarina of Time, Majora’s Mask and Twilight Princess"
+          "series": "The Legend of Zelda - Ocarina of Time, Majora's Mask and Twilight Princess"
         },
         {
-          "name": "Link + The Hero of Time (The Legend of Zelda - Ocarina of Time, Majora’s Mask and Twilight Princess)",
+          "name": "Link + The Hero of Time (The Legend of Zelda - Ocarina of Time, Majora's Mask and Twilight Princess)",
           "year": "2023",
           "tier": 4.0,
           "rank": 47,
           "exact": "Link/The Hero of Time (The Legend of Zelda)",
-          "series": "The Legend of Zelda - Ocarina of Time, Majora’s Mask and Twilight Princess"
+          "series": "The Legend of Zelda - Ocarina of Time, Majora's Mask and Twilight Princess"
         },
         {
-          "name": "Link + The Hero of Time (The Legend of Zelda - Ocarina of Time, Majora’s Mask and Twilight Princess)",
+          "name": "Link + The Hero of Time (The Legend of Zelda - Ocarina of Time, Majora's Mask and Twilight Princess)",
           "year": "2024",
           "tier": 5.0,
           "rank": 52,
           "exact": "Link/The Hero of Time (The Legend of Zelda)",
-          "series": "The Legend of Zelda - Ocarina of Time, Majora’s Mask and Twilight Princess"
+          "series": "The Legend of Zelda - Ocarina of Time, Majora's Mask and Twilight Princess"
         },
         {
           "name": "Link + The Hero of Time (The Legend of Zelda - Ocarina of Time, Majora’s Mask and Twilight Princess)",

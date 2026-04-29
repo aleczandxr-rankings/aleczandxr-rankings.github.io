@@ -3,20 +3,24 @@ NAME_MAPS: dict[str, dict[str, str]] = {
         "Haikyuu":                                          "Haikyuu!!",
         "Animal Crossing":                                  "Animal Crossing (Gamecube)",
         "Final Fantasy XIV (Up until the end of Shadowbringers 5.3)":
-                                                            "Final Fantasy XIV (Up until the end of Endwalker 6.55)",
-        "The Witcher video game series":                    "The Witcher Video Game Series",
+                                                            "Final Fantasy XIV (Up until the end of Endwalker 6.0)",
+        "Final Fantasy XIV (Up until the end of Endwalker 6.55)":
+                                                            "Final Fantasy XIV (Up until the end of Endwalker 6.0)",
+        "The Witcher video game series":                    "The Witcher 3: The Wild Hunt",
+        "The Witcher Video Game Series":                    "The Witcher 3: The Wild Hunt",
         "Cyberpunk: Edgerunners":                           "Cyberpunk Universe (2077 + Phantom Liberty + Edgerunners)",
         "Final Fantasy VII Remake":                         "Final Fantasy VII Remake + Rebirth",
         "Final Fantasy VII":                                "Final Fantasy VII (Original)",
         "Paper Mario: The Thousand Year Door":              "Paper Mario: The Thousand Year Door (+ Remake)",
-        "Undertale & Deltarune":                            "Undertale & Deltarune (Chapters 1 and 2)",
         "The Lord of the Rings: The Fellowship of the Ring (Film)":
-                                                            "The Lord of the Rings Film Trilogy",
-        "The Lord of the Rings: The Two Towers":            "The Lord of the Rings Film Trilogy",
-        "One Piece (Post-Wano, Pre-Egghead)":               "One Piece",
-        "One Piece (As of Chapter 1147)":                   "One Piece",
-        "One Piece (Up until the end of Impel Down)":       "One Piece",
-        "Nana (Anime)":                                     "Nana",
+                                                            "The Lord of the Rings: The Fellowship of the Ring",
+        "The Lord of the Rings: The Two Towers":            "The Lord of the Rings: The Fellowship of the Ring",
+        "The Lord of the Rings Film Trilogy":               "The Lord of the Rings: The Fellowship of the Ring",
+        "One Piece (Post-Wano, Pre-Egghead)":               "One Piece (As of Chapter 1181)",
+        "One Piece (As of Chapter 1147)":                   "One Piece (As of Chapter 1181)",
+        "One Piece (Up until the end of Impel Down)":       "One Piece (As of Chapter 1181)",
+        "Nana (Anime)":                                     "Nana (anime and manga)",
+        "Nana":                                             "Nana (anime and manga)",
         "Bleach (144 Chapters in)":                         "Bleach",
         "Megalo Box":                                       "Megalo Box + Nomad",
         "The House in Fata Morgana":                        "The House in Fata Morgana + A Requiem for Innocence",
@@ -28,9 +32,23 @@ NAME_MAPS: dict[str, dict[str, str]] = {
         "Succession (First 3 Seasons)":                     "Succession",
         "Yakuza 0":                                         "Yakuza/Like A Dragon Series",
         "Yakuza 5 + Yakuza 6: A Song of Life":              "Yakuza/Like A Dragon Series",
-        "The Legend of Zelda: Majora’s Mask":               "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
+        "The Legend of Zelda: Majora's Mask":               "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
         "The Legend of Zelda: Ocarina of Time":             "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
+        "The Legend of Zelda: Ocarina of Time + Majora's Mask": "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
         "Re:Zero":                                          "Re:Zero (Anime)",
+        "A Song of Ice and Fire (Books)":                   "A Song of Ice and Fire Universe",
+        "Bioshock":                                         "Bioshock Series",
+        "Beastars (Primarily the anime)":                   "Beastars",
+        "Kaguya-Sama: Love is War":                         "Kaguya-sama: Love is War (Anime)",
+        "Jujutsu Kaisen":                                   "Jujutsu Kaisen + Modulo",
+        "Digimon (S1-S3)":                                  "Digimon (Seasons 1-3)",
+        "The Legend of Heroes/Trails Series (Up until Trails into Reverie)":
+                                                            "The Legend of Heroes/Trails Series (Up to and including Trails Beyond The Horizon)",
+        "Rurouni Kenshin: Trust and Betrayal":              "Rurouni Kenshin: Trust & Betrayal",
+        "Final Fantasy Tactics: War of the Lions":          "Final Fantasy Tactics: The Ivalice Chronicles",
+        "Chainsaw Man":                                     "Chainsaw Man (Part 1)",
+        "Yu-Gi-Oh":                                         "Yu-Gi-Oh!",
+        "Lies of P": "Lies of P + Overture",
     },
 
     "protagonists": {
@@ -44,9 +62,9 @@ NAME_MAPS: dict[str, dict[str, str]] = {
         "Goro Majima (Yakuza Series)":                      "Goro Majima (Yakuza/Like A Dragon Series)",
         "Takayugi Yagami (Judgment)": "Takayugi Yagami (Judgment Series)",
         "Link (The Legend of Zelda)":
-            "Link + The Hero of Time (The Legend of Zelda - Ocarina of Time, Majora’s Mask and Twilight Princess)",
+            "Link + The Hero of Time (The Legend of Zelda - Ocarina of Time, Majora's Mask and Twilight Princess)",
         "Link/The Hero of Time (The Legend of Zelda)":
-            "Link + The Hero of Time (The Legend of Zelda - Ocarina of Time, Majora’s Mask and Twilight Princess)",
+            "Link + The Hero of Time (The Legend of Zelda - Ocarina of Time, Majora's Mask and Twilight Princess)",
         "Dean Winchester (Supernatural)":                   "Dean Winchester (Supernatural Seasons 1-5)",
         "Sam Winchester (Supernatural)":                    "Sam Winchester (Supernatural Seasons 1-5)",
         "Natsuki Subaru (Re:Zero)":                         "Natsuki Subaru (Re:Zero Anime)",
@@ -97,7 +115,6 @@ NAME_MAPS: dict[str, dict[str, str]] = {
         "Haku (Naruto)":                                    "Momochi Zabuza and Haku (Naruto)",
         "Tohru Adachi (Persona 4)":                         "Tohru Adachi (Persona 4 Golden)",
         "Genichiro Ashina (Sekiro)":                        "Genichiro Ashina (Sekiro: Shadows Die Twice)",
-        "Majora (The Legend of Zelda: Majora’s Mask)": "Skull Kid/Majora (The Legend of Zelda: Majora’s Mask)",
         "General Radahn (Elden Ring)": "Starscourge Radahn (Elden Ring)",
         "Malenia (Elden Ring)": "Malenia, Blade of Miquella (Elden Ring)",
         "Morgott (Elden Ring)": "Morgott",
@@ -124,6 +141,17 @@ NAME_MAPS: dict[str, dict[str, str]] = {
 }
 
 SPLIT_MAPS: dict[str, dict[str, list[str]]] = {
+    "fiction": {
+        "Undertale & Deltarune": [
+            "Undertale",
+            "Deltarune (Chapters 1-4)",
+        ],
+        "Undertale & Deltarune (Chapters 1 and 2)": [
+            "Undertale",
+            "Deltarune (Chapters 1-4)",
+        ],
+    },
+
     "protagonists": {
         "Kakeru Kurahara & Kiyose Haiji (Run With The Wind)": [
             "Kakeru Kurahara (Run With The Wind)",
@@ -144,5 +172,13 @@ SPLIT_MAPS: dict[str, dict[str, list[str]]] = {
             "Yoji Shono (Judgment)",
             "Mitsuru Kuroiwa (Judgment)",
         ],
+    },
+}
+
+MERGE_MAPS: dict[str, dict[str, str]] = {
+    "fiction": {
+        "Metal Gear Solid 3: Snake Eater":      "Metal Gear Solid Series",
+        "Metal Gear Solid 2: Sons of Liberty":  "Metal Gear Solid Series",
+        "Metal Gear Solid":                     "Metal Gear Solid Series",
     },
 }

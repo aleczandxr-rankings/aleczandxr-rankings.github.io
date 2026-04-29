@@ -28,7 +28,7 @@ function assignSlots(itemSlots, items, year, startSlot) {
     }
 }
 
-function computeLayout(tiers, years, data, gapSlots = 2) {
+function computeLayout(tiers, years, data, gapSlots = 2, mergeMap = {}) {
     const HM_TIER = 999;
 
     const byYearTier = {};
@@ -84,6 +84,22 @@ function computeLayout(tiers, years, data, gapSlots = 2) {
         if (Number(d.tier) === HM_TIER) appearsInHm.add(d.name);
         else appearsInRanked.add(d.name);
     }
+
+    let changed = true;
+    while (changed) {
+        changed = false;
+        for (const [src, tgt] of Object.entries(mergeMap)) {
+            if (appearsInRanked.has(src) && !appearsInRanked.has(tgt)) {
+                appearsInRanked.add(tgt);
+                changed = true;
+            }
+            if (appearsInRanked.has(tgt) && !appearsInRanked.has(src)) {
+                appearsInRanked.add(src);
+                changed = true;
+            }
+        }
+    }
+
     const hmGroup2Set = new Set([...appearsInHm].filter(n => !appearsInRanked.has(n)));
 
 
@@ -263,10 +279,12 @@ const state = {
     manifestTypes: [],
     exactLookup: {},
     splitPeerGroups: {},
+    mergeGroupMap: {},
     yearSpacing: 320,
     selectedYear: null,
     yearColumnCaption: {},
     enabledMediaTypes: new Set(MEDIA_TYPE_ORDER),
+    mergeMap: {},
 };
 
 const TYPE_DISPLAY_ORDER = ["fiction", "protagonists", "antagonists", "arcs"];
@@ -332,9 +350,8 @@ function rebuildVisibleData() {
 
         label: labelForTierAtOrBeforeYear(t.tier, latestYear, t.label),
     }));
-    state.layout = computeLayout(state.tiers, state.years, state.data);
-    state.allItems = [...new Set(visibleData.map(d => d.name))].sort();
-
+    state.layout = computeLayout(state.tiers, state.years, state.data, 2, state.mergeMap);
+    state.allItems =[...new Set(visibleData.map(d => d.name))].sort();
 
     state.splitPeerGroups = {};
     for (const [name, slotsByYear] of Object.entries(state.layout.itemSlots)) {
@@ -344,6 +361,20 @@ function rebuildVisibleData() {
                 (state.splitPeerGroups[name] ??= new Set()).add(peer);
                 (state.splitPeerGroups[peer] ??= new Set()).add(name);
             }
+        }
+    }
+
+    state.mergeGroupMap = {};
+    const _mm = state.mergeMap ?? {};
+    for (const [src, tgt] of Object.entries(_mm)) {
+        (state.mergeGroupMap[src] ??= new Set()).add(tgt);
+        (state.mergeGroupMap[tgt] ??= new Set()).add(src);
+    }
+    const _byTgt = {};
+    for (const [src, tgt] of Object.entries(_mm)) ((_byTgt[tgt] ??= [])).push(src);
+    for (const srcs of Object.values(_byTgt)) {
+        for (const a of srcs) for (const b of srcs) {
+            if (a !== b) (state.mergeGroupMap[a] ??= new Set()).add(b);
         }
     }
 
@@ -689,8 +720,66 @@ function renderChart() {
         }
 
         const lastPoint = [...valid].reverse()[0];
-        if (lastPoint) {
+        if (lastPoint && !(state.mergeMap ?? {})[name]) {
             labelRows.push({name, lastPoint, active, hasFilter, color});
+        }
+    }
+
+    for (const [sourceName, targetName] of Object.entries(state.mergeMap ?? {})) {
+        const sourceSlots = state.layout.itemSlots[sourceName];
+        const targetSlots = state.layout.itemSlots[targetName];
+        if (!sourceSlots || !targetSlots) continue;
+
+        const sourceYears = years.filter(yr => sourceSlots[yr]);
+        const targetYears = years.filter(yr => targetSlots[yr]);
+        if (!sourceYears.length || !targetYears.length) continue;
+
+        const lastSourceYear = sourceYears[sourceYears.length - 1];
+        const firstTargetYear = targetYears[0];
+        const lastSourceIdx = years.indexOf(lastSourceYear);
+        const firstTargetIdx = years.indexOf(firstTargetYear);
+        if (firstTargetIdx <= lastSourceIdx) continue;
+
+        const srcSlot = sourceSlots[lastSourceYear];
+        const tgtSlot = targetSlots[firstTargetYear];
+        const sourceColor = seriesColor(sourceName);
+        const active = renderSet.has(sourceName);
+        const isGap = firstTargetIdx - lastSourceIdx > 1;
+        const mergeClass = "series-line" + (isGap ? " series-line-gap" : "") + (hasFilter && !active ? " dim" : "");
+
+        const mergeD = lineSolid([
+            {year: lastSourceYear, slot: srcSlot.slot},
+            {year: firstTargetYear, slot: tgtSlot.slot},
+        ]);
+
+        const srcG = seriesGroup.select(`g[data-name="${cssEscape(sourceName)}"]`);
+        if (!srcG.empty()) {
+            srcG.append("path")
+                .attr("class", mergeClass)
+                .attr("d", mergeD)
+                .attr("stroke", sourceColor)
+                .style("pointer-events", "none");
+            srcG.append("path")
+                .attr("class", "series-line-hit")
+                .attr("d", mergeD)
+                .attr("fill", "none")
+                .attr("stroke", "transparent")
+                .attr("stroke-width", 16)
+                .style("cursor", "pointer")
+                .on("mouseenter", function(event) {
+                    highlight(targetName, true);
+                    showSeriesLineTooltip(event, targetName);
+                })
+                .on("mousemove", function(event) {
+                    moveTooltip(event.clientX, event.clientY);
+                })
+                .on("mouseleave", function() {
+                    highlight(targetName, false);
+                    hideTooltip();
+                })
+                .on("click", function() {
+                    toggleItem(targetName);
+                });
         }
     }
 
@@ -738,7 +827,36 @@ function renderChart() {
                         labelEl.append("tspan").text("  ~");
                     }
                 } else {
-                    labelEl.append("tspan").text("  +");
+                    const _mmL = state.mergeMap ?? {};
+                    const mergeSourcesL = Object.entries(_mmL).filter(([, t]) => t === name).map(([s]) => s);
+                    const srcRanksL = mergeSourcesL.map(src => {
+                        const r = state.layout.itemSlots[src]?.[prevYear]?.rank;
+                        return r == null ? null : (r === "HM" ? Infinity : Number(r));
+                    }).filter(r => r !== null);
+                    if (srcRanksL.length) {
+                        const finite = srcRanksL.filter(r => r !== Infinity);
+                        const prevNumL = finite.length ? Math.min(...finite) : Infinity;
+                        const currNumL = lastPoint.rank === "HM" ? Infinity : lastPoint.rank;
+                        if (currNumL < prevNumL) {
+                            if (prevNumL === Infinity) {
+                                const delta = (rankedCountForLabels[latestYear] ?? 100) + 1 - currNumL;
+                                labelEl.append("tspan").attr("fill", "#4ade80").text("  ↑" + delta + " From Honourable Mentions");
+                            } else {
+                                labelEl.append("tspan").attr("fill", "#4ade80").text("  ↑" + (prevNumL - currNumL));
+                            }
+                        } else if (currNumL > prevNumL) {
+                            if (currNumL === Infinity) {
+                                const delta = (rankedCountForLabels[latestYear] ?? 100) + 1 - prevNumL;
+                                labelEl.append("tspan").attr("fill", "#f87171").text("  ↓" + delta + " To Honourable Mentions");
+                            } else {
+                                labelEl.append("tspan").attr("fill", "#f87171").text("  ↓" + (currNumL - prevNumL));
+                            }
+                        } else {
+                            labelEl.append("tspan").text("  ~");
+                        }
+                    } else {
+                        labelEl.append("tspan").text("  +");
+                    }
                 }
             }
         } else {
@@ -935,18 +1053,21 @@ function truncate(s, n) {
 }
 
 function highlight(name, on) {
-    const g = d3.select(`#chart g.series g[data-name="${cssEscape(name)}"]`);
-    const dots = d3.select(`#chart g.series-dots g[data-name="${cssEscape(name)}"]`);
-    const label = d3.select(`#chart g.endpoint-labels text[data-name="${cssEscape(name)}"]`);
-    if (on) {
-        g.raise();
-        dots.raise();
-        label.raise();
-        g.selectAll("path.series-line").classed("hover", true).attr("stroke-width", 3.5);
-        dots.selectAll("circle.series-dot").transition().duration(120).attr("r", 6);
-    } else {
-        g.selectAll("path.series-line").classed("hover", false).attr("stroke-width", null);
-        dots.selectAll("circle.series-dot").transition().duration(120).attr("r", 4.5);
+    const allNames = [name, ...(state.mergeGroupMap[name] ?? [])];
+    for (const n of allNames) {
+        const g = d3.select(`#chart g.series g[data-name="${cssEscape(n)}"]`);
+        const dots = d3.select(`#chart g.series-dots g[data-name="${cssEscape(n)}"]`);
+        const label = d3.select(`#chart g.endpoint-labels text[data-name="${cssEscape(n)}"]`);
+        if (on) {
+            g.raise();
+            dots.raise();
+            label.raise();
+            g.selectAll("path.series-line").classed("hover", true).attr("stroke-width", 3.5);
+            dots.selectAll("circle.series-dot").transition().duration(120).attr("r", 6);
+        } else {
+            g.selectAll("path.series-line").classed("hover", false).attr("stroke-width", null);
+            dots.selectAll("circle.series-dot").transition().duration(120).attr("r", 4.5);
+        }
     }
 }
 
@@ -987,7 +1108,50 @@ function showTooltip(event, d) {
 function showSeriesLineTooltip(event, name) {
     const slots = state.layout.itemSlots[name] ?? {};
     const axisYears = state.years;
-    const presentYears = axisYears.filter(yr => slots[yr]);
+    const _mm = state.mergeMap ?? {};
+
+    const virtualSlots = {...slots};
+    const mergeTarget = _mm[name];
+    if (mergeTarget) {
+        const targetSlots = state.layout.itemSlots[mergeTarget] ?? {};
+        for (const [yr, slot] of Object.entries(targetSlots)) {
+            if (!virtualSlots[yr]) virtualSlots[yr] = {...slot, _mergedTargetName: mergeTarget};
+        }
+    }
+
+    const mergeSources = Object.entries(_mm).filter(([, t]) => t === name).map(([s]) => s);
+    if (mergeSources.length) {
+        const ownYears = axisYears.filter(yr => slots[yr]);
+        if (ownYears.length) {
+            const firstTargetIdx = axisYears.indexOf(ownYears[0]);
+            for (let i = 0; i < firstTargetIdx; i++) {
+                const yr = axisYears[i];
+                if (virtualSlots[yr]) continue;
+                const srcEntries = [];
+                for (const src of mergeSources) {
+                    const srcSlot = state.layout.itemSlots[src]?.[yr];
+                    if (!srcSlot) continue;
+                    srcEntries.push({rank: srcSlot.rank, tier: srcSlot.tier, exact: src});
+                }
+                if (!srcEntries.length) continue;
+                srcEntries.sort((a, b) => {
+                    if (a.rank === "HM" && b.rank === "HM") return 0;
+                    if (a.rank === "HM") return 1;
+                    if (b.rank === "HM") return -1;
+                    return Number(a.rank) - Number(b.rank);
+                });
+                virtualSlots[yr] = {
+                    rank: srcEntries[0].rank,
+                    tier: srcEntries[0].tier,
+                    subEntries: srcEntries.length > 1 ? srcEntries : null,
+                    _mergedSourceFor: name,
+                    exact: srcEntries.length === 1 ? srcEntries[0].exact : null,
+                };
+            }
+        }
+    }
+
+    const presentYears = axisYears.filter(yr => virtualSlots[yr]);
     if (!presentYears.length) return;
 
     const minY = presentYears[0];
@@ -999,7 +1163,7 @@ function showSeriesLineTooltip(event, name) {
     const rankedCount = getRankedCountPerYear(state.data);
     let prevNum = null;
     const progRows = spanYears.map(yr => {
-        const slot = slots[yr];
+        const slot = virtualSlots[yr];
         if (!slot) {
             return `<div class="t-prog-row t-prog-row-missing">
       <span class="t-prog-year t-prog-year-missing">${escapeHtml(yr)}</span>
@@ -1008,6 +1172,8 @@ function showSeriesLineTooltip(event, name) {
     </div>`;
         }
         const {rank, tier, subEntries} = slot;
+        const mergedTargetName = slot._mergedTargetName ?? null;
+        const mergedSourceFor = slot._mergedSourceFor ?? null;
         const isHonorableMention = rank === "HM" || Number(rank) === 999;
         const currNum = isHonorableMention ? Infinity : rank;
 
@@ -1054,22 +1220,27 @@ function showSeriesLineTooltip(event, name) {
         const tierIconHtml = isHonorableMention
             ? ""
             : `<span class="t-tier-icon" style="background:${hexToRGBA(tierColor, 0.28)};color:${visibleColor(tierColor)};">${tier}</span>`;
+        const mergeNote = mergedTargetName
+            ? ` <span class="t-alias" style="font-size:0.78em;opacity:0.75">→ ${escapeHtml(mergedTargetName)}</span>`
+            : mergedSourceFor && slot.exact && slot.exact !== name
+            ? ` <span class="t-alias" style="font-size:0.78em;opacity:0.75">← ${escapeHtml(slot.exact)}</span>`
+            : '';
 
         return `<div class="t-prog-row">
       <span class="t-prog-year">${escapeHtml(yr)}</span>
       ${arrowHtml}
       <span class="t-prog-rank">
         <span>${rankText}</span>
-        ${tierIconHtml}
+        ${tierIconHtml}${mergeNote}
       </span>
     </div>`;
     }).join('');
 
     const aliasEntries = Object.entries(state.exactLookup[name] ?? {})
         .filter(([yr, exact]) => {
-            const slot = slots[yr];
-
+            const slot = virtualSlots[yr];
             if (slot && slot.subEntries && slot.subEntries.length > 1) return false;
+            if (slot && (slot._mergedTargetName || slot._mergedSourceFor)) return false;
             return exact !== name;
         })
         .sort(([a], [b]) => a.localeCompare(b));
@@ -1083,7 +1254,7 @@ function showSeriesLineTooltip(event, name) {
         : '';
 
     const hasMultiSubYear = spanYears.some(yr => {
-        const slot = slots[yr];
+        const slot = virtualSlots[yr];
         return slot && slot.subEntries && slot.subEntries.length > 1;
     });
 
@@ -1311,7 +1482,10 @@ clearBtn.addEventListener("click", () => {
 });
 
 function toggleItem(name) {
-    const peers = state.splitPeerGroups[name] ?? new Set();
+    const peers = new Set([
+        ...(state.splitPeerGroups[name] ?? []),
+        ...(state.mergeGroupMap[name] ?? []),
+    ]);
     const allNames = [name, ...peers];
     if (state.selected.size === 0 || !state.selected.has(name)) {
         for (const n of allNames) state.selected.add(n);
@@ -1351,6 +1525,7 @@ function boot(typeObj) {
             data,
             tier_labels_by_year: tierLabelsByYear = {},
             year_column_caption: yearColumnCaption = {},
+            merge_map: mergeMap = {},
         } = typeObj;
         if (!data.length) throw new Error("No data rows found.");
 
@@ -1359,6 +1534,7 @@ function boot(typeObj) {
         state.allData = data;
         state.tierLabelsByYear = tierLabelsByYear;
         state.yearColumnCaption = yearColumnCaption;
+        state.mergeMap = mergeMap;
         state.selectedYear = years[years.length - 1];
         state.exactLookup = {};
         for (const d of data) {

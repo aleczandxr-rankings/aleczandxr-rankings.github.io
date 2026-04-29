@@ -36,7 +36,7 @@ import json
 import os
 import re
 
-from normalized_mappings_table import NAME_MAPS, SPLIT_MAPS
+from normalized_mappings_table import NAME_MAPS, SPLIT_MAPS, MERGE_MAPS
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_ROOT = os.path.join(SCRIPT_DIR, "data")
@@ -317,6 +317,7 @@ def process_type(type_name: str, input_dir: str, name_map: dict) -> dict | None:
         "as_of_by_year": as_of_by_year,
         "year_column_caption": year_column_caption,
         "tier_labels_by_year": tier_labels_by_year,
+        "merge_map": MERGE_MAPS.get(type_name, {}),
         "data": data_out,
     }
 
