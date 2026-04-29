@@ -32,7 +32,7 @@ NAME_MAPS: dict[str, dict[str, str]] = {
         "Succession (First 3 Seasons)":                     "Succession",
         "Yakuza 0":                                         "Yakuza/Like A Dragon Series",
         "Yakuza 5 + Yakuza 6: A Song of Life":              "Yakuza/Like A Dragon Series",
-        "The Legend of Zelda: Majora's Mask":               "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
+        "The Legend of Zelda: Majora’s Mask":               "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
         "The Legend of Zelda: Ocarina of Time":             "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
         "The Legend of Zelda: Ocarina of Time + Majora's Mask": "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
         "Re:Zero":                                          "Re:Zero (Anime)",

@@ -14857,46 +14857,61 @@
           "exact": "The Legend of Zelda: Link’s Awakening"
         },
         {
-          "name": "The Legend of Zelda: Majora’s Mask",
+          "name": "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
           "year": "2022",
           "tier": 5.0,
           "rank": 46,
-          "exact": "The Legend of Zelda: Majora’s Mask"
-        },
-        {
-          "name": "The Legend of Zelda: Majora’s Mask",
-          "year": "2023",
-          "tier": 4.0,
-          "rank": 44,
-          "exact": "The Legend of Zelda: Majora’s Mask"
-        },
-        {
-          "name": "The Legend of Zelda: Majora’s Mask",
-          "year": "2024",
-          "tier": 4.0,
-          "rank": 44,
-          "exact": "The Legend of Zelda: Majora’s Mask"
-        },
-        {
-          "name": "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
-          "year": "2022",
-          "tier": 999.0,
-          "rank": "HM",
-          "exact": "The Legend of Zelda: Ocarina of Time"
+          "exact": "The Legend of Zelda: Majora’s Mask",
+          "sub_entries": [
+            {
+              "rank": 46,
+              "tier": 5.0,
+              "exact": "The Legend of Zelda: Majora’s Mask"
+            },
+            {
+              "rank": "HM",
+              "tier": 999.0,
+              "exact": "The Legend of Zelda: Ocarina of Time"
+            }
+          ]
         },
         {
           "name": "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
           "year": "2023",
-          "tier": 999.0,
-          "rank": "HM",
-          "exact": "The Legend of Zelda: Ocarina of Time"
+          "tier": 4.0,
+          "rank": 44,
+          "exact": "The Legend of Zelda: Majora’s Mask",
+          "sub_entries": [
+            {
+              "rank": 44,
+              "tier": 4.0,
+              "exact": "The Legend of Zelda: Majora’s Mask"
+            },
+            {
+              "rank": "HM",
+              "tier": 999.0,
+              "exact": "The Legend of Zelda: Ocarina of Time"
+            }
+          ]
         },
         {
           "name": "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
           "year": "2024",
-          "tier": 999.0,
-          "rank": "HM",
-          "exact": "The Legend of Zelda: Ocarina of Time"
+          "tier": 4.0,
+          "rank": 44,
+          "exact": "The Legend of Zelda: Majora’s Mask",
+          "sub_entries": [
+            {
+              "rank": 44,
+              "tier": 4.0,
+              "exact": "The Legend of Zelda: Majora’s Mask"
+            },
+            {
+              "rank": "HM",
+              "tier": 999.0,
+              "exact": "The Legend of Zelda: Ocarina of Time"
+            }
+          ]
         },
         {
           "name": "The Legend of Zelda: Ocarina of Time + Majora’s Mask",
